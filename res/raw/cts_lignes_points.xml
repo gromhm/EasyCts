@@ -1,0 +1,7517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lesarrets>
+  <ligne title="02" labeldir1="Pont du Rhin" labeldir2="Campus d'Illkirch" id="0">
+    <arret id="498">
+      <nom>Pont du Rhin</nom>
+      <positions>
+        <position>
+          <lat>48.5735263</lat>
+          <lng>7.797892399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="463">
+      <nom>Jardin des Deux Rives</nom>
+      <positions>
+        <position>
+          <lat>48.57270459999999</lat>
+          <lng>7.795306699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="129">
+      <nom>Coopérative</nom>
+      <positions>
+        <position>
+          <lat>48.5748183</lat>
+          <lng>7.7922691</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="517">
+      <nom>Port du Rhin</nom>
+      <positions>
+        <position>
+          <lat>48.5765592</lat>
+          <lng>7.787690599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="158">
+      <nom>Dunkerque</nom>
+      <positions>
+        <position>
+          <lat>48.5777145</lat>
+          <lng>7.7846557</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="706">
+      <nom>Place d'Islande</nom>
+      <positions>
+        <position>
+          <lat>48.5807586</lat>
+          <lng>7.776600999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="438">
+      <nom>Observatoire</nom>
+      <positions>
+        <position>
+          <lat>48.5815873</lat>
+          <lng>7.770411800000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="385">
+      <nom>Marne</nom>
+      <positions>
+        <position>
+          <lat>48.58380529999999</lat>
+          <lng>7.7728674</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="614">
+      <nom>Saint-Maurice</nom>
+      <positions>
+        <position>
+          <lat>48.58572059999999</lat>
+          <lng>7.771992999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="626">
+      <nom>Tauler</nom>
+      <positions>
+        <position>
+          <lat>48.5881014</lat>
+          <lng>7.769788399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="154">
+      <nom>Dordogne</nom>
+      <positions>
+        <position>
+          <lat>48.58903489999999</lat>
+          <lng>7.766591</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="51">
+      <nom>Bethesda</nom>
+      <positions>
+        <position>
+          <lat>48.59234</lat>
+          <lng>7.7610549</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="368">
+      <nom>Lycée Kléber</nom>
+      <positions>
+        <position>
+          <lat>48.5934532</lat>
+          <lng>7.758140699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="115">
+      <nom>Clemenceau</nom>
+      <positions>
+        <position>
+          <lat>48.5919675</lat>
+          <lng>7.754703499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="474">
+      <nom>Phalsbourg</nom>
+      <positions>
+        <position>
+          <lat>48.5913412</lat>
+          <lng>7.7490896</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="485">
+      <nom>Place de Pierre</nom>
+      <positions>
+        <position>
+          <lat>48.5906337</lat>
+          <lng>7.7453367</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="633">
+      <nom>Travail</nom>
+      <positions>
+        <position>
+          <lat>48.5899734</lat>
+          <lng>7.7420783</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="667">
+      <nom>Wilson</nom>
+      <positions>
+        <position>
+          <lat>48.5879668</lat>
+          <lng>7.739221799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="230">
+      <nom>Gare Centrale</nom>
+      <positions>
+        <position>
+          <lat>48.5854864</lat>
+          <lng>7.7359347</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="595">
+      <nom>Sainte-Aurélie</nom>
+      <positions>
+        <position>
+          <lat>48.5817568</lat>
+          <lng>7.732151399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="436">
+      <nom>Obernai Lyon</nom>
+      <positions>
+        <position>
+          <lat>48.5784039</lat>
+          <lng>7.7316432</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="323">
+      <nom>Laiterie</nom>
+      <positions>
+        <position>
+          <lat>48.5755299</lat>
+          <lng>7.730834499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="410">
+      <nom>Montagne Verte</nom>
+      <positions>
+        <position>
+          <lat>48.5745681</lat>
+          <lng>7.727413299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="36">
+      <nom>Camping</nom>
+      <positions>
+        <position>
+          <lat>48.5733715</lat>
+          <lng>7.7192487</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="429">
+      <nom>Nid de Cigognes</nom>
+      <positions>
+        <position>
+          <lat>48.57230089999999</lat>
+          <lng>7.714615200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="68">
+      <nom>Bruche</nom>
+      <positions>
+        <position>
+          <lat>48.5702341</lat>
+          <lng>7.7112718</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="246">
+      <nom>Gliesberg</nom>
+      <positions>
+        <position>
+          <lat>48.5676588</lat>
+          <lng>7.7091542</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="540">
+      <nom>Roethig</nom>
+      <positions>
+        <position>
+          <lat>48.5645597</lat>
+          <lng>7.7069575</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="174">
+      <nom>Elmerforst</nom>
+      <positions>
+        <position>
+          <lat>48.5618971</lat>
+          <lng>7.711092099999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="417">
+      <nom>Murhof</nom>
+      <positions>
+        <position>
+          <lat>48.5590542</lat>
+          <lng>7.712150200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="665">
+      <nom>Wihrel</nom>
+      <positions>
+        <position>
+          <lat>48.55454049999999</lat>
+          <lng>7.712895899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="448">
+      <nom>Ostwald Hôtel de Ville</nom>
+      <positions>
+        <position>
+          <lat>48.55056</lat>
+          <lng>7.7107327</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="656">
+      <nom>Rue de Lingolsheim</nom>
+      <positions>
+        <position>
+          <lat>48.5490419</lat>
+          <lng>7.7097523</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="647">
+      <nom>Vernois Mangold</nom>
+      <positions>
+        <position>
+          <lat>48.5454569</lat>
+          <lng>7.709797899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="449">
+      <nom>Ostwald Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.5436226</lat>
+          <lng>7.7102673</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="447">
+      <nom>Ostwald Bellevue</nom>
+      <positions>
+        <position>
+          <lat>48.5395204</lat>
+          <lng>7.7102955</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="40">
+      <nom>Bâle</nom>
+      <positions>
+        <position>
+          <lat>48.5365413</lat>
+          <lng>7.7098811</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="476">
+      <nom>Pigeons</nom>
+      <positions>
+        <position>
+          <lat>48.535211</lat>
+          <lng>7.7091287</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="704">
+      <nom>23 Novembre</nom>
+      <positions>
+        <position>
+          <lat>48.5331765</lat>
+          <lng>7.7064378</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="291">
+      <nom>Illkirch Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.5292582</lat>
+          <lng>7.711073300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="541">
+      <nom>Rohmer</nom>
+      <positions>
+        <position>
+          <lat>48.5279793</lat>
+          <lng>7.716441799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="653">
+      <nom>Vincent Scotto</nom>
+      <positions>
+        <position>
+          <lat>48.52724389999999</lat>
+          <lng>7.721570099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="290">
+      <nom>Illkirch Lixenbuhl</nom>
+      <positions>
+        <position>
+          <lat>48.5300096</lat>
+          <lng>7.724507200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="75">
+      <nom>Campus d'Illkirch</nom>
+      <positions>
+        <position>
+          <lat>48.5291978</lat>
+          <lng>7.732881</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="04" labeldir1="Reichstett Mairie" labeldir2="Wolfisheim Stade" id="1">
+    <arret id="525">
+      <nom>Reichstett Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.6485283</lat>
+          <lng>7.7533785</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="263">
+      <nom>Hay</nom>
+      <positions>
+        <position>
+          <lat>48.6485903</lat>
+          <lng>7.751789199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="269">
+      <nom>Hirondelles</nom>
+      <positions>
+        <position>
+          <lat>48.6462104</lat>
+          <lng>7.753681500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="20">
+      <nom>Alouettes</nom>
+      <positions>
+        <position>
+          <lat>48.6435077</lat>
+          <lng>7.7536333</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="523">
+      <nom>Raisin d'Or</nom>
+      <positions>
+        <position>
+          <lat>48.6329157</lat>
+          <lng>7.754073099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="411">
+      <nom>Mozart</nom>
+      <positions>
+        <position>
+          <lat>48.6300874</lat>
+          <lng>7.7537553</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="215">
+      <nom>Foch</nom>
+      <positions>
+        <position>
+          <lat>48.6278528</lat>
+          <lng>7.7538465</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="679">
+      <nom>Emailleries</nom>
+      <positions>
+        <position>
+          <lat>48.6259545</lat>
+          <lng>7.755956400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="274">
+      <nom>Hoenheim Gare</nom>
+      <positions>
+        <position>
+          <lat>48.6281536</lat>
+          <lng>7.7589286</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="553">
+      <nom>Route de La Wantzenau</nom>
+      <positions>
+        <position>
+          <lat>48.6239259</lat>
+          <lng>7.754987799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="281">
+      <nom>Hoenheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.62136479999999</lat>
+          <lng>7.755302899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="467">
+      <nom>Parc Wodli</nom>
+      <positions>
+        <position>
+          <lat>48.6172654</lat>
+          <lng>7.754242099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="87">
+      <nom>Cheval Blanc</nom>
+      <positions>
+        <position>
+          <lat>48.6144061</lat>
+          <lng>7.7523887</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="562">
+      <nom>Rue de la Gare</nom>
+      <positions>
+        <position>
+          <lat>48.61091709999999</lat>
+          <lng>7.7509537</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="386">
+      <nom>Maison Rouge</nom>
+      <positions>
+        <position>
+          <lat>48.6078854</lat>
+          <lng>7.7499385</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="574">
+      <nom>Schiltigheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.6048242</lat>
+          <lng>7.747765899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="43">
+      <nom>Barr</nom>
+      <positions>
+        <position>
+          <lat>48.60172920000001</lat>
+          <lng>7.745187</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="610">
+      <nom>Sainte Hélène</nom>
+      <positions>
+        <position>
+          <lat>48.59681579999999</lat>
+          <lng>7.742011199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="485">
+      <nom>Place de Pierre</nom>
+      <positions>
+        <position>
+          <lat>48.5906337</lat>
+          <lng>7.7453367</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="195">
+      <nom>Faubourg de Pierre</nom>
+      <positions>
+        <position>
+          <lat>48.5874905</lat>
+          <lng>7.7463511</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="497">
+      <nom>Pont de Pierre</nom>
+      <positions>
+        <position>
+          <lat>48.5864215</lat>
+          <lng>7.746275999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="341">
+      <nom>Les Halles - Pont de Paris</nom>
+      <positions>
+        <position>
+          <lat>48.5858892</lat>
+          <lng>7.74376</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="492">
+      <nom>Pont Kuss</nom>
+      <positions>
+        <position>
+          <lat>48.5834708</lat>
+          <lng>7.739817200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="613">
+      <nom>Sainte Marguerite</nom>
+      <positions>
+        <position>
+          <lat>48.5813096</lat>
+          <lng>7.7370465</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="375">
+      <nom>Musée d'Art Moderne</nom>
+      <positions>
+        <position>
+          <lat>48.5783134</lat>
+          <lng>7.7340303</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="436">
+      <nom>Obernai-Lyon</nom>
+      <positions>
+        <position>
+          <lat>48.5784039</lat>
+          <lng>7.7316432</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="599">
+      <nom>Saint Gall</nom>
+      <positions>
+        <position>
+          <lat>48.5802361</lat>
+          <lng>7.720360500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="85">
+      <nom>Charmille</nom>
+      <positions>
+        <position>
+          <lat>48.5797392</lat>
+          <lng>7.7168629</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="575">
+      <nom>Schnockeloch</nom>
+      <positions>
+        <position>
+          <lat>48.57905419999999</lat>
+          <lng>7.712533799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="252">
+      <nom>Grüber</nom>
+      <positions>
+        <position>
+          <lat>48.57863099999999</lat>
+          <lng>7.7100246</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="79">
+      <nom>Capucins</nom>
+      <positions>
+        <position>
+          <lat>48.5780587</lat>
+          <lng>7.705836300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="486">
+      <nom>Place des Romains</nom>
+      <positions>
+        <position>
+          <lat>48.57988839999999</lat>
+          <lng>7.703825999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="61">
+      <nom>Bosco</nom>
+      <positions>
+        <position>
+          <lat>48.5818135</lat>
+          <lng>7.703052199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="98">
+      <nom>Cicéron</nom>
+      <positions>
+        <position>
+          <lat>48.5823448</lat>
+          <lng>7.7035057</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="278">
+      <nom>Koenigshoffen Hohberg</nom>
+      <positions>
+        <position>
+          <lat>48.5820442</lat>
+          <lng>7.7010499</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="652">
+      <nom>Virgile</nom>
+      <positions>
+        <position>
+          <lat>48.5814196</lat>
+          <lng>7.700096400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="285">
+      <nom>Horace</nom>
+      <positions>
+        <position>
+          <lat>48.5827593</lat>
+          <lng>7.699291699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="371">
+      <nom>Lycée Marcel Rudloff</nom>
+      <positions>
+        <position>
+          <lat>48.5853179</lat>
+          <lng>7.6945415</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="395">
+      <nom>Mitterrand</nom>
+      <positions>
+        <position>
+          <lat>48.5874168</lat>
+          <lng>7.6973967</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="452">
+      <nom>Paul Eluard</nom>
+      <positions>
+        <position>
+          <lat>48.5891147</lat>
+          <lng>7.697325599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="259">
+      <nom>Hautepierre Maillon</nom>
+      <positions>
+        <position>
+          <lat>48.5927977</lat>
+          <lng>7.6979332</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="542">
+      <nom>Romains</nom>
+      <positions>
+        <position>
+          <lat>48.578482</lat>
+          <lng>7.7007937</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="265">
+      <nom>Henri Frenay</nom>
+      <positions>
+        <position>
+          <lat>48.5797632</lat>
+          <lng>7.6977669</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="441">
+      <nom>Octroi</nom>
+      <positions>
+        <position>
+          <lat>48.5804854</lat>
+          <lng>7.6951383</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="297">
+      <nom>Jardin des Roses</nom>
+      <positions>
+        <position>
+          <lat>48.580528</lat>
+          <lng>7.690437699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="160">
+      <nom>Eckbolsheim Centre</nom>
+      <positions>
+        <position>
+          <lat>48.5803443</lat>
+          <lng>7.6874068</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="299">
+      <nom>Jardin des Vignes</nom>
+      <positions>
+        <position>
+          <lat>48.582353</lat>
+          <lng>7.682932900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="554">
+      <nom>Route de Wolfisheim</nom>
+      <positions>
+        <position>
+          <lat>48.5843189</lat>
+          <lng>7.6788291</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="296">
+      <nom>Jardins</nom>
+      <positions>
+        <position>
+          <lat>48.5868863</lat>
+          <lng>7.6708925</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="60">
+      <nom>Boeuf Rouge</nom>
+      <positions>
+        <position>
+          <lat>48.5870842</lat>
+          <lng>7.6680359</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="670">
+      <nom>Wolfisheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.583847</lat>
+          <lng>7.666485600000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="400">
+      <nom>Moulin</nom>
+      <positions>
+        <position>
+          <lat>48.5814338</lat>
+          <lng>7.666383700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="671">
+      <nom>Wolfisheim Stade</nom>
+      <positions>
+        <position>
+          <lat>48.579017</lat>
+          <lng>7.666614399999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="06" labeldir1="Pont Phario" labeldir2="Hoenheim Gare" id="2">
+    <arret id="271">
+      <nom>Hoenheim Cigognes</nom>
+      <positions>
+        <position>
+          <lat>48.6232017</lat>
+          <lng>7.7468124</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="219">
+      <nom>Fontaine</nom>
+      <positions>
+        <position>
+          <lat>48.6237664</lat>
+          <lng>7.750826300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="553">
+      <nom>Route de La Wantzenau</nom>
+      <positions>
+        <position>
+          <lat>48.6239259</lat>
+          <lng>7.754987799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="679">
+      <nom>Emailleries</nom>
+      <positions>
+        <position>
+          <lat>48.6259545</lat>
+          <lng>7.755956400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="274">
+      <nom>Hoenheim Gare</nom>
+      <positions>
+        <position>
+          <lat>48.6281536</lat>
+          <lng>7.7589286</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="215">
+      <nom>Foch</nom>
+      <positions>
+        <position>
+          <lat>48.6278528</lat>
+          <lng>7.7538465</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="411">
+      <nom>Mozart</nom>
+      <positions>
+        <position>
+          <lat>48.6300874</lat>
+          <lng>7.7537553</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="523">
+      <nom>Raisin d'Or</nom>
+      <positions>
+        <position>
+          <lat>48.6329157</lat>
+          <lng>7.754073099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="584">
+      <nom>Souffelweyersheim Canal</nom>
+      <positions>
+        <position>
+          <lat>48.6340501</lat>
+          <lng>7.7518898</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="145">
+      <nom>Dauphiné</nom>
+      <positions>
+        <position>
+          <lat>48.6339066</lat>
+          <lng>7.746043999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="586">
+      <nom>Souffelweyersheim Ecole</nom>
+      <positions>
+        <position>
+          <lat>48.633529</lat>
+          <lng>7.740699599999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="585">
+      <nom>Souffelweyersheim Centre</nom>
+      <positions>
+        <position>
+          <lat>48.6345323</lat>
+          <lng>7.736475199999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="64">
+      <nom>Bouvreuil</nom>
+      <positions>
+        <position>
+          <lat>48.6348877</lat>
+          <lng>7.731546599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="216">
+      <nom>Fort Desaix</nom>
+      <positions>
+        <position>
+          <lat>48.6349595</lat>
+          <lng>7.7294236</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="231">
+      <nom>Gaertel</nom>
+      <positions>
+        <position>
+          <lat>48.6321091</lat>
+          <lng>7.7284527</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="331">
+      <nom>La Souffel</nom>
+      <positions>
+        <position>
+          <lat>48.6288261</lat>
+          <lng>7.7292386</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="650">
+      <nom>Victor Hugo</nom>
+      <positions>
+        <position>
+          <lat>48.622582</lat>
+          <lng>7.7307165</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="339">
+      <nom>Lerchenberg</nom>
+      <positions>
+        <position>
+          <lat>48.6196946</lat>
+          <lng>7.7315171</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="388">
+      <nom>Marc Seguin</nom>
+      <positions>
+        <position>
+          <lat>48.6155623</lat>
+          <lng>7.732310999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="491">
+      <nom>Poincaré</nom>
+      <positions>
+        <position>
+          <lat>48.6140674</lat>
+          <lng>7.7328113</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="169">
+      <nom>Ecrivains</nom>
+      <positions>
+        <position>
+          <lat>48.609603</lat>
+          <lng>7.734330699999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="634">
+      <nom>Trois Epis</nom>
+      <positions>
+        <position>
+          <lat>48.6068372</lat>
+          <lng>7.735936</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="399">
+      <nom>Moser</nom>
+      <positions>
+        <position>
+          <lat>48.60324840000001</lat>
+          <lng>7.737933</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="678">
+      <nom>Embranchement</nom>
+      <positions>
+        <position>
+          <lat>48.5997461</lat>
+          <lng>7.7397166</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="610">
+      <nom>Sainte Hélène</nom>
+      <positions>
+        <position>
+          <lat>48.59681579999999</lat>
+          <lng>7.742011199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="668">
+      <nom>Wissembourg</nom>
+      <positions>
+        <position>
+          <lat>48.58998940000001</lat>
+          <lng>7.741367500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="667">
+      <nom>Wilson</nom>
+      <positions>
+        <position>
+          <lat>48.5879668</lat>
+          <lng>7.739221799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="197">
+      <nom>Faubourg de Saverne</nom>
+      <positions>
+        <position>
+          <lat>48.58607989999999</lat>
+          <lng>7.739826599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="341">
+      <nom>Les Halles - Pont de Paris</nom>
+      <positions>
+        <position>
+          <lat>48.5858892</lat>
+          <lng>7.74376</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="497">
+      <nom>Pont de Pierre</nom>
+      <positions>
+        <position>
+          <lat>48.5864215</lat>
+          <lng>7.746275999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="635">
+      <nom>Tribunal - Fonderie</nom>
+      <positions>
+        <position>
+          <lat>48.5868739</lat>
+          <lng>7.7495831</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="527">
+      <nom>République</nom>
+      <positions>
+        <position>
+          <lat>48.5865918</lat>
+          <lng>7.753839800000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="343">
+      <nom>Liberté</nom>
+      <positions>
+        <position>
+          <lat>48.5859957</lat>
+          <lng>7.758126</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="69">
+      <nom>Brant - Université</nom>
+      <positions>
+        <position>
+          <lat>48.58559109999999</lat>
+          <lng>7.761671799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="116">
+      <nom>Clinique de l'Orangerie</nom>
+      <positions>
+        <position>
+          <lat>48.5879491</lat>
+          <lng>7.765330400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="154">
+      <nom>Dordogne</nom>
+      <positions>
+        <position>
+          <lat>48.58903489999999</lat>
+          <lng>7.766591</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="443">
+      <nom>Orangerie</nom>
+      <positions>
+        <position>
+          <lat>48.5921768</lat>
+          <lng>7.7696192</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="453">
+      <nom>Palais de l'Europe</nom>
+      <positions>
+        <position>
+          <lat>48.5939278</lat>
+          <lng>7.772143199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="535">
+      <nom>Robertsau Boecklin</nom>
+      <positions>
+        <position>
+          <lat>48.5979439</lat>
+          <lng>7.7770261</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="576">
+      <nom>Schott</nom>
+      <positions>
+        <position>
+          <lat>48.6004574</lat>
+          <lng>7.780565299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="539">
+      <nom>Robertsau Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.6029726</lat>
+          <lng>7.783360200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="39">
+      <nom>Baillis</nom>
+      <positions>
+        <position>
+          <lat>48.6069986</lat>
+          <lng>7.779918899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="111">
+      <nom>Cimetière Nord</nom>
+      <positions>
+        <position>
+          <lat>48.6089708</lat>
+          <lng>7.779582299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="459">
+      <nom>Papeterie</nom>
+      <positions>
+        <position>
+          <lat>48.6116025</lat>
+          <lng>7.780412399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="264">
+      <nom>Hechner</nom>
+      <positions>
+        <position>
+          <lat>48.61231979999999</lat>
+          <lng>7.776821000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="99">
+      <nom>Cité de l'Ill</nom>
+      <positions>
+        <position direction="1">
+          <lat>48.6129423</lat>
+          <lng>7.773600999999999</lng>
+        </position>
+        <position direction="2">
+          <lat>48.6129015</lat>
+          <lng>7.7732711</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="496">
+      <nom>Pont Phario</nom>
+      <positions>
+        <position>
+          <lat>48.6132198</lat>
+          <lng>7.769182000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="235">
+      <nom>Georges Burger</nom>
+      <positions>
+        <position>
+          <lat>48.6151438</lat>
+          <lng>7.7297133</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="92">
+      <nom>Chambre de Métiers</nom>
+      <positions>
+        <position>
+          <lat>48.6157228</lat>
+          <lng>7.721049799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="433">
+      <nom>Nord</nom>
+      <positions>
+        <position>
+          <lat>48.6231848</lat>
+          <lng>7.7117787</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="563">
+      <nom>Rue de Hoenheim</nom>
+      <positions>
+        <position>
+          <lat>48.6242982</lat>
+          <lng>7.705576100000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="431">
+      <nom>Niederhausbergen Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.6232531</lat>
+          <lng>7.6999931</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="432">
+      <nom>Niederhausbergen Centre</nom>
+      <positions>
+        <position>
+          <lat>48.623718</lat>
+          <lng>7.699453</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="680">
+      <nom>Niederhausbergen Ouest</nom>
+      <positions>
+        <position>
+          <lat>48.6248487</lat>
+          <lng>7.700056099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="674">
+      <nom>ZAC des Maréchaux</nom>
+      <positions>
+        <position>
+          <lat>48.6341547</lat>
+          <lng>7.7153072</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="07" labeldir1="Illkirch Fort Uhrich" labeldir2="Place Arnold" id="3">
+    <arret id="221">
+      <nom>Illkirch Fort Uhrich</nom>
+      <positions>
+        <position>
+          <lat>48.5144803</lat>
+          <lng>7.723258599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="445">
+      <nom>Ormes</nom>
+      <positions>
+        <position>
+          <lat>48.5159736</lat>
+          <lng>7.722256799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="547">
+      <nom>Roseaux</nom>
+      <positions>
+        <position>
+          <lat>48.5182957</lat>
+          <lng>7.7190381</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="379">
+      <nom>Malraux</nom>
+      <positions>
+        <position>
+          <lat>48.5216952</lat>
+          <lng>7.7205965</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="86">
+      <nom>Chateaubriand</nom>
+      <positions>
+        <position>
+          <lat>48.5236911</lat>
+          <lng>7.7214535</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="653">
+      <nom>Vincent Scotto</nom>
+      <positions>
+        <position>
+          <lat>48.52724389999999</lat>
+          <lng>7.721570099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="290">
+      <nom>Illkirch Lixenbuhl</nom>
+      <positions>
+        <position>
+          <lat>48.5300096</lat>
+          <lng>7.724507200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="22">
+      <nom>Alsace</nom>
+      <positions>
+        <position>
+          <lat>48.5322334</lat>
+          <lng>7.7272645</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="83">
+      <nom>Centre de Traumatologie</nom>
+      <positions>
+        <position>
+          <lat>48.5375269</lat>
+          <lng>7.728188499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="128">
+      <nom>Colonne</nom>
+      <positions>
+        <position>
+          <lat>48.5381405</lat>
+          <lng>7.733107700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="38">
+      <nom>Baggersee</nom>
+      <positions>
+        <position>
+          <lat>48.54486199999999</lat>
+          <lng>7.738013400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="280">
+      <nom>Hohwart</nom>
+      <positions>
+        <position>
+          <lat>48.5493056</lat>
+          <lng>7.741781899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="176">
+      <nom>Emile Mathis</nom>
+      <positions>
+        <position>
+          <lat>48.55284229999999</lat>
+          <lng>7.7441932</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="149">
+      <nom>Dietterlin</nom>
+      <positions>
+        <position>
+          <lat>48.5526728</lat>
+          <lng>7.7494437</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="223">
+      <nom>Franche Comté</nom>
+      <positions>
+        <position>
+          <lat>48.5517309</lat>
+          <lng>7.751517</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="577">
+      <nom>Schulmeister</nom>
+      <positions>
+        <position>
+          <lat>48.5498764</lat>
+          <lng>7.752630099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="100">
+      <nom>Cité Meinau</nom>
+      <positions>
+        <position>
+          <lat>48.5479819</lat>
+          <lng>7.756379799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="356">
+      <nom>Louis Loucheur</nom>
+      <positions>
+        <position>
+          <lat>48.5494085</lat>
+          <lng>7.758140699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="529">
+      <nom>Rhin Tortu</nom>
+      <positions>
+        <position>
+          <lat>48.5532463</lat>
+          <lng>7.7579731</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="640">
+      <nom>Vanneaux</nom>
+      <positions>
+        <position>
+          <lat>48.5543026</lat>
+          <lng>7.760389699999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="47">
+      <nom>Bergerac</nom>
+      <positions>
+        <position>
+          <lat>48.5543044</lat>
+          <lng>7.763004899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="316">
+      <nom>Kibitzenau</nom>
+      <positions>
+        <position>
+          <lat>48.5549311</lat>
+          <lng>7.7665079</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="10" labeldir1="Gare Centrale" id="4">
+    <arret id="230">
+      <nom>Gare Centrale</nom>
+      <positions>
+        <position>
+          <lat>48.5854864</lat>
+          <lng>7.7359347</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="667">
+      <nom>Wilson</nom>
+      <positions>
+        <position>
+          <lat>48.5879668</lat>
+          <lng>7.739221799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="633">
+      <nom>Travail</nom>
+      <positions>
+        <position>
+          <lat>48.5899734</lat>
+          <lng>7.7420783</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="485">
+      <nom>Place de Pierre</nom>
+      <positions>
+        <position>
+          <lat>48.5906337</lat>
+          <lng>7.7453367</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="454">
+      <nom>Palais des Fêtes</nom>
+      <positions>
+        <position>
+          <lat>48.5903637</lat>
+          <lng>7.748879</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="655">
+      <nom>Vosges Oberlin</nom>
+      <positions>
+        <position>
+          <lat>48.5896931</lat>
+          <lng>7.751272900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="326">
+      <nom>Lamey</nom>
+      <positions>
+        <position>
+          <lat>48.5882897</lat>
+          <lng>7.756298</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="512">
+      <nom>Pont des Vosges</nom>
+      <positions>
+        <position>
+          <lat>48.5877486</lat>
+          <lng>7.7582037</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="69">
+      <nom>Brant - Université</nom>
+      <positions>
+        <position>
+          <lat>48.58559109999999</lat>
+          <lng>7.761671799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="233">
+      <nom>Gallia</nom>
+      <positions>
+        <position>
+          <lat>48.5844582</lat>
+          <lng>7.759232399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="600">
+      <nom>Saint Guillaume</nom>
+      <positions>
+        <position>
+          <lat>48.582801</lat>
+          <lng>7.757623000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="45">
+      <nom>Bateliers</nom>
+      <positions>
+        <position>
+          <lat>48.5807684</lat>
+          <lng>7.753967199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="132">
+      <nom>Corbeau</nom>
+      <positions>
+        <position>
+          <lat>48.5794943</lat>
+          <lng>7.751397600000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="616">
+      <nom>Saint Nicolas</nom>
+      <positions>
+        <position>
+          <lat>48.5783852</lat>
+          <lng>7.7480194</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="620">
+      <nom>Saint Thomas</nom>
+      <positions>
+        <position>
+          <lat>48.57888029999999</lat>
+          <lng>7.7437279</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="273">
+      <nom>Hôtel du Département</nom>
+      <positions>
+        <position>
+          <lat>48.5787118</lat>
+          <lng>7.739760899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="375">
+      <nom>Musée d'Art Moderne</nom>
+      <positions>
+        <position>
+          <lat>48.5783134</lat>
+          <lng>7.7340303</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="436">
+      <nom>Obernai-Lyon</nom>
+      <positions>
+        <position>
+          <lat>48.5784039</lat>
+          <lng>7.7316432</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="595">
+      <nom>Sainte Aurélie</nom>
+      <positions>
+        <position>
+          <lat>48.5817568</lat>
+          <lng>7.732151399999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="13" labeldir1="Lingolsheim Alouettes" labeldir2="Montagne Verte" id="5">
+    <arret id="681">
+      <nom>Lingolsheim Alouettes</nom>
+      <positions>
+        <position>
+          <lat>48.5512413</lat>
+          <lng>7.6923035</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="515">
+      <nom>Protection</nom>
+      <positions>
+        <position>
+          <lat>48.5520319</lat>
+          <lng>7.6890805</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="628">
+      <nom>Lingolsheim Tiergaertel</nom>
+      <positions>
+        <position>
+          <lat>48.55398479999999</lat>
+          <lng>7.6896733</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="18">
+      <nom>Albatros</nom>
+      <positions>
+        <position>
+          <lat>48.5564028</lat>
+          <lng>7.692778000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="578">
+      <nom>Schumann</nom>
+      <positions>
+        <position>
+          <lat>48.5587604</lat>
+          <lng>7.6931307</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="513">
+      <nom>Prés</nom>
+      <positions>
+        <position>
+          <lat>48.5599196</lat>
+          <lng>7.691574999999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="112">
+      <nom>Cité Russi</nom>
+      <positions>
+        <position>
+          <lat>48.5593595</lat>
+          <lng>7.689680000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="350">
+      <nom>Lingolsheim Centre</nom>
+      <positions>
+        <position>
+          <lat>48.5584657</lat>
+          <lng>7.686151600000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="353">
+      <nom>Lingolsheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.5574343</lat>
+          <lng>7.6827894</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="649">
+      <nom>Vignes</nom>
+      <positions>
+        <position>
+          <lat>48.55731</lat>
+          <lng>7.679261</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="352">
+      <nom>Lingolsheim Gare</nom>
+      <positions>
+        <position>
+          <lat>48.5595974</lat>
+          <lng>7.678138499999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="374">
+      <nom>Maxime Alexandre</nom>
+      <positions>
+        <position>
+          <lat>48.5617391</lat>
+          <lng>7.682459499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="632">
+      <nom>Touraine</nom>
+      <positions>
+        <position>
+          <lat>48.5630793</lat>
+          <lng>7.6883537</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="559">
+      <nom>Rue d'Eckbolsheim</nom>
+      <positions>
+        <position>
+          <lat>48.5640858</lat>
+          <lng>7.6905879</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="590">
+      <nom>Sports</nom>
+      <positions>
+        <position>
+          <lat>48.5641799</lat>
+          <lng>7.6940346</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="37">
+      <nom>Avenir</nom>
+      <positions>
+        <position>
+          <lat>48.56492799999999</lat>
+          <lng>7.6984669</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="55">
+      <nom>Blaesheim</nom>
+      <positions>
+        <position>
+          <lat>48.5660951</lat>
+          <lng>7.7035014</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="246">
+      <nom>Gliesberg</nom>
+      <positions>
+        <position>
+          <lat>48.5676588</lat>
+          <lng>7.7091542</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="68">
+      <nom>Bruche</nom>
+      <positions>
+        <position>
+          <lat>48.5702341</lat>
+          <lng>7.7112718</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="429">
+      <nom>Nid de Cigognes</nom>
+      <positions>
+        <position>
+          <lat>48.57230089999999</lat>
+          <lng>7.714615200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="36">
+      <nom>Camping</nom>
+      <positions>
+        <position>
+          <lat>48.5733715</lat>
+          <lng>7.7192487</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="410">
+      <nom>Montagne Verte</nom>
+      <positions>
+        <position>
+          <lat>48.5745681</lat>
+          <lng>7.727413299999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="15" labeldir1="Lingolsheim Alouettes" labeldir2="Robertsau Boecklin" id="6">
+    <arret id="681">
+      <nom>Lingolsheim Alouettes</nom>
+      <positions>
+        <position>
+          <lat>48.5512413</lat>
+          <lng>7.6923035</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="123">
+      <nom>Collège Galilée</nom>
+      <positions>
+        <position>
+          <lat>48.5505404</lat>
+          <lng>7.6870877</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="311">
+      <nom>Kastler</nom>
+      <positions>
+        <position>
+          <lat>48.5488368</lat>
+          <lng>7.6843236</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="110">
+      <nom>Cimetière</nom>
+      <positions>
+        <position>
+          <lat>48.5511104</lat>
+          <lng>7.6802896</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="564">
+      <nom>Rue des Juifs</nom>
+      <positions>
+        <position>
+          <lat>48.5545228</lat>
+          <lng>7.6799262</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="353">
+      <nom>Lingolsheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.5574343</lat>
+          <lng>7.6827894</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="350">
+      <nom>Lingolsheim Centre</nom>
+      <positions>
+        <position>
+          <lat>48.5584657</lat>
+          <lng>7.686151600000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="112">
+      <nom>Cité Russi</nom>
+      <positions>
+        <position>
+          <lat>48.5593595</lat>
+          <lng>7.689680000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="513">
+      <nom>Prés</nom>
+      <positions>
+        <position>
+          <lat>48.5599196</lat>
+          <lng>7.691574999999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="624">
+      <nom>Tanneries</nom>
+      <positions>
+        <position>
+          <lat>48.5615119</lat>
+          <lng>7.6947695</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="396">
+      <nom>Molkenbronn</nom>
+      <positions>
+        <position>
+          <lat>48.5627998</lat>
+          <lng>7.700255999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="540">
+      <nom>Roethig</nom>
+      <positions>
+        <position>
+          <lat>48.5645597</lat>
+          <lng>7.7069575</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="246">
+      <nom>Gliesberg</nom>
+      <positions>
+        <position>
+          <lat>48.5676588</lat>
+          <lng>7.7091542</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="68">
+      <nom>Bruche</nom>
+      <positions>
+        <position>
+          <lat>48.5702341</lat>
+          <lng>7.7112718</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="429">
+      <nom>Nid de Cigognes</nom>
+      <positions>
+        <position>
+          <lat>48.57230089999999</lat>
+          <lng>7.714615200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="36">
+      <nom>Camping</nom>
+      <positions>
+        <position>
+          <lat>48.5733715</lat>
+          <lng>7.7192487</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="410">
+      <nom>Montagne Verte</nom>
+      <positions>
+        <position>
+          <lat>48.5745681</lat>
+          <lng>7.727413299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="323">
+      <nom>Laiterie</nom>
+      <positions>
+        <position>
+          <lat>48.5755299</lat>
+          <lng>7.730834499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="372">
+      <nom>Lyon-Pasteur</nom>
+      <positions>
+        <position>
+          <lat>48.5748964</lat>
+          <lng>7.7343535</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="373">
+      <nom>Lycée Pasteur</nom>
+      <positions>
+        <position>
+          <lat>48.5745077</lat>
+          <lng>7.7385458</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="272">
+      <nom>Hôpital Civil</nom>
+      <positions>
+        <position>
+          <lat>48.57417760000001</lat>
+          <lng>7.7422553</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="284">
+      <nom>Hôtel de Police</nom>
+      <positions>
+        <position>
+          <lat>48.5745237</lat>
+          <lng>7.748867</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="583">
+      <nom>Sécurité Sociale</nom>
+      <positions>
+        <position>
+          <lat>48.5761919</lat>
+          <lng>7.756817000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="96">
+      <nom>Cité Administrative</nom>
+      <positions>
+        <position>
+          <lat>48.5779594</lat>
+          <lng>7.7618328</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="458">
+      <nom>Palerme</nom>
+      <positions>
+        <position>
+          <lat>48.5777429</lat>
+          <lng>7.764166299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="185">
+      <nom>Esplanade</nom>
+      <positions>
+        <position>
+          <lat>48.5785201</lat>
+          <lng>7.7696232</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="438">
+      <nom>Observatoire</nom>
+      <positions>
+        <position>
+          <lat>48.5815873</lat>
+          <lng>7.770411800000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="385">
+      <nom>Marne</nom>
+      <positions>
+        <position>
+          <lat>48.58380529999999</lat>
+          <lng>7.7728674</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="70">
+      <nom>Bruxelles</nom>
+      <positions>
+        <position>
+          <lat>48.5841539</lat>
+          <lng>7.775265299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="673">
+      <nom>Ypres</nom>
+      <positions>
+        <position>
+          <lat>48.5862316</lat>
+          <lng>7.780678000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="131">
+      <nom>Conseil des Quinze</nom>
+      <positions>
+        <position>
+          <lat>48.58740969999999</lat>
+          <lng>7.782298000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="522">
+      <nom>Quartier des Quinze</nom>
+      <positions>
+        <position>
+          <lat>48.58920699999999</lat>
+          <lng>7.782672199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="74">
+      <nom>Carpe Haute</nom>
+      <positions>
+        <position>
+          <lat>48.5961399</lat>
+          <lng>7.788214999999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="65">
+      <nom>Brême</nom>
+      <positions>
+        <position>
+          <lat>48.598696</lat>
+          <lng>7.7909777</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="327">
+      <nom>Lamproie</nom>
+      <positions>
+        <position>
+          <lat>48.6019531</lat>
+          <lng>7.792598399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="59">
+      <nom>Bois Fleuri</nom>
+      <positions>
+        <position>
+          <lat>48.6034204</lat>
+          <lng>7.7905887</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="598">
+      <nom>Saint François</nom>
+      <positions>
+        <position>
+          <lat>48.603533</lat>
+          <lng>7.7872172</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="539">
+      <nom>Robertsau Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.6029726</lat>
+          <lng>7.783360200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="576">
+      <nom>Schott</nom>
+      <positions>
+        <position>
+          <lat>48.6004574</lat>
+          <lng>7.780565299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="535">
+      <nom>Robertsau Boecklin</nom>
+      <positions>
+        <position>
+          <lat>48.5979439</lat>
+          <lng>7.7770261</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="15a" labeldir1="République" labeldir2="Robertsau Sainte-Anne" id="7">
+    <arret id="527">
+      <nom>République</nom>
+      <positions>
+        <position>
+          <lat>48.5865918</lat>
+          <lng>7.753839800000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="343">
+      <nom>Liberté</nom>
+      <positions>
+        <position>
+          <lat>48.5859957</lat>
+          <lng>7.758126</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="69">
+      <nom>Brant Université</nom>
+      <positions>
+        <position>
+          <lat>48.58559109999999</lat>
+          <lng>7.761671799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="248">
+      <nom>Golbery</nom>
+      <positions>
+        <position>
+          <lat>48.587463</lat>
+          <lng>7.7667989</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="626">
+      <nom>Tauler</nom>
+      <positions>
+        <position>
+          <lat>48.5881014</lat>
+          <lng>7.769788399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="644">
+      <nom>Verdun</nom>
+      <positions>
+        <position>
+          <lat>48.5235375</lat>
+          <lng>7.6831622</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="701">
+      <nom>Wagner</nom>
+      <positions>
+        <position>
+          <lat>48.5869857</lat>
+          <lng>7.7774405</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="673">
+      <nom>Ypres</nom>
+      <positions>
+        <position>
+          <lat>48.5862316</lat>
+          <lng>7.780678000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="131">
+      <nom>Conseil des Quinze</nom>
+      <positions>
+        <position>
+          <lat>48.58740969999999</lat>
+          <lng>7.782298000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="522">
+      <nom>Quartier des Quinze</nom>
+      <positions>
+        <position>
+          <lat>48.58920699999999</lat>
+          <lng>7.782672199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="74">
+      <nom>Carpe Haute</nom>
+      <positions>
+        <position>
+          <lat>48.5961399</lat>
+          <lng>7.788214999999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="65">
+      <nom>Brême</nom>
+      <positions>
+        <position>
+          <lat>48.598696</lat>
+          <lng>7.7909777</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="327">
+      <nom>Lamproie</nom>
+      <positions>
+        <position>
+          <lat>48.6019531</lat>
+          <lng>7.792598399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="59">
+      <nom>Bois Fleuri</nom>
+      <positions>
+        <position>
+          <lat>48.6034204</lat>
+          <lng>7.7905887</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="598">
+      <nom>Saint François</nom>
+      <positions>
+        <position>
+          <lat>48.603533</lat>
+          <lng>7.7872172</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="539">
+      <nom>Robertsau Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.6029726</lat>
+          <lng>7.783360200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="39">
+      <nom>Baillis</nom>
+      <positions>
+        <position>
+          <lat>48.6069986</lat>
+          <lng>7.779918899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="111">
+      <nom>Cimetière Nord</nom>
+      <positions>
+        <position>
+          <lat>48.6089708</lat>
+          <lng>7.779582299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="459">
+      <nom>Papeterie</nom>
+      <positions>
+        <position>
+          <lat>48.6116025</lat>
+          <lng>7.780412399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="117">
+      <nom>Clinique Sainte Anne</nom>
+      <positions>
+        <position>
+          <lat>48.615408</lat>
+          <lng>7.7853531</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="549">
+      <nom>Robertsau Sainte Anne</nom>
+      <positions>
+        <position direction="1">
+          <lat>48.6169206</lat>
+          <lng>7.7881077</lng>
+        </position>
+        <position direction="2">
+          <lat>48.6172982</lat>
+          <lng>7.7882418</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="17" labeldir1="Niederhausbergen Ouest" labeldir2="Les Halles Sébastopol" id="8">
+    <arret id="680">
+      <nom>Niederhausbergen Ouest</nom>
+      <positions>
+        <position>
+          <lat>48.6248487</lat>
+          <lng>7.700056099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="432">
+      <nom>Niederhausbergen Centre</nom>
+      <positions>
+        <position>
+          <lat>48.623718</lat>
+          <lng>7.699453</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="568">
+      <nom>Rue du Stade</nom>
+      <positions>
+        <position>
+          <lat>48.6225838</lat>
+          <lng>7.6990449</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="393">
+      <nom>Mittelhausbergen Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.6143121</lat>
+          <lng>7.6940145</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="394">
+      <nom>Mittelhausbergen Mittelberg</nom>
+      <positions>
+        <position>
+          <lat>48.6122666</lat>
+          <lng>7.69704</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="538">
+      <nom>Rodin</nom>
+      <positions>
+        <position>
+          <lat>48.6131577</lat>
+          <lng>7.688710400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="50">
+      <nom>Bethel</nom>
+      <positions>
+        <position>
+          <lat>48.6118827</lat>
+          <lng>7.686979</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="435">
+      <nom>Oberhausbergen Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.60996919999999</lat>
+          <lng>7.6846763</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="682">
+      <nom>Oberhausbergen Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.6057997</lat>
+          <lng>7.6861019</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="656">
+      <nom>Vosges</nom>
+      <positions>
+        <position>
+          <lat>48.6039676</lat>
+          <lng>7.690201699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="434">
+      <nom>Oberhausbergen Est</nom>
+      <positions>
+        <position>
+          <lat>48.6018072</lat>
+          <lng>7.695523199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="42">
+      <nom>Banlieue</nom>
+      <positions>
+        <position>
+          <lat>48.6007873</lat>
+          <lng>7.698122299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="159">
+      <nom>Duntzenheim</nom>
+      <positions>
+        <position>
+          <lat>48.5987156</lat>
+          <lng>7.7021335</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="80">
+      <nom>Catherine</nom>
+      <positions>
+        <position>
+          <lat>48.59668449999999</lat>
+          <lng>7.7059744</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="187">
+      <nom>Etoile d'Or</nom>
+      <positions>
+        <position>
+          <lat>48.5948387</lat>
+          <lng>7.710473799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="295">
+      <nom>Jacob</nom>
+      <positions>
+        <position>
+          <lat>48.5923409</lat>
+          <lng>7.7175991</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="428">
+      <nom>Neuve</nom>
+      <positions>
+        <position>
+          <lat>48.591508</lat>
+          <lng>7.721934900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="550">
+      <nom>Rotonde</nom>
+      <positions>
+        <position>
+          <lat>48.5919089</lat>
+          <lng>7.725540499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="97">
+      <nom>Cimetière Central</nom>
+      <positions>
+        <position>
+          <lat>48.59101039999999</lat>
+          <lng>7.731081199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="140">
+      <nom>Cronenbourg CTS</nom>
+      <positions>
+        <position>
+          <lat>48.59200209999999</lat>
+          <lng>7.7329306</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="342">
+      <nom>Les Halles Sébastopol</nom>
+      <positions>
+        <position>
+          <lat>48.5862312</lat>
+          <lng>7.743013100000001</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="19" labeldir1="Rotonde" labeldir2="Chambre de Métiers" id="9">
+    <arret id="550">
+      <nom>Rotonde</nom>
+      <positions>
+        <position>
+          <lat>48.5919089</lat>
+          <lng>7.725540499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="710">
+      <nom>Eglise Saint Florent</nom>
+      <positions>
+        <position>
+          <lat>48.593573</lat>
+          <lng>7.7212912</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="711">
+      <nom>Villa Vénitienne</nom>
+      <positions>
+        <position>
+          <lat>48.5946928</lat>
+          <lng>7.7259374</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="709">
+      <nom>Mathieu Zell</nom>
+      <positions>
+        <position>
+          <lat>48.59526229999999</lat>
+          <lng>7.7183334</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="622">
+      <nom>Stutzheim</nom>
+      <positions>
+        <position>
+          <lat>48.5983218</lat>
+          <lng>7.714009000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="49">
+      <nom>Berstett</nom>
+      <positions>
+        <position>
+          <lat>48.6001426</lat>
+          <lng>7.711702300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="91">
+      <nom>Champ de Manoeuvre</nom>
+      <positions>
+        <position>
+          <lat>48.6015403</lat>
+          <lng>7.710467100000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="258">
+      <nom>Haldenbourg</nom>
+      <positions>
+        <position>
+          <lat>48.6031579</lat>
+          <lng>7.713260699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="136">
+      <nom>Cronenbourg Arago</nom>
+      <positions>
+        <position>
+          <lat>48.6046167</lat>
+          <lng>7.7167851</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="161">
+      <nom>Ecole de Chimie</nom>
+      <positions>
+        <position>
+          <lat>48.6075307</lat>
+          <lng>7.7179585</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="73">
+      <nom>Campus Cronenbourg Schiltigheim</nom>
+      <positions>
+        <position>
+          <lat>48.6096482</lat>
+          <lng>7.7120912</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="182">
+      <nom>Espace Européen de l'Entreprise</nom>
+      <positions>
+        <position>
+          <lat>48.6120769</lat>
+          <lng>7.7144542</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="92">
+      <nom>Chambre de Métiers</nom>
+      <positions>
+        <position>
+          <lat>48.6157228</lat>
+          <lng>7.721049799999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="21" labeldir1="Jean Jaurès" labeldir2="Kehl Stadthalle" id="10">
+    <arret id="298">
+      <nom>Jean Jaurès</nom>
+      <positions>
+        <position>
+          <lat>48.56641459999999</lat>
+          <lng>7.7731276</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="32">
+      <nom>Aristide Briand</nom>
+      <positions>
+        <position>
+          <lat>48.56854269999999</lat>
+          <lng>7.776316699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="510">
+      <nom>Pont Vauban</nom>
+      <positions>
+        <position>
+          <lat>48.56981</lat>
+          <lng>7.7817187</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="471">
+      <nom>Petit Rhin</nom>
+      <positions>
+        <position>
+          <lat>48.5709787</lat>
+          <lng>7.785949899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="463">
+      <nom>Jardin des Deux Rives</nom>
+      <positions>
+        <position>
+          <lat>48.57270459999999</lat>
+          <lng>7.795306699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="313">
+      <nom>Kehl Bahnhof</nom>
+      <positions>
+        <position>
+          <lat>48.5752664</lat>
+          <lng>7.807100399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="314">
+      <nom>Kehl Am Läger</nom>
+      <positions>
+        <position>
+          <lat>48.5754102</lat>
+          <lng>7.8131448</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="315">
+      <nom>Kehl Stadthalle</nom>
+      <positions>
+        <position>
+          <lat>48.5719468</lat>
+          <lng>7.812033</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="27" labeldir1="Baggersee" labeldir2="General Motors" id="11">
+    <arret id="38">
+      <nom>Baggersee</nom>
+      <positions>
+        <position>
+          <lat>48.54486199999999</lat>
+          <lng>7.738013400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="280">
+      <nom>Hohwart</nom>
+      <positions>
+        <position>
+          <lat>48.5493056</lat>
+          <lng>7.741781899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="645">
+      <nom>Verdon</nom>
+      <positions>
+        <position>
+          <lat>48.5497202</lat>
+          <lng>7.7356169</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="137">
+      <nom>CRAV</nom>
+      <positions>
+        <position>
+          <lat>48.5513163</lat>
+          <lng>7.7334215</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="224">
+      <nom>Frères Eberts</nom>
+      <positions>
+        <position>
+          <lat>48.5552258</lat>
+          <lng>7.735063</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="44">
+      <nom>Bartischgut</nom>
+      <positions>
+        <position>
+          <lat>48.55478369999999</lat>
+          <lng>7.739586500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="176">
+      <nom>Emile Mathis</nom>
+      <positions>
+        <position>
+          <lat>48.55284229999999</lat>
+          <lng>7.7441932</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="77">
+      <nom>Canardière</nom>
+      <positions>
+        <position>
+          <lat>48.550164</lat>
+          <lng>7.7459702</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="289">
+      <nom>Ile de France</nom>
+      <positions>
+        <position>
+          <lat>48.5498711</lat>
+          <lng>7.7509229</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="577">
+      <nom>Schulmeister</nom>
+      <positions>
+        <position>
+          <lat>48.5498764</lat>
+          <lng>7.752630099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="100">
+      <nom>Cité Meinau</nom>
+      <positions>
+        <position>
+          <lat>48.5479819</lat>
+          <lng>7.756379799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="12">
+      <nom>Abbé de l'Epée</nom>
+      <positions>
+        <position>
+          <lat>48.5454516</lat>
+          <lng>7.760698199999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="546">
+      <nom>Neuhof Rodolphe Reuss</nom>
+      <positions>
+        <position>
+          <lat>48.5456034</lat>
+          <lng>7.765590500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="293">
+      <nom>Ingold</nom>
+      <positions>
+        <position>
+          <lat>48.5455794</lat>
+          <lng>7.7721781</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="318">
+      <nom>Klebsau</nom>
+      <positions>
+        <position>
+          <lat>48.5441802</lat>
+          <lng>7.7733663</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="425">
+      <nom>Jean Moulin</nom>
+      <positions>
+        <position>
+          <lat>48.5416745</lat>
+          <lng>7.775538900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="133">
+      <nom>Neuhof Corps Européen</nom>
+      <positions>
+        <position>
+          <lat>48.5442086</lat>
+          <lng>7.7814142</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="426">
+      <nom>Neuhof Lorient</nom>
+      <positions>
+        <position>
+          <lat>48.54465159999999</lat>
+          <lng>7.787587299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="330">
+      <nom>La Rochelle</nom>
+      <positions>
+        <position>
+          <lat>48.5353043</lat>
+          <lng>7.785455</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="90">
+      <nom>Cherbourg</nom>
+      <positions>
+        <position>
+          <lat>48.5334944</lat>
+          <lng>7.782936400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="615">
+      <nom>Saint Nazaire</nom>
+      <positions>
+        <position>
+          <lat>48.5306455</lat>
+          <lng>7.780171</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="190">
+      <nom>Eurofret</nom>
+      <positions>
+        <position>
+          <lat>48.5244106</lat>
+          <lng>7.7783351</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="242">
+      <nom>General Motors</nom>
+      <positions>
+        <position>
+          <lat>48.5160154</lat>
+          <lng>7.7753766</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="30" labeldir1="Wattwiller" labeldir2="Robertsau Chasseurs" id="12">
+    <arret id="660">
+      <nom>Wattwiller</nom>
+      <positions>
+        <position>
+          <lat>48.5612004</lat>
+          <lng>7.785896199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="488">
+      <nom>Place de Wattwiller</nom>
+      <positions>
+        <position>
+          <lat>48.56080009999999</lat>
+          <lng>7.7839825</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="418">
+      <nom>Musau</nom>
+      <positions>
+        <position>
+          <lat>48.5613193</lat>
+          <lng>7.7806605</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="589">
+      <nom>Soultz</nom>
+      <positions>
+        <position>
+          <lat>48.5654384</lat>
+          <lng>7.778538900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="32">
+      <nom>Aristide Briand</nom>
+      <positions>
+        <position>
+          <lat>48.56854269999999</lat>
+          <lng>7.776316699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="144">
+      <nom>Danube</nom>
+      <positions>
+        <position>
+          <lat>48.5729096</lat>
+          <lng>7.770776599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="29">
+      <nom>Ankara</nom>
+      <positions>
+        <position>
+          <lat>48.57539060000001</lat>
+          <lng>7.771443099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="543">
+      <nom>Rome</nom>
+      <positions>
+        <position>
+          <lat>48.5771919</lat>
+          <lng>7.768160099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="458">
+      <nom>Palerme</nom>
+      <positions>
+        <position>
+          <lat>48.5777429</lat>
+          <lng>7.764166299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="96">
+      <nom>Cité Administrative</nom>
+      <positions>
+        <position>
+          <lat>48.5779594</lat>
+          <lng>7.7618328</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="320">
+      <nom>Krutenau</nom>
+      <positions>
+        <position>
+          <lat>48.58017659999999</lat>
+          <lng>7.7577116</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="600">
+      <nom>Saint Guillaume</nom>
+      <positions>
+        <position>
+          <lat>48.582801</lat>
+          <lng>7.757623000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="233">
+      <nom>Gallia</nom>
+      <positions>
+        <position>
+          <lat>48.5844582</lat>
+          <lng>7.759232399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="69">
+      <nom>Brant - Université</nom>
+      <positions>
+        <position>
+          <lat>48.58559109999999</lat>
+          <lng>7.761671799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="116">
+      <nom>Clinique de l'Orangerie</nom>
+      <positions>
+        <position>
+          <lat>48.5879491</lat>
+          <lng>7.765330400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="154">
+      <nom>Dordogne</nom>
+      <positions>
+        <position>
+          <lat>48.58903489999999</lat>
+          <lng>7.766591</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="443">
+      <nom>Orangerie</nom>
+      <positions>
+        <position>
+          <lat>48.5921768</lat>
+          <lng>7.7696192</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="453">
+      <nom>Palais de l'Europe</nom>
+      <positions>
+        <position>
+          <lat>48.5939278</lat>
+          <lng>7.772143199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="156">
+      <nom>Droits de l'Homme</nom>
+      <positions>
+        <position>
+          <lat>48.5961417</lat>
+          <lng>7.7749971</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="535">
+      <nom>Robertsau Boecklin</nom>
+      <positions>
+        <position>
+          <lat>48.5979439</lat>
+          <lng>7.7770261</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="114">
+      <nom>Cité Universitaire</nom>
+      <positions>
+        <position>
+          <lat>48.6018365</lat>
+          <lng>7.775416799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="217">
+      <nom>Fort Louis</nom>
+      <positions>
+        <position>
+          <lat>48.6051727</lat>
+          <lng>7.7778858</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="111">
+      <nom>Cimetière Nord</nom>
+      <positions>
+        <position>
+          <lat>48.6089708</lat>
+          <lng>7.779582299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="459">
+      <nom>Papeterie</nom>
+      <positions>
+        <position>
+          <lat>48.6116025</lat>
+          <lng>7.780412399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="117">
+      <nom>Clinique Sainte Anne</nom>
+      <positions>
+        <position>
+          <lat>48.615408</lat>
+          <lng>7.7853531</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="549">
+      <nom>Robertsau Sainte Anne</nom>
+      <positions>
+        <position direction="2">
+          <lat>48.6169206</lat>
+          <lng>7.7881077</lng>
+        </position>
+        <position direction="1">
+          <lat>48.6172982</lat>
+          <lng>7.7882418</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="213">
+      <nom>Fischacker</nom>
+      <positions>
+        <position>
+          <lat>48.6188152</lat>
+          <lng>7.788020500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="232">
+      <nom>Gardes Forestiers</nom>
+      <positions>
+        <position>
+          <lat>48.62126019999999</lat>
+          <lng>7.7872118</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="536">
+      <nom>Robertsau Chasseurs</nom>
+      <positions>
+        <position>
+          <lat>48.6234915</lat>
+          <lng>7.7865225</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="31" labeldir1="Jean Jaurès" labeldir2="Wattwiller" id="13">
+    <arret id="298">
+      <nom>Jean Jaurès</nom>
+      <positions>
+        <position>
+          <lat>48.56641459999999</lat>
+          <lng>7.7731276</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="32">
+      <nom>Aristide Briand</nom>
+      <positions>
+        <position>
+          <lat>48.56854269999999</lat>
+          <lng>7.776316699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="589">
+      <nom>Soultz</nom>
+      <positions>
+        <position>
+          <lat>48.5654384</lat>
+          <lng>7.778538900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="418">
+      <nom>Musau</nom>
+      <positions>
+        <position>
+          <lat>48.5613193</lat>
+          <lng>7.7806605</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="488">
+      <nom>Place de Wattwiller</nom>
+      <positions>
+        <position>
+          <lat>48.56080009999999</lat>
+          <lng>7.7839825</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="660">
+      <nom>Wattwiller</nom>
+      <positions>
+        <position>
+          <lat>48.5612004</lat>
+          <lng>7.785896199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="444">
+      <nom>Orbey</nom>
+      <positions>
+        <position>
+          <lat>48.56255119999999</lat>
+          <lng>7.773484299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="316">
+      <nom>Kibitzenau</nom>
+      <positions>
+        <position>
+          <lat>48.5549311</lat>
+          <lng>7.7665079</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="40" labeldir1="Unterelsau" labeldir2="Neuhof Ganzau" id="14">
+    <arret id="637">
+      <nom>Unterelsau</nom>
+      <positions>
+        <position>
+          <lat>48.5621829</lat>
+          <lng>7.729874300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="629">
+      <nom>Tintoret</nom>
+      <positions>
+        <position>
+          <lat>48.5650079</lat>
+          <lng>7.7280731</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="630">
+      <nom>Titien</nom>
+      <positions>
+        <position>
+          <lat>48.564558</lat>
+          <lng>7.725736899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="392">
+      <nom>Michel Ange</nom>
+      <positions>
+        <position>
+          <lat>48.5642065</lat>
+          <lng>7.7202907</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="412">
+      <nom>Martin Schongauer</nom>
+      <positions>
+        <position>
+          <lat>48.5661217</lat>
+          <lng>7.720271899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="526">
+      <nom>Rembrandt</nom>
+      <positions>
+        <position>
+          <lat>48.5665708</lat>
+          <lng>7.723691799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="175">
+      <nom>Elsau</nom>
+      <positions>
+        <position>
+          <lat>48.5676846</lat>
+          <lng>7.7261111</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="155">
+      <nom>Doubs</nom>
+      <positions>
+        <position>
+          <lat>48.5684105</lat>
+          <lng>7.739139900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="199">
+      <nom>Fédération</nom>
+      <positions>
+        <position>
+          <lat>48.56424639999999</lat>
+          <lng>7.7386089</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="477">
+      <nom>Plaine des Bouchers</nom>
+      <positions>
+        <position>
+          <lat>48.5622237</lat>
+          <lng>7.7396107</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="336">
+      <nom>Lefèbvre</nom>
+      <positions>
+        <position>
+          <lat>48.5595158</lat>
+          <lng>7.74582</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="366">
+      <nom>Lycée Couffignal</nom>
+      <positions>
+        <position>
+          <lat>48.5586725</lat>
+          <lng>7.7480784</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="473">
+      <nom>Pfister</nom>
+      <positions>
+        <position>
+          <lat>48.5546497</lat>
+          <lng>7.7533785</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="223">
+      <nom>Franche Comté</nom>
+      <positions>
+        <position>
+          <lat>48.5517309</lat>
+          <lng>7.751517</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="289">
+      <nom>Ile de France</nom>
+      <positions>
+        <position>
+          <lat>48.5498711</lat>
+          <lng>7.7509229</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="702">
+      <nom>Bourgogne</nom>
+      <positions>
+        <position>
+          <lat>48.5478363</lat>
+          <lng>7.7478987</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="661">
+      <nom>Weeber</nom>
+      <positions>
+        <position>
+          <lat>48.5460988</lat>
+          <lng>7.751810699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="113">
+      <nom>Cimetière Sud</nom>
+      <positions>
+        <position>
+          <lat>48.5458795</lat>
+          <lng>7.756841199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="12">
+      <nom>Abbé de l'Epée</nom>
+      <positions>
+        <position>
+          <lat>48.5454516</lat>
+          <lng>7.760698199999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="546">
+      <nom>Neuhof Rodolphe Reuss</nom>
+      <positions>
+        <position>
+          <lat>48.5456034</lat>
+          <lng>7.765590500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="245">
+      <nom>Glaubitz</nom>
+      <positions>
+        <position>
+          <lat>48.5433793</lat>
+          <lng>7.7646987</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="499">
+      <nom>Pont Schuhansen</nom>
+      <positions>
+        <position>
+          <lat>48.5413691</lat>
+          <lng>7.7624309</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="308">
+      <nom>Jésuites</nom>
+      <positions>
+        <position>
+          <lat>48.5390942</lat>
+          <lng>7.7611005</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="196">
+      <nom>Faisanderie</nom>
+      <positions>
+        <position>
+          <lat>48.5347048</lat>
+          <lng>7.760451400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="611">
+      <nom>Saint Ignace</nom>
+      <positions>
+        <position>
+          <lat>48.5320806</lat>
+          <lng>7.761765699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <!--       <arret id="446">
+         <nom>Orpailleurs</nom>
+         <correspondance/>
+         <pdf>http://applis.cts-strasbourg.fr/CTS_FicheHoraire/</pdf>
+      </arret> -->
+    <arret id="424">
+      <nom>Neuhof Ganzau</nom>
+      <positions>
+        <position>
+          <lat>48.5273016</lat>
+          <lng>7.7601846</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="50" labeldir1="Montagne Verte" labeldir2="" id="15">
+    <arret id="410">
+      <nom>Montagne Verte</nom>
+      <positions>
+        <position>
+          <lat>48.5745681</lat>
+          <lng>7.727413299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="13">
+      <nom>Abbé Lemire</nom>
+      <positions>
+        <position>
+          <lat>48.5782034</lat>
+          <lng>7.724582299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="599">
+      <nom>Saint Gall</nom>
+      <positions>
+        <position>
+          <lat>48.5802361</lat>
+          <lng>7.720360500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="85">
+      <nom>Charmille</nom>
+      <positions>
+        <position>
+          <lat>48.5797392</lat>
+          <lng>7.7168629</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="575">
+      <nom>Schnockeloch</nom>
+      <positions>
+        <position>
+          <lat>48.57905419999999</lat>
+          <lng>7.712533799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="252">
+      <nom>Grüber</nom>
+      <positions>
+        <position>
+          <lat>48.57863099999999</lat>
+          <lng>7.7100246</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="178">
+      <nom>Engelbreit</nom>
+      <positions>
+        <position>
+          <lat>48.5805821</lat>
+          <lng>7.707625299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="61">
+      <nom>Bosco</nom>
+      <positions>
+        <position>
+          <lat>48.5818135</lat>
+          <lng>7.703052199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="652">
+      <nom>Virgile</nom>
+      <positions>
+        <position>
+          <lat>48.5814196</lat>
+          <lng>7.700096400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="285">
+      <nom>Horace</nom>
+      <positions>
+        <position>
+          <lat>48.5827593</lat>
+          <lng>7.699291699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="371">
+      <nom>Lycée Marcel Rudloff</nom>
+      <positions>
+        <position>
+          <lat>48.5853179</lat>
+          <lng>7.6945415</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="395">
+      <nom>Mitterrand</nom>
+      <positions>
+        <position>
+          <lat>48.5874168</lat>
+          <lng>7.6973967</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="452">
+      <nom>Paul Eluard</nom>
+      <positions>
+        <position>
+          <lat>48.5891147</lat>
+          <lng>7.697325599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="259">
+      <nom>Hautepierre Maillon</nom>
+      <positions>
+        <position>
+          <lat>48.5927977</lat>
+          <lng>7.6979332</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="95">
+      <nom>CHU</nom>
+      <positions>
+        <position>
+          <lat>48.5946232</lat>
+          <lng>7.7039319</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="592">
+      <nom>Saint Antoine</nom>
+      <positions>
+        <position>
+          <lat>48.5978198</lat>
+          <lng>7.709537699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="49">
+      <nom>Berstett</nom>
+      <positions>
+        <position>
+          <lat>48.6001426</lat>
+          <lng>7.711702300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="130">
+      <nom>Copernic</nom>
+      <positions>
+        <position>
+          <lat>48.6009275</lat>
+          <lng>7.7153769</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="533">
+      <nom>Rieth</nom>
+      <positions>
+        <position>
+          <lat>48.6026231</lat>
+          <lng>7.719377399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="136">
+      <nom>Cronenbourg Arago</nom>
+      <positions>
+        <position>
+          <lat>48.6046167</lat>
+          <lng>7.7167851</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="161">
+      <nom>Ecole de Chimie</nom>
+      <positions>
+        <position>
+          <lat>48.6075307</lat>
+          <lng>7.7179585</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="612">
+      <nom>Saint Junien</nom>
+      <positions>
+        <position>
+          <lat>48.6073835</lat>
+          <lng>7.723195599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="457">
+      <nom>Paix</nom>
+      <positions>
+        <position>
+          <lat>48.6063167</lat>
+          <lng>7.729430300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="124">
+      <nom>Collège Leclerc</nom>
+      <positions>
+        <position>
+          <lat>48.60831899999999</lat>
+          <lng>7.7313937</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="169">
+      <nom>Ecrivains</nom>
+      <positions>
+        <position>
+          <lat>48.609603</lat>
+          <lng>7.734330699999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="325">
+      <nom>Lamartine</nom>
+      <positions>
+        <position>
+          <lat>48.6111184</lat>
+          <lng>7.738218599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="332">
+      <nom>Lauterbourg</nom>
+      <positions>
+        <position>
+          <lat>48.6095728</lat>
+          <lng>7.7421802</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="218">
+      <nom>Fondeur</nom>
+      <positions>
+        <position>
+          <lat>48.6091986</lat>
+          <lng>7.7452527</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="386">
+      <nom>Maison Rouge</nom>
+      <positions>
+        <position>
+          <lat>48.6078854</lat>
+          <lng>7.7499385</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="54">
+      <nom>Bitche</nom>
+      <positions>
+        <position>
+          <lat>48.609814</lat>
+          <lng>7.7530123</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="677">
+      <nom>Zorn</nom>
+      <positions>
+        <position>
+          <lat>48.6093059</lat>
+          <lng>7.757629799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="338">
+      <nom>Le Marais</nom>
+      <positions>
+        <position>
+          <lat>48.6098273</lat>
+          <lng>7.7657756</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="572">
+      <nom>le Marais</nom>
+      <positions>
+        <position>
+          <lat>48.6098273</lat>
+          <lng>7.7657756</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="574">
+      <nom>Schiltigheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.6048242</lat>
+          <lng>7.747765899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="591">
+      <nom>Square du Château</nom>
+      <positions>
+        <position>
+          <lat>48.6036448</lat>
+          <lng>7.750283199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="118">
+      <nom>CMCO</nom>
+      <positions>
+        <position>
+          <lat>48.6009408</lat>
+          <lng>7.7496502</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="530">
+      <nom>Rives de l'Aar</nom>
+      <positions>
+        <position>
+          <lat>48.6003297</lat>
+          <lng>7.754236799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="657">
+      <nom>Wacken</nom>
+      <positions>
+        <position>
+          <lat>48.5983023</lat>
+          <lng>7.761213199999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="63" labeldir1="Blaesheim Centre" labeldir2="Plobsheim Est" id="16">
+    <arret id="483">
+      <nom>Plobsheim Est</nom>
+      <positions>
+        <position>
+          <lat>48.4655944</lat>
+          <lng>7.735868999999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="703">
+      <nom>Perdrix</nom>
+      <positions>
+        <position>
+          <lat>48.4671257</lat>
+          <lng>7.7374461</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="184">
+      <nom>Espérance</nom>
+      <positions>
+        <position>
+          <lat>48.46770189999999</lat>
+          <lng>7.735101900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="528">
+      <nom>Rhin</nom>
+      <positions>
+        <position>
+          <lat>48.4668838</lat>
+          <lng>7.7315855</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="619">
+      <nom>Saint Paul</nom>
+      <positions>
+        <position>
+          <lat>48.46931130000001</lat>
+          <lng>7.7286834</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="484">
+      <nom>Plobsheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.4702058</lat>
+          <lng>7.726025300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="482">
+      <nom>Plobsheim Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.47029389999999</lat>
+          <lng>7.7231634</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="481">
+      <nom>Plobsheim Canal</nom>
+      <positions>
+        <position>
+          <lat>48.47087310000001</lat>
+          <lng>7.7185312</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="354">
+      <nom>Loeb</nom>
+      <positions>
+        <position>
+          <lat>48.4757895</lat>
+          <lng>7.709603500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="663">
+      <nom>Wibolsheim Chapelle</nom>
+      <positions>
+        <position>
+          <lat>48.4767799</lat>
+          <lng>7.7068877</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="618">
+      <nom>Stoskopf</nom>
+      <positions>
+        <position>
+          <lat>48.4792834</lat>
+          <lng>7.707862700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="524">
+      <nom>Rathsamhausen</nom>
+      <positions>
+        <position>
+          <lat>48.4811556</lat>
+          <lng>7.7122119</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="183">
+      <nom>Eschau Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.4841549</lat>
+          <lng>7.714038499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="570">
+      <nom>Schaal</nom>
+      <positions>
+        <position>
+          <lat>48.4871309</lat>
+          <lng>7.715366200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="151">
+      <nom>d'Niedergass</nom>
+      <positions>
+        <position>
+          <lat>48.4880331</lat>
+          <lng>7.7187578</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="253">
+      <nom>Grundgrübe</nom>
+      <positions>
+        <position>
+          <lat>48.48804819999999</lat>
+          <lng>7.7215312</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="521">
+      <nom>Pulverlaechel</nom>
+      <positions>
+        <position>
+          <lat>48.488546</lat>
+          <lng>7.724407899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="267">
+      <nom>Hetzlader</nom>
+      <positions>
+        <position>
+          <lat>48.4888322</lat>
+          <lng>7.728522399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="229">
+      <nom>Fusiliers Marins</nom>
+      <positions>
+        <position>
+          <lat>48.4913555</lat>
+          <lng>7.7298997</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="571">
+      <nom>Scheidstein</nom>
+      <positions>
+        <position>
+          <lat>48.49797040000001</lat>
+          <lng>7.731188499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="658">
+      <nom>Waldhorn</nom>
+      <positions>
+        <position>
+          <lat>48.50998209999999</lat>
+          <lng>7.729530899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="511">
+      <nom>Pont des Vignes</nom>
+      <positions>
+        <position>
+          <lat>48.5194985</lat>
+          <lng>7.735056299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="631">
+      <nom>Tobias Stimmer</nom>
+      <positions>
+        <position>
+          <lat>48.5222095</lat>
+          <lng>7.740871299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="456">
+      <nom>Parc d'Innovation</nom>
+      <positions>
+        <position>
+          <lat>48.5256194</lat>
+          <lng>7.7365208</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="75">
+      <nom>Campus d'Illkirch</nom>
+      <positions>
+        <position>
+          <lat>48.5291978</lat>
+          <lng>7.732881</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="290">
+      <nom>Illkirch Lixenbuhl</nom>
+      <positions>
+        <position>
+          <lat>48.5300096</lat>
+          <lng>7.724507200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="430">
+      <nom>Niederbourg</nom>
+      <positions>
+        <position>
+          <lat>48.5331019</lat>
+          <lng>7.721170499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="146">
+      <nom>Deux Clés</nom>
+      <positions>
+        <position>
+          <lat>48.5319119</lat>
+          <lng>7.716024699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="291">
+      <nom>Illkirch Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.5292582</lat>
+          <lng>7.711073300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="704">
+      <nom>23 Novembre</nom>
+      <positions>
+        <position>
+          <lat>48.5331765</lat>
+          <lng>7.7064378</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="333">
+      <nom>La Vigie</nom>
+      <positions>
+        <position>
+          <lat>48.5336401</lat>
+          <lng>7.6941875</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="244">
+      <nom>Geispolsheim Zone Industrielle</nom>
+      <positions>
+        <position>
+          <lat>48.53183019999999</lat>
+          <lng>7.6851001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="93">
+      <nom>Chopin</nom>
+      <positions>
+        <position>
+          <lat>48.5251949</lat>
+          <lng>7.683040199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="646">
+      <nom>Verdun</nom>
+      <positions>
+        <position>
+          <lat>48.5235375</lat>
+          <lng>7.6831622</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="237">
+      <nom>Geispolsheim Gare</nom>
+      <positions>
+        <position>
+          <lat>48.5187825</lat>
+          <lng>7.6838475</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="651">
+      <nom>Vieux Moulin</nom>
+      <positions>
+        <position>
+          <lat>48.517832</lat>
+          <lng>7.679580199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="172">
+      <nom>Ehn</nom>
+      <positions>
+        <position>
+          <lat>48.5171347</lat>
+          <lng>7.673260900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="581">
+      <nom>Séné</nom>
+      <positions>
+        <position>
+          <lat>48.5168566</lat>
+          <lng>7.6554</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="122">
+      <nom>Collège La Fontaine</nom>
+      <positions>
+        <position>
+          <lat>48.5167758</lat>
+          <lng>7.650278399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="222">
+      <nom>Four</nom>
+      <positions>
+        <position>
+          <lat>48.5155472</lat>
+          <lng>7.6449984</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="241">
+      <nom>Geispolsheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.51511989999999</lat>
+          <lng>7.64274</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="243">
+      <nom>Geispolsheim Ouest</nom>
+      <positions>
+        <position>
+          <lat>48.5150604</lat>
+          <lng>7.6406023</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="594">
+      <nom>Station de Pompage</nom>
+      <positions>
+        <position>
+          <lat>48.5084344</lat>
+          <lng>7.611006799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="168">
+      <nom>Ecole</nom>
+      <positions>
+        <position>
+          <lat>48.5051122</lat>
+          <lng>7.608632999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="247">
+      <nom>Gloeckelsberg</nom>
+      <positions>
+        <position>
+          <lat>48.5045853</lat>
+          <lng>7.604291899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="56">
+      <nom>Blaesheim Centre</nom>
+      <positions>
+        <position>
+          <lat>48.5039011</lat>
+          <lng>7.607892799999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="66" labeldir1="Lipsheim Centre" labeldir2="Baggersee" id="17">
+    <arret id="344">
+      <nom>Lipsheim Centre</nom>
+      <positions>
+        <position>
+          <lat>48.4903325</lat>
+          <lng>7.664971500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="345">
+      <nom>Lipsheim Est</nom>
+      <positions>
+        <position>
+          <lat>48.4916417</lat>
+          <lng>7.669957699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="346">
+      <nom>Lipsheim Gare</nom>
+      <positions>
+        <position>
+          <lat>48.4907547</lat>
+          <lng>7.674905099999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="210">
+      <nom>Fegersheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.4904996</lat>
+          <lng>7.6798323</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="148">
+      <nom>De Lattre de Tassigny</nom>
+      <positions>
+        <position>
+          <lat>48.4935455</lat>
+          <lng>7.6841278</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="560">
+      <nom>Rue de l'Etang</nom>
+      <positions>
+        <position>
+          <lat>48.4960393</lat>
+          <lng>7.687125200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="173">
+      <nom>Elisa</nom>
+      <positions>
+        <position>
+          <lat>48.5171871</lat>
+          <lng>7.700895699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="495">
+      <nom>Pont du Péage</nom>
+      <positions>
+        <position>
+          <lat>48.5188074</lat>
+          <lng>7.703400899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="150">
+      <nom>Graffenstaden Digue</nom>
+      <positions>
+        <position>
+          <lat>48.52086910000001</lat>
+          <lng>7.705153699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="66">
+      <nom>Brochet</nom>
+      <positions>
+        <position>
+          <lat>48.52424269999999</lat>
+          <lng>7.707893599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="254">
+      <nom>Graffenstaden Usine</nom>
+      <positions>
+        <position>
+          <lat>48.5275836</lat>
+          <lng>7.7099917</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="291">
+      <nom>Illkirch Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.5292582</lat>
+          <lng>7.711073300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="146">
+      <nom>Deux Clés</nom>
+      <positions>
+        <position>
+          <lat>48.5319119</lat>
+          <lng>7.716024699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="430">
+      <nom>Niederbourg</nom>
+      <positions>
+        <position>
+          <lat>48.5331019</lat>
+          <lng>7.721170499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="83">
+      <nom>Centre de Traumatologie</nom>
+      <positions>
+        <position>
+          <lat>48.5375269</lat>
+          <lng>7.728188499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="128">
+      <nom>Colonne</nom>
+      <positions>
+        <position>
+          <lat>48.5381405</lat>
+          <lng>7.733107700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="38">
+      <nom>Baggersee</nom>
+      <positions>
+        <position>
+          <lat>48.54486199999999</lat>
+          <lng>7.738013400000001</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="70" labeldir1="Oberschaeffolsheim Stade" labeldir2="Robertsau Renaissance" id="18">
+    <arret id="440">
+      <nom>Oberschaeffolsheim Stade</nom>
+      <positions>
+        <position>
+          <lat>48.5821347</lat>
+          <lng>7.647221999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="437">
+      <nom>Oberschaeffolsheim Canal</nom>
+      <positions>
+        <position>
+          <lat>48.5847794</lat>
+          <lng>7.6468787</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="439">
+      <nom>Oberschaeffolsheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.5862547</lat>
+          <lng>7.6492819</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="134">
+      <nom>Couronne</nom>
+      <positions>
+        <position>
+          <lat>48.5868473</lat>
+          <lng>7.652339599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="414">
+      <nom>Mühlbach</nom>
+      <positions>
+        <position>
+          <lat>48.5867497</lat>
+          <lng>7.654898500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="60">
+      <nom>Boeuf Rouge</nom>
+      <positions>
+        <position>
+          <lat>48.5870842</lat>
+          <lng>7.6680359</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="296">
+      <nom>Jardins</nom>
+      <positions>
+        <position>
+          <lat>48.5868863</lat>
+          <lng>7.6708925</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="554">
+      <nom>Route de Wolfisheim</nom>
+      <positions>
+        <position>
+          <lat>48.5843189</lat>
+          <lng>7.6788291</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="299">
+      <nom>Jardin des Vignes</nom>
+      <positions>
+        <position>
+          <lat>48.582353</lat>
+          <lng>7.682932900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="160">
+      <nom>Eckbolsheim Centre</nom>
+      <positions>
+        <position>
+          <lat>48.5803443</lat>
+          <lng>7.6874068</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="297">
+      <nom>Jardin des Roses</nom>
+      <positions>
+        <position>
+          <lat>48.580528</lat>
+          <lng>7.690437699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="441">
+      <nom>Octroi</nom>
+      <positions>
+        <position>
+          <lat>48.5804854</lat>
+          <lng>7.6951383</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="460">
+      <nom>Parc des Poteries</nom>
+      <positions>
+        <position>
+          <lat>48.5832153</lat>
+          <lng>7.690534299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="659">
+      <nom>Wasselonne</nom>
+      <positions>
+        <position>
+          <lat>48.5844591</lat>
+          <lng>7.6878735</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="300">
+      <nom>Jean Monnet</nom>
+      <positions>
+        <position>
+          <lat>48.5875667</lat>
+          <lng>7.6874699</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="309">
+      <nom>Jean Perrin</nom>
+      <positions>
+        <position>
+          <lat>48.5879012</lat>
+          <lng>7.6834425</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="165">
+      <nom>Eckbolsheim Parc d'Activités</nom>
+      <positions>
+        <position>
+          <lat>48.5905181</lat>
+          <lng>7.683523</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="71">
+      <nom>Bugatti</nom>
+      <positions>
+        <position>
+          <lat>48.5895033</lat>
+          <lng>7.6885924</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="94">
+      <nom>Charles Péguy</nom>
+      <positions>
+        <position>
+          <lat>48.58907920000001</lat>
+          <lng>7.693173600000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="452">
+      <nom>Paul Eluard</nom>
+      <positions>
+        <position>
+          <lat>48.5891147</lat>
+          <lng>7.697325599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="259">
+      <nom>Hautepierre Maillon</nom>
+      <positions>
+        <position>
+          <lat>48.5927977</lat>
+          <lng>7.6979332</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="310">
+      <nom>Karine</nom>
+      <positions>
+        <position>
+          <lat>48.5963483</lat>
+          <lng>7.697363199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="398">
+      <nom>Montesquieu</nom>
+      <positions>
+        <position>
+          <lat>48.5983572</lat>
+          <lng>7.6953046</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="42">
+      <nom>Banlieue</nom>
+      <positions>
+        <position>
+          <lat>48.6007873</lat>
+          <lng>7.698122299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="381">
+      <nom>Marcel Pagnol</nom>
+      <positions>
+        <position>
+          <lat>48.6024325</lat>
+          <lng>7.7027021</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="19">
+      <nom>Allée de l'Euro</nom>
+      <positions>
+        <position>
+          <lat>48.60452890000001</lat>
+          <lng>7.705552</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="294">
+      <nom>I.U.T. Pasteur</nom>
+      <positions>
+        <position>
+          <lat>48.6064346</lat>
+          <lng>7.7093902</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="182">
+      <nom>Espace Européen de l'Entreprise</nom>
+      <positions>
+        <position>
+          <lat>48.6120769</lat>
+          <lng>7.7144542</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="92">
+      <nom>Chambre de Métiers</nom>
+      <positions>
+        <position>
+          <lat>48.6157228</lat>
+          <lng>7.721049799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="235">
+      <nom>Georges Burger</nom>
+      <positions>
+        <position>
+          <lat>48.6151438</lat>
+          <lng>7.7297133</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="388">
+      <nom>Marc Seguin</nom>
+      <positions>
+        <position>
+          <lat>48.6155623</lat>
+          <lng>7.732310999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="518">
+      <nom>Prunelliers</nom>
+      <positions>
+        <position>
+          <lat>48.6147466</lat>
+          <lng>7.734879299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="225">
+      <nom>Frères Lumière</nom>
+      <positions>
+        <position>
+          <lat>48.6145258</lat>
+          <lng>7.738281600000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="52">
+      <nom>Bischheim Gare</nom>
+      <positions>
+        <position>
+          <lat>48.6145199</lat>
+          <lng>7.744616600000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="654">
+      <nom>Voltaire</nom>
+      <positions>
+        <position>
+          <lat>48.6142394</lat>
+          <lng>7.7483869</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="87">
+      <nom>Cheval Blanc</nom>
+      <positions>
+        <position>
+          <lat>48.6144061</lat>
+          <lng>7.7523887</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="380">
+      <nom>Malterie</nom>
+      <positions>
+        <position>
+          <lat>48.6136321</lat>
+          <lng>7.756011000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="384">
+      <nom>Marguerite</nom>
+      <positions>
+        <position>
+          <lat>48.6142057</lat>
+          <lng>7.7601188</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="387">
+      <nom>Maires Schaub</nom>
+      <positions>
+        <position>
+          <lat>48.6132038</lat>
+          <lng>7.7640872</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="496">
+      <nom>Pont Phario</nom>
+      <positions>
+        <position>
+          <lat>48.6132198</lat>
+          <lng>7.769182000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="99">
+      <nom>Cité de l'Ill</nom>
+      <positions>
+        <position direction="1">
+          <lat>48.6129423</lat>
+          <lng>7.773600999999999</lng>
+        </position>
+        <position direction="2">
+          <lat>48.6129015</lat>
+          <lng>7.7732711</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="264">
+      <nom>Hechner</nom>
+      <positions>
+        <position>
+          <lat>48.61231979999999</lat>
+          <lng>7.776821000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="459">
+      <nom>Papeterie</nom>
+      <positions>
+        <position>
+          <lat>48.6116025</lat>
+          <lng>7.780412399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="181">
+      <nom>L'Escale</nom>
+      <positions>
+        <position>
+          <lat>48.6107495</lat>
+          <lng>7.7824429</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="121">
+      <nom>Coehorn</nom>
+      <positions>
+        <position>
+          <lat>48.6104507</lat>
+          <lng>7.786045100000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="240">
+      <nom>Général Lejeune</nom>
+      <positions>
+        <position>
+          <lat>48.6129077</lat>
+          <lng>7.788306199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="545">
+      <nom>Robertsau Renaissance</nom>
+      <positions>
+        <position>
+          <lat>48.6137216</lat>
+          <lng>7.792409999999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="71" labeldir1="Eckwersheim Hippodrome" labeldir2="Les Halles Sébastopol" id="19">
+    <arret id="164">
+      <nom>Eckwersheim Hippodrome</nom>
+      <positions>
+        <position>
+          <lat>48.6851596</lat>
+          <lng>7.6981464</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="163">
+      <nom>Eckwersheim Cimetière</nom>
+      <positions>
+        <position>
+          <lat>48.6829718</lat>
+          <lng>7.6943457</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="166">
+      <nom>Eckwersheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.68139129999999</lat>
+          <lng>7.6938616</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="76">
+      <nom>Canal</nom>
+      <positions>
+        <position>
+          <lat>48.6784647</lat>
+          <lng>7.697227699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="88">
+      <nom>Château d'Eau</nom>
+      <positions>
+        <position>
+          <lat>48.6731231</lat>
+          <lng>7.7039668</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="279">
+      <nom>Hohl</nom>
+      <positions>
+        <position>
+          <lat>48.6710224</lat>
+          <lng>7.704008399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="627">
+      <nom>Temple</nom>
+      <positions>
+        <position>
+          <lat>48.6693334</lat>
+          <lng>7.7080625</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="648">
+      <nom>Vendenheim au Tilleul</nom>
+      <positions>
+        <position>
+          <lat>48.668701</lat>
+          <lng>7.710371899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="643">
+      <nom>Vendenheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.6652326</lat>
+          <lng>7.7115293</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="642">
+      <nom>Vendenheim Gare</nom>
+      <positions>
+        <position>
+          <lat>48.6666994</lat>
+          <lng>7.7173778</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="500">
+      <nom>Pont S.N.C.F.</nom>
+      <positions>
+        <position>
+          <lat>48.6677923</lat>
+          <lng>7.716908499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="470">
+      <nom>Perdrix</nom>
+      <positions>
+        <position>
+          <lat>48.4671257</lat>
+          <lng>7.7374461</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="31">
+      <nom>Artisans</nom>
+      <positions>
+        <position>
+          <lat>48.6604733</lat>
+          <lng>7.7210511</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="676">
+      <nom>Zone Commerciale</nom>
+      <positions>
+        <position>
+          <lat>48.6566579</lat>
+          <lng>7.722085099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="321">
+      <nom>Lampertheim Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.6508833</lat>
+          <lng>7.701002999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="328">
+      <nom>Lampertheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.6506698</lat>
+          <lng>7.700076299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="63">
+      <nom>Bourgogne</nom>
+      <positions>
+        <position>
+          <lat>48.5478363</lat>
+          <lng>7.7478987</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="324">
+      <nom>Lampertheim Lorraine</nom>
+      <positions>
+        <position>
+          <lat>48.6515274</lat>
+          <lng>7.6916488</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="566">
+      <nom>Rue de Mundolsheim</nom>
+      <positions>
+        <position>
+          <lat>48.64776450000001</lat>
+          <lng>7.702199199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="126">
+      <nom>Collège</nom>
+      <positions>
+        <position>
+          <lat>48.6426482</lat>
+          <lng>7.708102799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="472">
+      <nom>Petite</nom>
+      <positions>
+        <position>
+          <lat>48.6408582</lat>
+          <lng>7.710176099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="48">
+      <nom>Berlioz</nom>
+      <positions>
+        <position>
+          <lat>48.6370431</lat>
+          <lng>7.7097403</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="416">
+      <nom>Mundolsheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.6417417</lat>
+          <lng>7.7153555</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="27">
+      <nom>Anémones</nom>
+      <positions>
+        <position>
+          <lat>48.6432401</lat>
+          <lng>7.723721299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="633">
+      <nom>Travail</nom>
+      <positions>
+        <position>
+          <lat>48.5899734</lat>
+          <lng>7.7420783</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="342">
+      <nom>Les Halles Sébastopol</nom>
+      <positions>
+        <position>
+          <lat>48.5862312</lat>
+          <lng>7.743013100000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="341">
+      <nom>Les Halles - Pont de Paris</nom>
+      <positions>
+        <position>
+          <lat>48.5858892</lat>
+          <lng>7.74376</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="667">
+      <nom>Wilson</nom>
+      <positions>
+        <position>
+          <lat>48.5879668</lat>
+          <lng>7.739221799999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="72" labeldir1="République" labeldir2="La Wantzenau Le Golf" id="20">
+    <arret id="527">
+      <nom>République</nom>
+      <positions>
+        <position>
+          <lat>48.5865918</lat>
+          <lng>7.753839800000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="69">
+      <nom>Brant - Université</nom>
+      <positions>
+        <position>
+          <lat>48.58559109999999</lat>
+          <lng>7.761671799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="116">
+      <nom>Clinique de l'Orangerie</nom>
+      <positions>
+        <position>
+          <lat>48.5879491</lat>
+          <lng>7.765330400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="154">
+      <nom>Dordogne</nom>
+      <positions>
+        <position>
+          <lat>48.58903489999999</lat>
+          <lng>7.766591</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="443">
+      <nom>Orangerie</nom>
+      <positions>
+        <position>
+          <lat>48.5921768</lat>
+          <lng>7.7696192</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="453">
+      <nom>Palais de l'Europe</nom>
+      <positions>
+        <position>
+          <lat>48.5939278</lat>
+          <lng>7.772143199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="156">
+      <nom>Droits de l'Homme</nom>
+      <positions>
+        <position>
+          <lat>48.5961417</lat>
+          <lng>7.7749971</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="535">
+      <nom>Robertsau Boecklin</nom>
+      <positions>
+        <position>
+          <lat>48.5979439</lat>
+          <lng>7.7770261</lng>
+        </position>
+      </positions>
+    </arret>
+    <!--       <arret id="576">
+         <nom>Schott</nom>
+         <correspondance/>
+         <pdf>http://applis.cts-strasbourg.fr/CTS_FicheHoraire/</pdf>
+      </arret> -->
+    <arret id="539">
+      <nom>Robertsau Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.6029726</lat>
+          <lng>7.783360200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <!--       <arret id="39">
+         <nom>Baillis</nom>
+         <correspondance/>
+         <pdf>http://applis.cts-strasbourg.fr/CTS_FicheHoraire/</pdf>
+      </arret>
+      <arret id="111">
+         <nom>Cimetière Nord</nom>
+         <correspondance/>
+         <pdf>http://applis.cts-strasbourg.fr/CTS_FicheHoraire/</pdf>
+      </arret> -->
+    <arret id="459">
+      <nom>Papeterie</nom>
+      <positions>
+        <position>
+          <lat>48.6116025</lat>
+          <lng>7.780412399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="264">
+      <nom>Hechner</nom>
+      <positions>
+        <position>
+          <lat>48.61231979999999</lat>
+          <lng>7.776821000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="99">
+      <nom>Cité de l'Ill</nom>
+      <positions>
+        <position direction="1">
+          <lat>48.6129423</lat>
+          <lng>7.773600999999999</lng>
+        </position>
+        <position direction="2">
+          <lat>48.6129015</lat>
+          <lng>7.7732711</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="496">
+      <nom>Pont Phario</nom>
+      <positions>
+        <position>
+          <lat>48.6132198</lat>
+          <lng>7.769182000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="117">
+      <nom>Clinique Sainte Anne</nom>
+      <positions>
+        <position>
+          <lat>48.615408</lat>
+          <lng>7.7853531</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="549">
+      <nom>Robertsau Sainte Anne</nom>
+      <positions>
+        <position direction="2">
+          <lat>48.6169206</lat>
+          <lng>7.7881077</lng>
+        </position>
+        <position direction="1">
+          <lat>48.6172982</lat>
+          <lng>7.7882418</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="46">
+      <nom>Belzwoerth</nom>
+      <positions>
+        <position>
+          <lat>48.6192912</lat>
+          <lng>7.793010799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="72">
+      <nom>Bussière</nom>
+      <positions>
+        <position>
+          <lat>48.6212922</lat>
+          <lng>7.7978723</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="227">
+      <nom>Fuchs am Buckel</nom>
+      <positions>
+        <position>
+          <lat>48.6260499</lat>
+          <lng>7.804034700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="639">
+      <nom>Unterjaegerhof</nom>
+      <positions>
+        <position>
+          <lat>48.631572</lat>
+          <lng>7.804672999999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="282">
+      <nom>Honau</nom>
+      <positions>
+        <position>
+          <lat>48.6405675</lat>
+          <lng>7.8085434</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="558">
+      <nom>Rue des Champs</nom>
+      <positions>
+        <position>
+          <lat>48.6438941</lat>
+          <lng>7.821026399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="537">
+      <nom>Rochechouart</nom>
+      <positions>
+        <position>
+          <lat>48.64956489999999</lat>
+          <lng>7.823182899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="623">
+      <nom>Saint Yrieix</nom>
+      <positions>
+        <position>
+          <lat>48.652183</lat>
+          <lng>7.825224099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="191">
+      <nom>Faubourg d'Alençon</nom>
+      <positions>
+        <position>
+          <lat>48.6535111</lat>
+          <lng>7.8286828</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="239">
+      <nom>Général Leclerc</nom>
+      <positions>
+        <position>
+          <lat>48.6550721</lat>
+          <lng>7.831295299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="466">
+      <nom>Patronage</nom>
+      <positions>
+        <position>
+          <lat>48.65716459999999</lat>
+          <lng>7.829868299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="362">
+      <nom>La Wantzenau Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.6580266</lat>
+          <lng>7.827939799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="358">
+      <nom>La Wantzenau Ecole</nom>
+      <positions>
+        <position>
+          <lat>48.6593376</lat>
+          <lng>7.825590200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="364">
+      <nom>La Wantzenau Le Tilleul</nom>
+      <positions>
+        <position>
+          <lat>48.6607789</lat>
+          <lng>7.823410900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="359">
+      <nom>La Wantzenau Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.6628118</lat>
+          <lng>7.8222482</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="361">
+      <nom>La Wantzenau Le Golf</nom>
+      <positions>
+        <position>
+          <lat>48.6759064</lat>
+          <lng>7.815439400000001</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="1222" labeldir1="Entzheim Ouest" labeldir2="Holtzheim Ouest" id="21">
+    <arret id="179">
+      <nom>Entzheim Ouest</nom>
+      <positions>
+        <position>
+          <lat>48.5313169</lat>
+          <lng>7.629176099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="28">
+      <nom>Ancienne Forge</nom>
+      <positions>
+        <position>
+          <lat>48.5314856</lat>
+          <lng>7.63135</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="177">
+      <nom>Entzheim Centre</nom>
+      <positions>
+        <position>
+          <lat>48.5328763</lat>
+          <lng>7.6352352</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="462">
+      <nom>Parc</nom>
+      <positions>
+        <position>
+          <lat>48.5350325</lat>
+          <lng>7.639548199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="81">
+      <nom>Cerisiers</nom>
+      <positions>
+        <position>
+          <lat>48.5347643</lat>
+          <lng>7.642883499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="214">
+      <nom>Floralies</nom>
+      <positions>
+        <position>
+          <lat>48.5368751</lat>
+          <lng>7.6430203</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="708">
+      <nom>Terres de la Chapelle</nom>
+      <positions>
+        <position>
+          <lat>48.5389752</lat>
+          <lng>7.646092800000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="16">
+      <nom>Aéroparc</nom>
+      <positions>
+        <position>
+          <lat>48.54194709999999</lat>
+          <lng>7.652056699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="288">
+      <nom>Icare</nom>
+      <positions>
+        <position>
+          <lat>48.5434308</lat>
+          <lng>7.655066100000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="192">
+      <nom>Faisans</nom>
+      <positions>
+        <position>
+          <lat>48.5525023</lat>
+          <lng>7.6735465</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="351">
+      <nom>Lingolsheim Château</nom>
+      <positions>
+        <position>
+          <lat>48.55372209999999</lat>
+          <lng>7.679820200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="564">
+      <nom>Rue des Juifs</nom>
+      <positions>
+        <position>
+          <lat>48.5545228</lat>
+          <lng>7.6799262</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="141">
+      <nom>Croix</nom>
+      <positions>
+        <position>
+          <lat>48.5552595</lat>
+          <lng>7.678813000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="469">
+      <nom>Perce-Neige</nom>
+      <positions>
+        <position>
+          <lat>48.5524207</lat>
+          <lng>7.6832199</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="123">
+      <nom>Collège Galilée</nom>
+      <positions>
+        <position>
+          <lat>48.5505404</lat>
+          <lng>7.6870877</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="681">
+      <nom>Lingolsheim Alouettes</nom>
+      <positions>
+        <position>
+          <lat>48.5512413</lat>
+          <lng>7.6923035</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="10">
+      <nom>Abattoirs</nom>
+      <positions>
+        <position>
+          <lat>48.556923</lat>
+          <lng>7.6537009</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="17">
+      <nom>A l'Aigle</nom>
+      <positions>
+        <position>
+          <lat>48.5571023</lat>
+          <lng>7.645974799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="256">
+      <nom>Gustave Doré</nom>
+      <positions>
+        <position>
+          <lat>48.5558276</lat>
+          <lng>7.640896</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="270">
+      <nom>Holtzheim Centre</nom>
+      <positions>
+        <position>
+          <lat>48.5586876</lat>
+          <lng>7.643008199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="455">
+      <nom>Parc de Gaulle</nom>
+      <positions>
+        <position>
+          <lat>48.5589947</lat>
+          <lng>7.638716700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="260">
+      <nom>Hangenbieten</nom>
+      <positions>
+        <position>
+          <lat>48.559435</lat>
+          <lng>7.6363295</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="283">
+      <nom>Holtzheim Ouest</nom>
+      <positions>
+        <position>
+          <lat>48.5584213</lat>
+          <lng>7.633931599999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="1424" labeldir1="Ancienne Douane" labeldir2="Neuhof Lorient" id="22">
+    <arret id="26">
+      <nom>Ancienne Douane</nom>
+      <positions>
+        <position>
+          <lat>48.5796833</lat>
+          <lng>7.749871499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="520">
+      <nom>Porte de l'Hôpital</nom>
+      <positions>
+        <position>
+          <lat>48.578183</lat>
+          <lng>7.7509135</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="186">
+      <nom>Etoile Bourse</nom>
+      <positions>
+        <position>
+          <lat>48.5744687</lat>
+          <lng>7.7537432</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="189">
+      <nom>Etoile Polygone</nom>
+      <positions>
+        <position>
+          <lat>48.57195919999999</lat>
+          <lng>7.7551085</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="415">
+      <nom>Mulhouse</nom>
+      <positions>
+        <position>
+          <lat>48.5681159</lat>
+          <lng>7.757535899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="421">
+      <nom>Neudorf Marché</nom>
+      <positions>
+        <position>
+          <lat>48.5659593</lat>
+          <lng>7.7591828</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="334">
+      <nom>Lazaret</nom>
+      <positions>
+        <position>
+          <lat>48.5632258</lat>
+          <lng>7.761944099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="420">
+      <nom>Neudorf Gravière</nom>
+      <positions>
+        <position>
+          <lat>48.5614551</lat>
+          <lng>7.763831</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="700">
+      <nom>Polygone</nom>
+      <positions>
+        <position>
+          <lat>48.5578497</lat>
+          <lng>7.766234300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="316">
+      <nom>Kibitzenau</nom>
+      <positions>
+        <position>
+          <lat>48.5549311</lat>
+          <lng>7.7665079</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="596">
+      <nom>Saint Christophe</nom>
+      <positions>
+        <position>
+          <lat>48.5518543</lat>
+          <lng>7.7663952</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="546">
+      <nom>Neuhof Rodolphe Reuss</nom>
+      <positions>
+        <position>
+          <lat>48.5456034</lat>
+          <lng>7.765590500000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="532">
+      <nom>Riehl</nom>
+      <positions>
+        <position>
+          <lat>48.5429531</lat>
+          <lng>7.766065299999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="142">
+      <nom>Dalis</nom>
+      <positions>
+        <position>
+          <lat>48.5397007</lat>
+          <lng>7.7681641</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="423">
+      <nom>Neuhof Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.5368565</lat>
+          <lng>7.770598199999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="662">
+      <nom>Welsch</nom>
+      <positions>
+        <position>
+          <lat>48.5335992</lat>
+          <lng>7.7684015</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="127">
+      <nom>Colombes</nom>
+      <positions>
+        <position>
+          <lat>48.5302245</lat>
+          <lng>7.768475299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="427">
+      <nom>Neuhof Stéphanie</nom>
+      <positions>
+        <position>
+          <lat>48.5276676</lat>
+          <lng>7.769470399999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="478">
+      <nom>Place des Colombes</nom>
+      <positions>
+        <position>
+          <lat>48.5309696</lat>
+          <lng>7.7706666</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="119">
+      <nom>Coucou des Bois</nom>
+      <positions>
+        <position>
+          <lat>48.5307147</lat>
+          <lng>7.7738263</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="249">
+      <nom>Goldschmidt</nom>
+      <positions>
+        <position>
+          <lat>48.53351929999999</lat>
+          <lng>7.771488700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="262">
+      <nom>Hautefort</nom>
+      <positions>
+        <position>
+          <lat>48.549998</lat>
+          <lng>7.7687515</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="317">
+      <nom>Kiefer</nom>
+      <positions>
+        <position>
+          <lat>48.5475788</lat>
+          <lng>7.770045699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="293">
+      <nom>Ingold</nom>
+      <positions>
+        <position>
+          <lat>48.5455794</lat>
+          <lng>7.7721781</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="318">
+      <nom>Klebsau</nom>
+      <positions>
+        <position>
+          <lat>48.5441802</lat>
+          <lng>7.7733663</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="425">
+      <nom>Jean Moulin</nom>
+      <positions>
+        <position>
+          <lat>48.5416745</lat>
+          <lng>7.775538900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="133">
+      <nom>Neuhof Corps Européen</nom>
+      <positions>
+        <position>
+          <lat>48.5442086</lat>
+          <lng>7.7814142</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="426">
+      <nom>Neuhof Lorient</nom>
+      <positions>
+        <position>
+          <lat>48.54465159999999</lat>
+          <lng>7.787587299999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="6265" labeldir1="Lipsheim Gare" labeldir2="Baggersee" id="23">
+    <arret id="346">
+      <nom>Lipsheim Gare</nom>
+      <positions>
+        <position>
+          <lat>48.4907547</lat>
+          <lng>7.674905099999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="210">
+      <nom>Fegersheim Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.4904996</lat>
+          <lng>7.6798323</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="82">
+      <nom>Centre Sportif</nom>
+      <positions>
+        <position>
+          <lat>48.491296</lat>
+          <lng>7.684157300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="23">
+      <nom>Albert Schweitzer</nom>
+      <positions>
+        <position>
+          <lat>48.49128</lat>
+          <lng>7.689081900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="139">
+      <nom>Cressier Château d'eau</nom>
+      <positions>
+        <position>
+          <lat>48.4903112</lat>
+          <lng>7.6949733</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="442">
+      <nom>Ohnheim Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.489441</lat>
+          <lng>7.699813400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="147">
+      <nom>De Gaulle</nom>
+      <positions>
+        <position>
+          <lat>48.4886109</lat>
+          <lng>7.710200299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="268">
+      <nom>Hieselrain</nom>
+      <positions>
+        <position>
+          <lat>48.4885789</lat>
+          <lng>7.7155995</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="11">
+      <nom>Abbatiale</nom>
+      <positions>
+        <position>
+          <lat>48.4916568</lat>
+          <lng>7.716064899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="180">
+      <nom>Ermitage</nom>
+      <positions>
+        <position>
+          <lat>48.49599749999999</lat>
+          <lng>7.7172209</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="135">
+      <nom>CRAM</nom>
+      <positions>
+        <position>
+          <lat>48.500185</lat>
+          <lng>7.717667499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="41">
+      <nom>Ballastière</nom>
+      <positions>
+        <position>
+          <lat>48.5067773</lat>
+          <lng>7.7171673</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="255">
+      <nom>Graffenstaden Z.I</nom>
+      <positions>
+        <position>
+          <lat>48.5102025</lat>
+          <lng>7.714422</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="120">
+      <nom>Cor de chasse</nom>
+      <positions>
+        <position>
+          <lat>48.5135066</lat>
+          <lng>7.712409</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="14">
+      <nom>Acacias</nom>
+      <positions>
+        <position>
+          <lat>48.5159083</lat>
+          <lng>7.711008899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="194">
+      <nom>Faubourg de la Paix</nom>
+      <positions>
+        <position>
+          <lat>48.5202207</lat>
+          <lng>7.7088779</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="150">
+      <nom>Graffenstaden Digue</nom>
+      <positions>
+        <position>
+          <lat>48.52086910000001</lat>
+          <lng>7.705153699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="495">
+      <nom>Pont du Péage</nom>
+      <positions>
+        <position>
+          <lat>48.5188074</lat>
+          <lng>7.703400899999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="561">
+      <nom>Rue du Fort</nom>
+      <positions>
+        <position>
+          <lat>48.5222664</lat>
+          <lng>7.6923957</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="236">
+      <nom>Geispolsheim Centre Commercial</nom>
+      <positions>
+        <position>
+          <lat>48.52475339999999</lat>
+          <lng>7.6900944</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="66">
+      <nom>Brochet</nom>
+      <positions>
+        <position>
+          <lat>48.52424269999999</lat>
+          <lng>7.707893599999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="254">
+      <nom>Graffenstaden Usine</nom>
+      <positions>
+        <position>
+          <lat>48.5275836</lat>
+          <lng>7.7099917</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="291">
+      <nom>Illkirch Mairie</nom>
+      <positions>
+        <position>
+          <lat>48.5292582</lat>
+          <lng>7.711073300000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="146">
+      <nom>Deux Clés</nom>
+      <positions>
+        <position>
+          <lat>48.5319119</lat>
+          <lng>7.716024699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="430">
+      <nom>Niederbourg</nom>
+      <positions>
+        <position>
+          <lat>48.5331019</lat>
+          <lng>7.721170499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="83">
+      <nom>Centre de Traumatologie</nom>
+      <positions>
+        <position>
+          <lat>48.5375269</lat>
+          <lng>7.728188499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="128">
+      <nom>Colonne</nom>
+      <positions>
+        <position>
+          <lat>48.5381405</lat>
+          <lng>7.733107700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="38">
+      <nom>Baggersee</nom>
+      <positions>
+        <position>
+          <lat>48.54486199999999</lat>
+          <lng>7.738013400000001</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="A" labeldir1="Hautepierre Maillon" labeldir2="Illkirch Lixenbuhl" id="24">
+    <arret id="259">
+      <nom>Hautepierre Maillon</nom>
+      <positions>
+        <position>
+          <lat>48.5932886</lat>
+          <lng>7.698831199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="143">
+      <nom>Dante</nom>
+      <positions>
+        <position>
+          <lat>48.5911834</lat>
+          <lng>7.702663200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="277">
+      <nom>Hôpital de Hautepierre</nom>
+      <positions>
+        <position>
+          <lat>48.5916109</lat>
+          <lng>7.706745600000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="157">
+      <nom>Ducs d'Alsace</nom>
+      <positions>
+        <position>
+          <lat>48.590149</lat>
+          <lng>7.7150926</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="597">
+      <nom>Saint Florent</nom>
+      <positions>
+        <position>
+          <lat>48.59158069999999</lat>
+          <lng>7.7201432</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="550">
+      <nom>Rotonde</nom>
+      <positions>
+        <position>
+          <lat>48.5919089</lat>
+          <lng>7.724740499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="230">
+      <nom>Gare Centrale</nom>
+      <positions>
+        <position>
+          <lat>48.5850961</lat>
+          <lng>7.7354828</lng>
+        </position>
+        <position>
+          <lat>48.5858156</lat>
+          <lng>7.7359883</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="30">
+      <nom>Ancienne Synagogue - Les Halles</nom>
+      <positions>
+        <position>
+          <lat>48.5853285</lat>
+          <lng>7.7423774</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="275">
+      <nom>Homme de Fer</nom>
+      <positions>
+        <position>
+          <lat>48.5843509</lat>
+          <lng>7.7449912</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="322">
+      <nom>Langstross - Grand'Rue</nom>
+      <positions>
+        <position>
+          <lat>48.58134949999999</lat>
+          <lng>7.7462961</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="520">
+      <nom>Porte de l'Hôpital</nom>
+      <positions>
+        <position>
+          <lat>48.5780374</lat>
+          <lng>7.7502885</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="186">
+      <nom>Etoile Bourse</nom>
+      <positions>
+        <position>
+          <lat>48.574624</lat>
+          <lng>7.753481700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="573">
+      <nom>Schluthfeld</nom>
+      <positions>
+        <position>
+          <lat>48.5684877</lat>
+          <lng>7.7516618</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="319">
+      <nom>Krimmeri</nom>
+      <positions>
+        <position>
+          <lat>48.5629959</lat>
+          <lng>7.752632800000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="366">
+      <nom>Lycée Couffignal</nom>
+      <positions>
+        <position>
+          <lat>48.5587533</lat>
+          <lng>7.749078900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="176">
+      <nom>Emile Mathis</nom>
+      <positions>
+        <position>
+          <lat>48.5530554</lat>
+          <lng>7.7441409</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="280">
+      <nom>Hohwart</nom>
+      <positions>
+        <position>
+          <lat>48.5492035</lat>
+          <lng>7.741520400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="38">
+      <nom>Baggersee</nom>
+      <positions>
+        <position>
+          <lat>48.5449251</lat>
+          <lng>7.7378491</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="128">
+      <nom>Colonne</nom>
+      <positions>
+        <position>
+          <lat>48.5379478</lat>
+          <lng>7.733591799999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="335">
+      <nom>Leclerc</nom>
+      <positions>
+        <position>
+          <lat>48.5343434</lat>
+          <lng>7.734434</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="75">
+      <nom>Campus d'Illkirch</nom>
+      <positions>
+        <position>
+          <lat>48.5293541</lat>
+          <lng>7.7327791</lng>
+        </position>
+        <position>
+          <lat>48.5296055</lat>
+          <lng>7.7327791</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="290">
+      <nom>Illkirch Lixenbuhl</nom>
+      <positions>
+        <position>
+          <lat>48.5299057</lat>
+          <lng>7.724413299999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="B" labeldir1="Hoenheim Gare" labeldir2="Lingolsheim Tiergaertel" id="25">
+    <arret id="274">
+      <nom>Hoenheim Gare</nom>
+      <positions>
+        <position>
+          <lat>48.62798780000001</lat>
+          <lng>7.7586298</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="238">
+      <nom>Général de Gaulle</nom>
+      <positions>
+        <position>
+          <lat>48.6216228</lat>
+          <lng>7.7637854</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="340">
+      <nom>Le Ried</nom>
+      <positions>
+        <position>
+          <lat>48.6214597</lat>
+          <lng>7.767627699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="369">
+      <nom>Lycée Marc Bloch</nom>
+      <positions>
+        <position>
+          <lat>48.6166156</lat>
+          <lng>7.7680086</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="496">
+      <nom>Pont Phario</nom>
+      <positions>
+        <position>
+          <lat>48.6130575</lat>
+          <lng>7.7672052</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="338">
+      <nom>Le Marais</nom>
+      <positions>
+        <position>
+          <lat>48.6099878</lat>
+          <lng>7.7658695</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="228">
+      <nom>Futura Glacière</nom>
+      <positions>
+        <position>
+          <lat>48.6051417</lat>
+          <lng>7.7595516</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="530">
+      <nom>Rives de l'Aar</nom>
+      <positions>
+        <position>
+          <lat>48.6008512</lat>
+          <lng>7.7546123</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="657">
+      <nom>Wacken</nom>
+      <positions>
+        <position>
+          <lat>48.5986748</lat>
+          <lng>7.760722299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="368">
+      <nom>Lycée Kléber</nom>
+      <positions>
+        <position>
+          <lat>48.5941877</lat>
+          <lng>7.7578041</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="451">
+      <nom>Parc du Contades</nom>
+      <positions>
+        <position>
+          <lat>48.5904081</lat>
+          <lng>7.756063299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="527">
+      <nom>République</nom>
+      <positions>
+        <position>
+          <lat>48.586457</lat>
+          <lng>7.753700299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="67">
+      <nom>Broglie</nom>
+      <positions>
+        <position>
+          <lat>48.5848264</lat>
+          <lng>7.7495134</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="275">
+      <nom>Homme de Fer</nom>
+      <positions>
+        <position>
+          <lat>48.5843509</lat>
+          <lng>7.7449912</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="24">
+      <nom>Alt Winmärik</nom>
+      <positions>
+        <position>
+          <lat>48.5834495</lat>
+          <lng>7.7403241</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="193">
+      <nom>Faubourg National</nom>
+      <positions>
+        <position>
+          <lat>48.582423</lat>
+          <lng>7.7368627</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="375">
+      <nom>Musée d'Art Moderne</nom>
+      <positions>
+        <position>
+          <lat>48.577986</lat>
+          <lng>7.7341484</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="323">
+      <nom>Laiterie</nom>
+      <positions>
+        <position>
+          <lat>48.5759896</lat>
+          <lng>7.7316083</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="410">
+      <nom>Montagne Verte</nom>
+      <positions>
+        <position direction="1">
+          <lat>48.5744678</lat>
+          <lng>7.727385200000001</lng>
+        </position>
+        <position direction="2">
+          <lat>48.57467279999999</lat>
+          <lng>7.727017699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="175">
+      <nom>Elsau</nom>
+      <positions>
+        <position>
+          <lat>48.5677751</lat>
+          <lng>7.7264048</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="412">
+      <nom>Martin Schongauer</nom>
+      <positions>
+        <position>
+          <lat>48.5661004</lat>
+          <lng>7.7200681</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="174">
+      <nom>Elmerforst</nom>
+      <positions>
+        <position>
+          <lat>48.5629551</lat>
+          <lng>7.711400499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="665">
+      <nom>Wihrel</nom>
+      <positions>
+        <position>
+          <lat>48.5546133</lat>
+          <lng>7.712753699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="448">
+      <nom>Ostwald Hôtel de Ville</nom>
+      <positions>
+        <position>
+          <lat>48.5510305</lat>
+          <lng>7.7102056</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="58">
+      <nom>Borie</nom>
+      <positions>
+        <position>
+          <lat>48.5498169</lat>
+          <lng>7.702749099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="681">
+      <nom>Alouettes</nom>
+      <positions>
+        <position>
+          <lat>48.5512915</lat>
+          <lng>7.692661299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="348">
+      <nom>Lingolsheim Tiergaertel</nom>
+      <positions>
+        <position>
+          <lat>48.5537895</lat>
+          <lng>7.689423899999999</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="C" labeldir1="Gare Centrale" labeldir2="Heuhof Rodolphe Reuss" id="26">
+    <arret id="230">
+      <nom>Gare Centrale</nom>
+      <positions>
+        <position>
+          <lat>48.5850961</lat>
+          <lng>7.7354828</lng>
+        </position>
+        <position>
+          <lat>48.5858156</lat>
+          <lng>7.7359883</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="197">
+      <nom>Faubourg de Saverne</nom>
+      <positions>
+        <position>
+          <lat>48.5861802</lat>
+          <lng>7.739870799999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="275">
+      <nom>Homme de Fer</nom>
+      <positions>
+        <position>
+          <lat>48.5843509</lat>
+          <lng>7.7449912</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="67">
+      <nom>Broglie</nom>
+      <positions>
+        <position>
+          <lat>48.5848264</lat>
+          <lng>7.7495134</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="527">
+      <nom>République</nom>
+      <positions>
+        <position>
+          <lat>48.586457</lat>
+          <lng>7.753700299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="233">
+      <nom>Gallia</nom>
+      <positions>
+        <position>
+          <lat>48.584452</lat>
+          <lng>7.758229199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="638">
+      <nom>Université</nom>
+      <positions>
+        <position>
+          <lat>47.733531</lat>
+          <lng>7.315295000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="438">
+      <nom>Observatoire</nom>
+      <positions>
+        <position>
+          <lat>48.5815119</lat>
+          <lng>7.7687985</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="185">
+      <nom>Esplanade</nom>
+      <positions>
+        <position direction="2">
+          <lat>48.5782335</lat>
+          <lng>7.769395299999999</lng>
+        </position>
+        <position direction="1">
+          <lat>48.5784642</lat>
+          <lng>7.7694891</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="664">
+      <nom>Winston Churchill</nom>
+      <positions>
+        <position>
+          <lat>48.5740765</lat>
+          <lng>7.766816299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="329">
+      <nom>Landsberg</nom>
+      <positions>
+        <position>
+          <lat>48.5693405</lat>
+          <lng>7.764091199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="298">
+      <nom>Jean Jaurès</nom>
+      <positions>
+        <position direction="2">
+          <lat>48.5671388</lat>
+          <lng>7.772132500000001</lng>
+        </position>
+        <position direction="1">
+          <lat>48.5673127</lat>
+          <lng>7.771893700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="367">
+      <nom>Lycée Jean Monnet</nom>
+      <positions>
+        <position>
+          <lat>48.56449490000001</lat>
+          <lng>7.7696112</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="420">
+      <nom>Gravière</nom>
+      <positions>
+        <position>
+          <lat>48.5613051</lat>
+          <lng>7.7642387</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="316">
+      <nom>Kibitzenau</nom>
+      <positions>
+        <position>
+          <lat>48.55509439999999</lat>
+          <lng>7.7671891</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="596">
+      <nom>Saint Christophe</nom>
+      <positions>
+        <position>
+          <lat>48.5510607</lat>
+          <lng>7.7662933</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="546">
+      <nom>Neuhof Rodolphe Reuss</nom>
+      <positions>
+        <position>
+          <lat>48.546108</lat>
+          <lng>7.766901700000001</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="D" labeldir1="Rotonde" labeldir2="Artistide Briand" id="27">
+    <arret id="550">
+      <nom>Rotonde</nom>
+      <positions>
+        <position>
+          <lat>48.5919089</lat>
+          <lng>7.724740499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="230">
+      <nom>Gare Centrale</nom>
+      <positions>
+        <position>
+          <lat>48.5850961</lat>
+          <lng>7.7354828</lng>
+        </position>
+        <position>
+          <lat>48.5858156</lat>
+          <lng>7.7359883</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="30">
+      <nom>Ancienne Synagogue - Les Halles</nom>
+      <positions>
+        <position>
+          <lat>48.5853285</lat>
+          <lng>7.7423774</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="275">
+      <nom>Homme de Fer</nom>
+      <positions>
+        <position>
+          <lat>48.5843509</lat>
+          <lng>7.7449912</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="322">
+      <nom>Langstross Grand'Rue</nom>
+      <positions>
+        <position>
+          <lat>48.58134949999999</lat>
+          <lng>7.7462961</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="520">
+      <nom>Porte de l'Hôpital</nom>
+      <positions>
+        <position>
+          <lat>48.5780374</lat>
+          <lng>7.7502885</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="186">
+      <nom>Etoile Bourse</nom>
+      <positions>
+        <position>
+          <lat>48.574624</lat>
+          <lng>7.753481700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="189">
+      <nom>Etoile Polygone</nom>
+      <positions>
+        <position>
+          <lat>48.5716256</lat>
+          <lng>7.755255999999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="329">
+      <nom>Landsberg</nom>
+      <positions>
+        <position>
+          <lat>48.5693405</lat>
+          <lng>7.764091199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="298">
+      <nom>Jean Jaurès</nom>
+      <positions>
+        <position direction="2">
+          <lat>48.5671388</lat>
+          <lng>7.772132500000001</lng>
+        </position>
+        <position direction="1">
+          <lat>48.5673127</lat>
+          <lng>7.771893700000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="32">
+      <nom>Aristide Briand</nom>
+      <positions>
+        <position>
+          <lat>48.5685312</lat>
+          <lng>7.776861200000001</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="E" labeldir1="Robertsau Boecklin" labeldir2="Baggersee" id="28">
+    <arret id="535">
+      <nom>Robertsau Boecklin</nom>
+      <positions>
+        <position>
+          <lat>48.5979726</lat>
+          <lng>7.7782528</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="156">
+      <nom>Droits de l'Homme</nom>
+      <positions>
+        <position>
+          <lat>48.5960539</lat>
+          <lng>7.7742353</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="464">
+      <nom>Parlement Européen</nom>
+      <positions>
+        <position>
+          <lat>48.5994322</lat>
+          <lng>7.7672642</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="657">
+      <nom>Wacken</nom>
+      <positions>
+        <position>
+          <lat>48.5986748</lat>
+          <lng>7.760722299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="368">
+      <nom>Lycée Kléber</nom>
+      <positions>
+        <position>
+          <lat>48.5941877</lat>
+          <lng>7.7578041</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="451">
+      <nom>Parc du Contades</nom>
+      <positions>
+        <position>
+          <lat>48.5904081</lat>
+          <lng>7.756063299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="527">
+      <nom>République</nom>
+      <positions>
+        <position>
+          <lat>48.586457</lat>
+          <lng>7.753700299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="233">
+      <nom>Gallia</nom>
+      <positions>
+        <position>
+          <lat>48.584452</lat>
+          <lng>7.758229199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="638">
+      <nom>Université</nom>
+      <positions>
+        <position>
+          <lat>47.733531</lat>
+          <lng>7.315295000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="438">
+      <nom>Observatoire</nom>
+      <positions>
+        <position>
+          <lat>48.5815119</lat>
+          <lng>7.7687985</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="185">
+      <nom>Esplanade</nom>
+      <positions>
+        <position direction="2">
+          <lat>48.5782335</lat>
+          <lng>7.769395299999999</lng>
+        </position>
+        <position direction="1">
+          <lat>48.5784642</lat>
+          <lng>7.7694891</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="664">
+      <nom>Winston Churchill</nom>
+      <positions>
+        <position>
+          <lat>48.5740765</lat>
+          <lng>7.766816299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="329">
+      <nom>Landsberg</nom>
+      <positions>
+        <position>
+          <lat>48.5693405</lat>
+          <lng>7.764091199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="189">
+      <nom>Etoile Polygone</nom>
+      <positions>
+        <position>
+          <lat>48.5716256</lat>
+          <lng>7.755255999999998</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="573">
+      <nom>Schluthfeld</nom>
+      <positions>
+        <position>
+          <lat>48.5684877</lat>
+          <lng>7.7516618</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="319">
+      <nom>Krimmeri</nom>
+      <positions>
+        <position>
+          <lat>48.5629959</lat>
+          <lng>7.752632800000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="366">
+      <nom>Lycée Couffignal</nom>
+      <positions>
+        <position>
+          <lat>48.5587533</lat>
+          <lng>7.749078900000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="176">
+      <nom>Emile Mathis</nom>
+      <positions>
+        <position>
+          <lat>48.5530554</lat>
+          <lng>7.7441409</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="280">
+      <nom>Hohwart</nom>
+      <positions>
+        <position>
+          <lat>48.5492035</lat>
+          <lng>7.741520400000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="38">
+      <nom>Baggersee</nom>
+      <positions>
+        <position>
+          <lat>48.5449251</lat>
+          <lng>7.7378491</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="F" labeldir1="Elsau" labeldir2="Place d'Islande" id="29">
+    <arret id="175">
+      <nom>Elsau</nom>
+      <positions>
+        <position>
+          <lat>48.5677751</lat>
+          <lng>7.7264048</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="410">
+      <nom>Montagne Verte</nom>
+      <positions>
+        <position direction="2">
+          <lat>48.5744678</lat>
+          <lng>7.727385200000001</lng>
+        </position>
+        <position direction="1">
+          <lat>48.57467279999999</lat>
+          <lng>7.727017699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="323">
+      <nom>Laiterie</nom>
+      <positions>
+        <position>
+          <lat>48.5759896</lat>
+          <lng>7.7316083</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="375">
+      <nom>Musée d'Art Moderne</nom>
+      <positions>
+        <position>
+          <lat>48.577986</lat>
+          <lng>7.7341484</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="193">
+      <nom>Faubourg National</nom>
+      <positions>
+        <position>
+          <lat>48.582423</lat>
+          <lng>7.7368627</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="24">
+      <nom>Alt Winmärik</nom>
+      <positions>
+        <position>
+          <lat>48.5834495</lat>
+          <lng>7.7403241</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="275">
+      <nom>Homme de Fer</nom>
+      <positions>
+        <position>
+          <lat>48.5843509</lat>
+          <lng>7.7449912</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="67">
+      <nom>Broglie</nom>
+      <positions>
+        <position>
+          <lat>48.5848264</lat>
+          <lng>7.7495134</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="527">
+      <nom>République</nom>
+      <positions>
+        <position>
+          <lat>48.586457</lat>
+          <lng>7.753700299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="233">
+      <nom>Gallia</nom>
+      <positions>
+        <position>
+          <lat>48.584452</lat>
+          <lng>7.758229199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="638">
+      <nom>Université</nom>
+      <positions>
+        <position>
+          <lat>47.733531</lat>
+          <lng>7.315295000000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="438">
+      <nom>Observatoire</nom>
+      <positions>
+        <position>
+          <lat>48.5815119</lat>
+          <lng>7.7687985</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="706">
+      <nom>Place d'Islande</nom>
+      <positions>
+        <position>
+          <lat>48.58040459999999</lat>
+          <lng>7.775458400000001</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="NHC" labeldir1="Musée d'Art Moderne" labeldir2="Porte de l'Hôpital" id="30">
+    <arret id="375">
+      <nom>Musée d'Art Moderne</nom>
+      <positions>
+        <position>
+          <lat>48.5783134</lat>
+          <lng>7.7340303</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="520">
+      <nom>Porte de l'Hôpital</nom>
+      <positions>
+        <position>
+          <lat>48.578183</lat>
+          <lng>7.7509135</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="NNM" labeldir1="Lycée Jean Monnet" labeldir2="Saint Dié" id="31">
+    <arret id="421">
+      <nom>Neudorf Marché</nom>
+      <positions>
+        <position>
+          <lat>48.5659593</lat>
+          <lng>7.7591828</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="NR" labeldir1="Robertsau Boecklin" labeldir2="Philippe Thys" id="32">
+    <arret id="535">
+      <nom>Robertsau Boecklin</nom>
+      <positions>
+        <position>
+          <lat>48.5979439</lat>
+          <lng>7.7770261</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="576">
+      <nom>Schott</nom>
+      <positions>
+        <position>
+          <lat>48.6004574</lat>
+          <lng>7.780565299999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="539">
+      <nom>Robertsau Eglise</nom>
+      <positions>
+        <position>
+          <lat>48.6029726</lat>
+          <lng>7.783360200000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="240">
+      <nom>Général Lejeune</nom>
+      <positions>
+        <position>
+          <lat>48.6129077</lat>
+          <lng>7.788306199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="598">
+      <nom>Saint François</nom>
+      <positions>
+        <position>
+          <lat>48.603533</lat>
+          <lng>7.7872172</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+  <ligne title="NE" labeldir1="Entzheim Ouest" labeldir2="Entzheim Gare" id="33">
+    <arret id="179">
+      <nom>Entzheim Ouest</nom>
+      <positions>
+        <position>
+          <lat>48.5313169</lat>
+          <lng>7.629176099999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="28">
+      <nom>Ancienne Forge</nom>
+      <positions>
+        <position>
+          <lat>48.5314856</lat>
+          <lng>7.63135</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="177">
+      <nom>Entzheim Centre</nom>
+      <positions>
+        <position>
+          <lat>48.5328763</lat>
+          <lng>7.6352352</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="462">
+      <nom>Parc</nom>
+      <positions>
+        <position>
+          <lat>48.5350325</lat>
+          <lng>7.639548199999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="81">
+      <nom>Cerisiers</nom>
+      <positions>
+        <position>
+          <lat>48.5347643</lat>
+          <lng>7.642883499999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="214">
+      <nom>Floralies</nom>
+      <positions>
+        <position>
+          <lat>48.5368751</lat>
+          <lng>7.6430203</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="708">
+      <nom>Terres de la Chapelle</nom>
+      <positions>
+        <position>
+          <lat>48.5389752</lat>
+          <lng>7.646092800000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="16">
+      <nom>Aéroparc</nom>
+      <positions>
+        <position>
+          <lat>48.54194709999999</lat>
+          <lng>7.652056699999999</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="288">
+      <nom>Icare</nom>
+      <positions>
+        <position>
+          <lat>48.5434308</lat>
+          <lng>7.655066100000001</lng>
+        </position>
+      </positions>
+    </arret>
+    <arret id="705">
+      <nom>Entzheim Gare</nom>
+      <positions>
+        <position>
+          <lat>48.545549</lat>
+          <lng>7.62221</lng>
+        </position>
+      </positions>
+    </arret>
+  </ligne>
+</lesarrets>

@@ -1,0 +1,49 @@
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true">
+
+<RelativeLayout
+    android:id="@+id/drawer_station_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/station_fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="25dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:text="Title"
+        android:layout_centerHorizontal="true"/>
+    
+    <Button
+        android:id="@+id/station_fragment_button"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/fragment_station_button_text" />
+    
+	<ProgressBar
+	      android:id="@+id/station_fragment_progressbar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          style="?android:attr/progressBarStyleLarge" 
+          android:visibility="gone"/>
+	
+	<LinearLayout  android:id="@+id/station_fragment_results"
+	    	  android:orientation="vertical" 
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:layout_below="@id/station_fragment_title"
+	          android:gravity="center_horizontal|top"
+	          android:visibility="gone">
+	</LinearLayout>
+ 
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transportTypes">
+        <item>BUS et TRAM</item>
+        <item>BUS</item>
+        <item>TRAM</item>planets_arrayplanets_array
+    </string-array>
+    <string-array name="menu_array">
+        <item>Accueil</item>
+        <item>Arrèts à proximité</item>
+        <item>Lignes</item>
+        <item>Favoris</item>
+        <item>Itinéraire</item>
+        <item>Plan CTS</item>
+        <item>A propos</item>
+    </string-array>
+    <string-array name="ligne_type">
+        <item>Bus et Tram</item>
+        <item>Bus</item>
+        <item>Tram</item>
+    </string-array>
+</resources>
