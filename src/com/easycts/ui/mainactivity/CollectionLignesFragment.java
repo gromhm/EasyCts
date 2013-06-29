@@ -1,9 +1,11 @@
-package com.easycts.ui.mainactivity.Views;
+package com.easycts.ui.mainactivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.CursorAdapter;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v4.widget.SimpleCursorAdapter.ViewBinder;
@@ -12,30 +14,47 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.FilterQueryProvider;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 
+import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuInflater;
 import com.easycts.R;
 import com.easycts.Database.LigneDBAdapter;
 import com.easycts.ui.CollectionStationActivity;
 import com.easycts.ui.MainActivity;
 
-
-public class LignesFragment
+public class CollectionLignesFragment extends SherlockFragment implements ActionBar.OnNavigationListener
 {
-	static SimpleCursorAdapter lignesAdapter;
-	static LigneDBAdapter ligneDBAdapter;
-	static SherlockFragment parrentfragment;
+	public static final String ITEMNUMBER = "com.easycts.ui.intent.STATIONID";
 	
-	public static View GetView(SherlockFragment fragment, LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-	{
-		View rootView = inflater.inflate(R.layout.activity_collection_ligne, container, false);
-		parrentfragment = fragment;
-		ligneDBAdapter = new LigneDBAdapter(rootView.getContext());
-		ligneDBAdapter.open();
+	LigneDBAdapter ligneDBAdapter;
+	SimpleCursorAdapter lignesAdapter;
+	SherlockFragmentActivity mContext;
+	boolean mNaviFirstHit;
+	
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) 
+    {
+        View rootView = inflater.inflate(R.layout.activity_collection_ligne, container, false);
+        mContext = this.getSherlockActivity();
+        this.setHasOptionsMenu(true);
+        mNaviFirstHit = true;
+        
+		ActionBar ab = mContext.getSupportActionBar();
+		Context context = ab.getThemedContext();
+        ArrayAdapter<CharSequence> list = ArrayAdapter.createFromResource(context, R.array.ligne_type, R.layout.sherlock_spinner_item);
+        list.setDropDownViewResource(R.layout.sherlock_spinner_dropdown_item);
+        ab.setListNavigationCallbacks(list, this);
+        
+        ligneDBAdapter = new LigneDBAdapter(rootView.getContext());
+    	ligneDBAdapter.open();
 		
 		lignesAdapter = new SimpleCursorAdapter(rootView.getContext(), R.layout.cursor_row, null,
 				new String[] { LigneDBAdapter.LIGNE_CTSID, LigneDBAdapter.LIGNE_DIR1, LigneDBAdapter.LIGNE_DIR2 },
@@ -92,24 +111,44 @@ public class LignesFragment
 			public void onItemClick(AdapterView<?> arg0, View view, int position, long id) {
 				Intent intent = new Intent(view.getContext(), CollectionStationActivity.class);
 				intent.putExtra(MainActivity.LIGNEID, id);
-				parrentfragment.startActivity(intent);
+				mContext.startActivity(intent);
 			}
 		});
-		
-		return rootView;
-	}
-	
-	public static void SetLignesFragmentFilter(int type)
+        
+        return rootView;
+    }
+    
+	public void SetLignesFragmentFilter(int type)
 	{
 		Log.d("StationTask", "SetLignesFragmentFilter:"+(lignesAdapter!=null));
 		if(lignesAdapter!=null)
 			lignesAdapter.getFilter().filter(String.valueOf(type));
 	}
 	
-	private static void SetTramTxtView(TextView tv, int color)
+    private void SetTramTxtView(TextView tv, int color)
 	{
 		   tv.setTextColor(color);
 		   tv.setTextSize(20);
 	}
-}
 
+	@Override
+	public boolean onNavigationItemSelected(int arg0, long arg1) 
+	{
+		if(mNaviFirstHit)
+		{
+			mNaviFirstHit=false;
+			return true;
+		}
+		
+		SetLignesFragmentFilter(arg0);
+		return true;
+	}
+	
+	@Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
+	{
+		//super.onCreateOptionsMenu(menu, inflater);
+		ActionBar ab = mContext.getSupportActionBar();
+        ab.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
+	}
+}

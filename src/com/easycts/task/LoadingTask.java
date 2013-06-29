@@ -6,11 +6,13 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
+import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.net.URLConnection;
 
 import com.easycts.R;
 import com.easycts.ui.SplashActivity;
+import com.easycts.ui.Network.soapHelper;
 
 import android.app.Activity;
 import android.content.Context;
@@ -54,6 +56,19 @@ public class LoadingTask extends AsyncTask<String, Integer, Integer>
 	@Override
 	protected Integer doInBackground(String... params) {
 		Log.i("Tutorial", "Starting download task ");
+		
+		try {
+			soapHelper.soap();
+		}
+		catch (SocketTimeoutException e1) 
+		{
+			e1.printStackTrace();
+		}
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		return downloadResources(params[0]);
 	}
 

@@ -1,9 +1,13 @@
 package com.easycts.ui;
 
 import java.io.File;
+import java.io.IOException;
+
+import org.xmlpull.v1.XmlPullParserException;
 
 import com.easycts.task.LoadingTask;
 import com.easycts.task.LoadingTask.LoadingTaskFinishedListener;
+import com.easycts.ui.Network.soapHelper;
 import com.easycts.R;
 
 import android.app.Activity;
@@ -27,7 +31,7 @@ public class SplashActivity extends Activity implements LoadingTaskFinishedListe
 	public void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
-
+		
 		ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 

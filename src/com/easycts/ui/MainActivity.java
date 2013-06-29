@@ -12,10 +12,12 @@ import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.CursorAdapter;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SimpleCursorAdapter;
+import android.util.Log;
 import android.view.ActionProvider;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
@@ -35,16 +37,19 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.easycts.R;
 import com.easycts.Database.LigneDBAdapter;
-import com.easycts.ui.mainactivity.MainActivityFragment;
+import com.easycts.ui.mainactivity.CollectionLignesFragment;
+import com.easycts.ui.mainactivity.DefaultFragment;
+import com.easycts.ui.mainactivity.FavoritesFragment;
 import com.easycts.ui.mainactivity.MainActivityMenuItemView;
+import com.easycts.ui.mainactivity.Views.FavFragment;
+import com.easycts.ui.mainactivity.Views.LignesFragment;
 import com.actionbarsherlock.widget.SearchView;
 import android.provider.BaseColumns;
 
-public class MainActivity extends SherlockFragmentActivity implements ActionBar.OnNavigationListener,  SearchView.OnQueryTextListener, SearchView.OnSuggestionListener {
+public class MainActivity extends SherlockFragmentActivity implements SearchView.OnQueryTextListener, SearchView.OnSuggestionListener {
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
-
 	private CharSequence mDrawerTitle;
 	private CharSequence mTitle;
 	private String[] mMenuArray;
@@ -52,14 +57,22 @@ public class MainActivity extends SherlockFragmentActivity implements ActionBar.
 	private int currentPosition;
 	Boolean isFirstFilterCallBack=true;
 	
+	CollectionLignesFragment lignesFragment;
+	FavoritesFragment favFragment;
+	DefaultFragment planetFragment;
+	
 	public final static String LIGNEID = "com.easycts.ui.intent.LIGNEID";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		setTheme(R.style.Theme_Sherlock_Light_DarkActionBar); //Used for theme switching in samples
-		
 		super.onCreate(savedInstanceState);
+		
+		lignesFragment = new CollectionLignesFragment();
+		favFragment = new FavoritesFragment();
+		planetFragment = new DefaultFragment();
+		
 		setContentView(R.layout.activity_main);
 		mTitle = mDrawerTitle = getTitle();
 		mMenuArray = getResources().getStringArray(R.array.menu_array);
@@ -68,11 +81,7 @@ public class MainActivity extends SherlockFragmentActivity implements ActionBar.
 
 		//Menu filtre ligne
 		mLigneTypes = getResources().getStringArray(R.array.ligne_type);
-		Context context = getSupportActionBar().getThemedContext();
-        ArrayAdapter<CharSequence> list = ArrayAdapter.createFromResource(context, R.array.ligne_type, R.layout.sherlock_spinner_item);
-        list.setDropDownViewResource(R.layout.sherlock_spinner_dropdown_item);
-        getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
-        getSupportActionBar().setListNavigationCallbacks(list, this);
+
 		
         // set a custom shadow that overlays the main content when the drawer
 		// opens
@@ -142,6 +151,7 @@ public class MainActivity extends SherlockFragmentActivity implements ActionBar.
             .setActionView(searchView)
             .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW);
         
+
 		//MenuItem searchMenu = menu.add("Search");
 		//searchMenu.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
 	        
@@ -158,10 +168,11 @@ public class MainActivity extends SherlockFragmentActivity implements ActionBar.
 		boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
 		//menu.findItem(R.id.action_websearch).setVisible(!drawerOpen);
 		//menu.findItem(R.id.action_filter).setVisible(!drawerOpen);
-		if(currentPosition == 2)
+		/*if(currentPosition == 2)
 		{
 			getSupportActionBar().setNavigationMode(drawerOpen? ActionBar.NAVIGATION_MODE_STANDARD : ActionBar.NAVIGATION_MODE_LIST);
-		}
+		}*/
+		getSupportActionBar().setNavigationMode(drawerOpen? ActionBar.NAVIGATION_MODE_STANDARD : ActionBar.NAVIGATION_MODE_LIST);
 		return super.onPrepareOptionsMenu(menu);
 	}
 
@@ -202,18 +213,30 @@ public class MainActivity extends SherlockFragmentActivity implements ActionBar.
 		return MainActivityMenuItemView.GetMenuItemView(item);
 	}
 
-	MainActivityFragment currentFragment;
+
 	private void selectItem(int position) 
 	{
 		// update the main content by replacing fragments
-		currentFragment = new MainActivityFragment();
-		
-		Bundle args = new Bundle();
-		args.putInt(MainActivityFragment.ITEMNUMBER, position);
-		currentFragment.setArguments(args);
+		   FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+	        // Locate Position
+	        switch (position) {
+	        case 2:
+	            ft.replace(R.id.content_frame, lignesFragment);
+	            break;
+	        case 3:
+	            ft.replace(R.id.content_frame, favFragment);
+	            break;
+	        default:
+	    		Bundle args = new Bundle();
+	    		args.putInt(DefaultFragment.ITEMNUMBER, position);
+	    		planetFragment.setArguments(args);
+	        	ft.replace(R.id.content_frame, planetFragment);
+	        	break;
+	        }
+	        ft.commit();
 
-		FragmentManager fragmentManager = getSupportFragmentManager();
-		fragmentManager.beginTransaction().replace(R.id.content_frame, currentFragment).commit();
+		/*FragmentManager fragmentManager = getSupportFragmentManager();
+		fragmentManager.beginTransaction().replace(R.id.content_frame, currentFragment).commit();*/
 
 		// update selected item and title, then close the drawer
 		mDrawerList.setItemChecked(position, true);
@@ -246,9 +269,9 @@ public class MainActivity extends SherlockFragmentActivity implements ActionBar.
 	}
 
 	
-	@Override
-	/* The click listner for filterView in the actionbar*/
-	public boolean onNavigationItemSelected(int arg0, long arg1)
+	/*@Override
+	 The click listner for filterView in the actionbar*/
+	/*public boolean onNavigationItemSelected(int arg0, long arg1)
 	{
 		if(isFirstFilterCallBack)
 			isFirstFilterCallBack = false;
@@ -256,7 +279,7 @@ public class MainActivity extends SherlockFragmentActivity implements ActionBar.
 			currentFragment.SetLignesFragmentFilter(arg0);
 		
 		return true;
-	}
+	}*/
 	
 	
 	/* The click listner for ListView in the navigation drawer */
