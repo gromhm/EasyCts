@@ -7,7 +7,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import com.easycts.task.LoadingTask;
 import com.easycts.task.LoadingTask.LoadingTaskFinishedListener;
-import com.easycts.ui.Network.soapHelper;
+import com.easycts.ui.Network.soapHoursHelper;
 import com.easycts.R;
 
 import android.app.Activity;

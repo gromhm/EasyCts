@@ -1,17 +1,17 @@
 package com.easycts.ui;
 
+import java.util.ArrayList;
+
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.MenuItem;
 import com.easycts.R;
-import com.easycts.task.StationsTask;
-import com.easycts.task.StationsTask.StationsTaskFinishedListener;
+import com.easycts.Models.Station;
 
-public class PagerStationActivity  extends SherlockFragmentActivity implements StationsTaskFinishedListener
+public class PagerStationActivity  extends SherlockFragmentActivity
 {
 	 private ViewPagerAdapter mSectionsPagerAdapter;
 	 private ViewPager mViewPager;
@@ -23,13 +23,17 @@ public class PagerStationActivity  extends SherlockFragmentActivity implements S
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.activity_pager_station);
 	        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-	        
+
 	        Intent i = getIntent();
-	        long ligneId = i.getLongExtra(MainActivity.LIGNEID, 0);
-	        //long stationId = i.getLongExtra(CollectionStationActivity.STATIONID, 0);
 	        initialPosition = i.getIntExtra(CollectionStationActivity.POSITIONID, 0);
-						
-	        new StationsTask(this).execute(String.valueOf(ligneId));
+	        ArrayList<Station> stations = i.getParcelableArrayListExtra(CollectionStationActivity.STATIONS);
+
+	        // Set up the adapter.
+	        mViewPager = (ViewPager) findViewById(R.id.viewPager);
+	        mSectionsPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), stations, mViewPager);
+	        mViewPager.setAdapter(mSectionsPagerAdapter);
+	        mViewPager.setCurrentItem(initialPosition, false);
+	        mViewPager.setOffscreenPageLimit(3);
 	 	}
 	 	
 	 	@Override
@@ -55,19 +59,6 @@ public class PagerStationActivity  extends SherlockFragmentActivity implements S
 		        return true;
 		    }
 		    return super.onOptionsItemSelected(item);
-		}
-
-		@Override
-		public void onTaskFinished(Cursor initialCursor)
-		{ 
-	        // Set up the ViewPager with the sections adapter.
-	        mViewPager = (ViewPager) findViewById(R.id.viewPager);
-	        // Set up the adapter.
-	        mSectionsPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), initialCursor, mViewPager);
-	        mViewPager.setAdapter(mSectionsPagerAdapter);
-	        mViewPager.setCurrentItem(initialPosition, false);
-	        mViewPager.setOffscreenPageLimit(3);
-	        
 		}
 }
 

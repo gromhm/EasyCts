@@ -2,26 +2,17 @@ package com.easycts.ui;
 
 import android.app.SearchManager;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.database.MatrixCursor;
-import android.graphics.drawable.Drawable;
-import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.BaseColumns;
 import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.CursorAdapter;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.SimpleCursorAdapter;
-import android.util.Log;
-import android.view.ActionProvider;
-import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
-import android.view.SubMenu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -33,20 +24,15 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+import com.actionbarsherlock.widget.SearchView;
 import com.easycts.R;
-import com.easycts.Database.LigneDBAdapter;
 import com.easycts.ui.mainactivity.CollectionLignesFragment;
 import com.easycts.ui.mainactivity.DefaultFragment;
 import com.easycts.ui.mainactivity.FavoritesFragment;
 import com.easycts.ui.mainactivity.MainActivityMenuItemView;
-import com.easycts.ui.mainactivity.Views.FavFragment;
-import com.easycts.ui.mainactivity.Views.LignesFragment;
-import com.actionbarsherlock.widget.SearchView;
-import android.provider.BaseColumns;
 
-public class MainActivity extends SherlockFragmentActivity implements SearchView.OnQueryTextListener, SearchView.OnSuggestionListener {
+public class MainActivity extends SherlockFragmentActivity {
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
 	private ActionBarDrawerToggle mDrawerToggle;
@@ -122,41 +108,15 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
 		}
 	}
 	
-    private static final String[] COLUMNS = {
-        BaseColumns._ID,
-        SearchManager.SUGGEST_COLUMN_TEXT_1,
-    };
-	private SuggestionsAdapter mSuggestionsAdapter;
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) 
-	{      
-		//Create the search view
-        SearchView searchView = new SearchView(getSupportActionBar().getThemedContext());
-        searchView.setQueryHint("Rechercher un arrêt");
-        searchView.setOnQueryTextListener(this);
-        searchView.setOnSuggestionListener(this);
-        
-        if (mSuggestionsAdapter == null) {
-            MatrixCursor cursor = new MatrixCursor(COLUMNS);
-            cursor.addRow(new String[]{"1", "'Murica"});
-            cursor.addRow(new String[]{"2", "Canada"});
-            cursor.addRow(new String[]{"3", "Denmark"});
-            mSuggestionsAdapter = new SuggestionsAdapter(getSupportActionBar().getThemedContext(), cursor);
-        }
-        
-        searchView.setSuggestionsAdapter(mSuggestionsAdapter);
-
-        menu.add("Search")
-            .setIcon(R.drawable.abs__ic_search)
-            .setActionView(searchView)
-            .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW);
-        
-
+	{
 		//MenuItem searchMenu = menu.add("Search");
 		//searchMenu.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
 	        
 		//MenuInflater inflater = getSupportMenuInflater();
 		//inflater.inflate(R.menu.main, menu);
+		getSupportActionBar().setNavigationMode( ActionBar.NAVIGATION_MODE_STANDARD);
 		return super.onCreateOptionsMenu(menu);
 	}
 
@@ -168,11 +128,18 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
 		boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
 		//menu.findItem(R.id.action_websearch).setVisible(!drawerOpen);
 		//menu.findItem(R.id.action_filter).setVisible(!drawerOpen);
+		
+		if(drawerOpen)
+		{
+			menu.clear();
+			getSupportActionBar().setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+		}
+		
 		/*if(currentPosition == 2)
 		{
 			getSupportActionBar().setNavigationMode(drawerOpen? ActionBar.NAVIGATION_MODE_STANDARD : ActionBar.NAVIGATION_MODE_LIST);
 		}*/
-		getSupportActionBar().setNavigationMode(drawerOpen? ActionBar.NAVIGATION_MODE_STANDARD : ActionBar.NAVIGATION_MODE_LIST);
+		
 		return super.onPrepareOptionsMenu(menu);
 	}
 
@@ -229,8 +196,9 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
 	        default:
 	    		Bundle args = new Bundle();
 	    		args.putInt(DefaultFragment.ITEMNUMBER, position);
-	    		planetFragment.setArguments(args);
-	        	ft.replace(R.id.content_frame, planetFragment);
+	    		DefaultFragment def = new DefaultFragment();
+	    		def.setArguments(args);
+	        	ft.replace(R.id.content_frame, def);
 	        	break;
 	        }
 	        ft.commit();
@@ -292,55 +260,4 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
 			selectItem(position);
 		}
 	}
-
-
-	@Override
-	public boolean onSuggestionClick(int position) {
-		Cursor c = (Cursor) mSuggestionsAdapter.getItem(position);
-        String query = c.getString(c.getColumnIndex(SearchManager.SUGGEST_COLUMN_TEXT_1));
-        Toast.makeText(this, "Suggestion clicked: " + query, Toast.LENGTH_LONG).show();
-        return true;
-	}
-
-
-	@Override
-	public boolean onSuggestionSelect(int arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-
-	@Override
-	public boolean onQueryTextChange(String arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-
-	@Override
-	public boolean onQueryTextSubmit(String query) {
-		Toast.makeText(this, "You searched for: " + query, Toast.LENGTH_LONG).show();
-		return true;
-	}
-	
-	 private class SuggestionsAdapter extends CursorAdapter {
-
-        public SuggestionsAdapter(Context context, Cursor c) {
-            super(context, c, 0);
-        }
-
-        @Override
-        public void bindView(View view, Context context, Cursor cursor) {
-            TextView tv = (TextView) view;
-            final int textIndex = cursor.getColumnIndex(SearchManager.SUGGEST_COLUMN_TEXT_1);
-            tv.setText(cursor.getString(textIndex));
-        }
-
-		@Override
-		public View newView(Context context, Cursor cursor, ViewGroup parent) {
-			LayoutInflater inflater = LayoutInflater.from(context);
-            View v = inflater.inflate(android.R.layout.simple_list_item_1, parent, false);
-            return v;
-		}
-    }
 }

@@ -9,10 +9,11 @@ import java.net.HttpURLConnection;
 import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Date;
 
 import com.easycts.R;
 import com.easycts.ui.SplashActivity;
-import com.easycts.ui.Network.soapHelper;
+import com.easycts.ui.Network.soapHoursHelper;
 
 import android.app.Activity;
 import android.content.Context;
@@ -20,6 +21,7 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
+import android.text.format.Time;
 import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -56,18 +58,6 @@ public class LoadingTask extends AsyncTask<String, Integer, Integer>
 	@Override
 	protected Integer doInBackground(String... params) {
 		Log.i("Tutorial", "Starting download task ");
-		
-		try {
-			soapHelper.soap();
-		}
-		catch (SocketTimeoutException e1) 
-		{
-			e1.printStackTrace();
-		}
-		catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		return downloadResources(params[0]);
 	}

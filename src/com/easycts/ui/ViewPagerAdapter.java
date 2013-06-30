@@ -15,7 +15,7 @@ import org.json.JSONObject;
 import com.codebutler.android_websockets.SocketIOClient;
 import com.easycts.R;
 import com.easycts.Models.Station;
-import com.easycts.Models.StationLigne;
+import com.easycts.Models.StationHours;
 import com.easycts.R.layout;
 import com.easycts.task.StationTask;
 import com.easycts.task.StationTask.StationTaskFinishedListener;
@@ -50,29 +50,24 @@ import android.widget.Toast;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 	Integer cursorLength;
-	Cursor cursor;
+	ArrayList<Station> stations;
 	ViewPager mViewPager;
 
-	public ViewPagerAdapter(FragmentManager fm, Cursor cursor, ViewPager pager) {
+	public ViewPagerAdapter(FragmentManager fm, ArrayList<Station> stations, ViewPager pager) {
 		super(fm);
-		this.cursor = cursor;
-		this.cursorLength = cursor.getCount();
+		this.stations = stations;
+		this.cursorLength = stations.size();
 		this.mViewPager = pager;
 	}
 
 	@Override
 	public Fragment getItem(int pos) {
-		boolean isValue = cursor.moveToPosition(pos);
 
-		if (isValue) {
-			Station sta = new Station(cursor);
-			Log.d("StationTask", "ViewPagerAdapter-getItem:" + sta.getCtsId()
-					+ ":" + sta.getId());
-			DummyFragment fragment = DummyFragment.newInstance(new Station(
-					cursor));
+			Station sta = stations.get(pos);
+			Log.d("StationTask", "ViewPagerAdapter-getItem:" + sta.getCtsId() + ":" + sta.getId());
+			DummyFragment fragment = DummyFragment.newInstance(sta);
 			return fragment;
-		} else
-			return null;
+
 	}
 
 	@Override
@@ -124,7 +119,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
 			((TextView) rootViewRL.findViewById(R.id.station_fragment_title)).setText(currentStation.getTitle());
 			
-			if (!hoursDisplayed)
+			/*if (!hoursDisplayed)
 			{
 				button.setOnClickListener(new View.OnClickListener() 
 				{
@@ -141,7 +136,14 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 			else
 			{
 				DisplayHours();
-			}
+			}*/
+			
+			button.setVisibility(View.GONE);
+			progressbar.setVisibility(View.VISIBLE);
+			new StationTask(DummyFragment.this).execute(
+					currentStation.getCtsId(),
+					String.valueOf(currentStation.getId()),
+					DummyFragment.this.getString(R.string.database_url));
 			
 			// ProgressDialog.show(this.get, "loading", "message");
 			LogFragment("onCreateView");
@@ -170,7 +172,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 		}
 
 		@Override
-		public void onTaskFinished(ArrayList<StationLigne> results) {
+		public void onTaskFinished(ArrayList<StationHours> results) {
 			if (!this.isAdded())
 				return;
 			currentStation.setStationHours(results);
@@ -188,7 +190,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 				Iterator it = stationLignes.iterator();
 				while (it.hasNext()) 
 				{
-					StationLigne stationLigne = (StationLigne)it.next();
+					StationHours stationLigne = (StationHours)it.next();
 
 					// New title
 					TextView titleView = new TextView(ctxt);

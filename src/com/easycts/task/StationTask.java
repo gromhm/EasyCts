@@ -8,9 +8,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
+import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -19,8 +21,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.easycts.R;
-import com.easycts.Models.StationLigne;
+import com.easycts.Models.StationHours;
 import com.easycts.ui.SplashActivity;
+import com.easycts.ui.Network.soapHoursHelper;
 
 import android.app.Activity;
 import android.content.Context;
@@ -34,11 +37,11 @@ import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import android.widget.Toast;
 
-public class StationTask extends AsyncTask<String, Integer, ArrayList<StationLigne>> 
+public class StationTask extends AsyncTask<String, Integer, ArrayList<StationHours>> 
 {
 	
 	public interface StationTaskFinishedListener {
-		void onTaskFinished(ArrayList<StationLigne> result);
+		void onTaskFinished(ArrayList<StationHours> result);
 	}
 	// This is the listener that will be told when this task is finished
 	private final StationTaskFinishedListener stationTaskFinishedListener;
@@ -58,18 +61,18 @@ public class StationTask extends AsyncTask<String, Integer, ArrayList<StationLig
 	}
 
 	@Override
-	protected ArrayList<StationLigne> doInBackground(String... params)
+	protected ArrayList<StationHours> doInBackground(String... params)
 	{
 		return downloadResources(params[0], params[1], params[2]);
 	}
 
-	private ArrayList<StationLigne> downloadResources(String ctsid, String id, String dbUrl) 
+	private ArrayList<StationHours> downloadResources(String ctsid, String id, String dbUrl) 
 	{
 		int count;
 		String resultToReturn=null;
 		HttpURLConnection conection = null;
 
-		try {
+		/*try {
 			URL url = new URL(dbUrl + "?type=station&ctsid="+ctsid+"&id="+id);
 			Log.d("StationTask","StationTask:dl:"+url.toString());
 			conection = (HttpURLConnection) url.openConnection();
@@ -96,14 +99,27 @@ public class StationTask extends AsyncTask<String, Integer, ArrayList<StationLig
 		{
 			if(conection != null)
 				conection.disconnect();
+		}*/
+		
+		try {
+			return new soapHoursHelper().getHours(319, 0, new Date(), 5);
+		}
+		catch (SocketTimeoutException e1) 
+		{
+			e1.printStackTrace();
+		}
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
-		return ProcessResults(resultToReturn);
+		return null;
+		//return ProcessResults(resultToReturn);
 	}
 
-	private ArrayList<StationLigne> ProcessResults(String resuls)
+	private ArrayList<StationHours> ProcessResults(String resuls)
 	{
-		Map<String, StationLigne> stationsGrouped = new HashMap<String, StationLigne>();
+		Map<String, StationHours> stationsGrouped = new HashMap<String, StationHours>();
 		
 		try 
 		{
@@ -129,7 +145,7 @@ public class StationTask extends AsyncTask<String, Integer, ArrayList<StationLig
 						}
 						else
 						{
-							StationLigne stationLigne = new StationLigne(endstation, type);
+							StationHours stationLigne = new StationHours(endstation, type);
 							stationLigne.getHours().add(hours);
 							stationsGrouped.put(endstation, stationLigne);
 						}
@@ -144,7 +160,7 @@ public class StationTask extends AsyncTask<String, Integer, ArrayList<StationLig
 			e.printStackTrace();
 		}
 		
-		return  new ArrayList<StationLigne>(stationsGrouped.values());
+		return  new ArrayList<StationHours>(stationsGrouped.values());
 	}
 	
 	@Override
@@ -153,7 +169,7 @@ public class StationTask extends AsyncTask<String, Integer, ArrayList<StationLig
 	}
 
 	@Override
-	protected void onPostExecute(ArrayList<StationLigne> result) 
+	protected void onPostExecute(ArrayList<StationHours> result) 
 	{
 		super.onPostExecute(result);
 		stationTaskFinishedListener.onTaskFinished(result);

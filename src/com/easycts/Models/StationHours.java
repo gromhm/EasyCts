@@ -1,30 +1,52 @@
 package com.easycts.Models;
 
+import java.util.ArrayList;
+
 import android.os.Parcel;
 import android.os.Parcelable;
 
 public class StationHours implements Parcelable {
+	private String endstation;
+	private String type;
+	ArrayList<String> hours;
 
-	private final String item1;
-	private final String item2;
-	private final String item3;
-
-	public StationHours(String item1, String item2, String item3) {
-		this.item1 = item1;
-		this.item2 = item2;
-		this.item3 = item3;
+	public StationHours(String endstation, String type) {
+		super();
+		this.endstation = endstation;
+		this.type = type;
+		this.hours = new ArrayList<String>();
 	}
 
-	public final String getItem1() {
-		return item1;
+	public StationHours(Parcel in) {
+		this.hours = new ArrayList<String>();
+		
+		this.endstation = in.readString();
+		this.type = in.readString();
+		in.readStringList(this.hours);
 	}
 
-	public final String getItem2() {
-		return item2;
+	public void setEndstation(String endstation) {
+		this.endstation = endstation;
 	}
 
-	public final String getItem3() {
-		return item3;
+	public String getEndstation() {
+		return endstation;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setHours(ArrayList<String> hours) {
+		this.hours = hours;
+	}
+
+	public ArrayList<String> getHours() {
+		return hours;
 	}
 
 	@Override
@@ -34,27 +56,19 @@ public class StationHours implements Parcelable {
 	}
 
 	@Override
-	public void writeToParcel(Parcel dest, int flags) {
-		dest.writeString(item1);
-		dest.writeString(item2);
-		dest.writeString(item3);
+	public void writeToParcel(Parcel dest, int arg1) {
+		dest.writeString(endstation);
+		dest.writeString(type);
+		dest.writeStringList(hours);
 	}
-	
-	private StationHours(Parcel in) {
-		this.item1 = in.readString();
-		this.item2 = in.readString();
-		this.item3 = in.readString();
-    }
-	
-	 public static final Parcelable.Creator<StationHours> CREATOR = new Parcelable.Creator<StationHours>() 
-	 {
-		 public StationHours[] newArray(int size) {
-		     return new StationHours[size];
-		 }
-	
+
+	public static final Parcelable.Creator<StationHours> CREATOR = new Parcelable.Creator<StationHours>() {
+		public StationHours[] newArray(int size) {
+			return new StationHours[size];
+		}
+
 		@Override
-		public StationHours createFromParcel(Parcel in) 
-		{
+		public StationHours createFromParcel(Parcel in) {
 			// TODO Auto-generated method stub
 			return new StationHours(in);
 		}

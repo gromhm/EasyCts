@@ -33,6 +33,7 @@ import com.easycts.R;
 import com.easycts.Utils;
 import com.easycts.Database.LigneDBAdapter;
 import com.easycts.Database.StationDBAdapter;
+import com.easycts.Models.Station;
 
 public class CollectionStationActivity extends SherlockActivity implements OnItemClickListener{
 	StationDBAdapter stationDBAdapter;
@@ -42,6 +43,7 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 	
 	public final static String STATIONID = "com.easycts.ui.intent.STATIONID";
 	public static final String POSITIONID = "com.easycts.ui.intent.POSITIONID";
+	public static final String STATIONS = "com.easycts.ui.intent.STATIONS";
 	public static final String FAVORITES = "com.easycts.ui.SP.FAVORITES";
 	public long ligneId = 0;
 
@@ -86,9 +88,14 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 	public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) 
 	{
 		Intent intent = new Intent(CollectionStationActivity.this, PagerStationActivity.class);
-		intent.putExtra(STATIONID, id);
 		intent.putExtra(POSITIONID, position);
-		intent.putExtra(MainActivity.LIGNEID, ligneId);
+		
+		ArrayList<Station> mArrayList = new ArrayList<Station>();
+	    Cursor cursor = adapter.getCursor();
+	    for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext())
+	    	mArrayList.add(Station.FromCursor(cursor));
+		intent.putParcelableArrayListExtra(STATIONS, mArrayList);
+		
 		startActivity(intent);
 		
 	}

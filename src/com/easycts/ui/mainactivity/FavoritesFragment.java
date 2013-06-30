@@ -1,5 +1,7 @@
 package com.easycts.ui.mainactivity;
 
+import java.util.ArrayList;
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -18,6 +20,7 @@ import com.actionbarsherlock.app.SherlockFragment;
 import com.easycts.R;
 import com.easycts.Utils;
 import com.easycts.Database.StationDBAdapter;
+import com.easycts.Models.Station;
 import com.easycts.ui.CollectionStationActivity;
 import com.easycts.ui.MainActivity;
 import com.easycts.ui.PagerStationActivity;
@@ -54,10 +57,13 @@ public class FavoritesFragment extends SherlockFragment
 			public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) 
 			{
 				Intent intent = new Intent(mContext, PagerStationActivity.class);
-				intent.putExtra(CollectionStationActivity.STATIONID, id);
 				intent.putExtra(CollectionStationActivity.POSITIONID, position);
-				curs.moveToPosition(position);
-				intent.putExtra(MainActivity.LIGNEID, curs.getLong(curs.getColumnIndex(StationDBAdapter.ARRET_LIGNE_KEY)));
+
+				ArrayList<Station> mArrayList = new ArrayList<Station>();
+			    for(curs.moveToFirst(); !curs.isAfterLast(); curs.moveToNext())
+			    	mArrayList.add(Station.FromCursor(curs));
+			    intent.putParcelableArrayListExtra(CollectionStationActivity.STATIONS, mArrayList);
+
 				mContext.startActivity(intent);
 				
 			}

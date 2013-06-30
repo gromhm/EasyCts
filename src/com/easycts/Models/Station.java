@@ -1,8 +1,6 @@
 package com.easycts.Models;
 
 import java.util.ArrayList;
-import java.util.List;
-
 import com.easycts.Database.StationDBAdapter;
 
 import android.database.Cursor;
@@ -10,36 +8,26 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Station implements Parcelable {
-	// Notez que l'identifiant est un long
 	private long id;
 	private String title;
 	private String ctsId;
-	ArrayList<StationLigne> stationLignes;
+	ArrayList<StationHours> stationHours;
 
 	public Station(long id, String ctsId, String title) {
 		super();
 		this.id = id;
 		this.ctsId = ctsId;
 		this.title = title;
-		this.stationLignes = new ArrayList<StationLigne>();
+		this.stationHours = new ArrayList<StationHours>();
 	}
-
-	public Station(Cursor cursor) {
-		super();
-		this.id = cursor.getLong(cursor
-				.getColumnIndex(StationDBAdapter.ARRET_KEY));
-		this.ctsId = cursor.getString(cursor
-				.getColumnIndex(StationDBAdapter.ARRET_CTSID));
-		this.title = cursor.getString(cursor
-				.getColumnIndex(StationDBAdapter.ARRET_TITLE));
-		this.stationLignes = new ArrayList<StationLigne>();
-	}
-
-	public Station(Parcel in) {
+	
+	public Station(Parcel in) 
+	{
+		this.stationHours = new ArrayList<StationHours>();
 		this.id = in.readLong();
-		this.title = in.readString();
 		this.ctsId = in.readString();
-		in.readTypedList(this.stationLignes, StationLigne.CREATOR);
+		this.title = in.readString();
+		in.readTypedList(this.stationHours, StationHours.CREATOR);
 	}
 
 	public long getId() {
@@ -58,12 +46,12 @@ public class Station implements Parcelable {
 		return ctsId;
 	}
 
-	public ArrayList<StationLigne> getStationHours() {
-		return stationLignes;
+	public ArrayList<StationHours> getStationHours() {
+		return stationHours;
 	}
 
-	public void setStationHours(ArrayList<StationLigne> stationHours) {
-		this.stationLignes = stationHours;
+	public void setStationHours(ArrayList<StationHours> stationHours) {
+		this.stationHours = stationHours;
 	}
 
 	@Override
@@ -77,9 +65,16 @@ public class Station implements Parcelable {
 		dest.writeLong(id);
 		dest.writeString(ctsId);
 		dest.writeString(title);
-		dest.writeTypedList(stationLignes);
+		dest.writeTypedList(stationHours);
 	}
-
+	
+	public static Station FromCursor(Cursor cursor)
+	{
+		return new Station(cursor.getLong(cursor.getColumnIndex(StationDBAdapter.ARRET_KEY)), 
+    			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_CTSID)),
+    			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_TITLE)));
+	}
+	
 	public static final Parcelable.Creator<Station> CREATOR = new Parcelable.Creator<Station>() {
 		@Override
 		public Station createFromParcel(Parcel source) {
@@ -91,5 +86,5 @@ public class Station implements Parcelable {
 			return new Station[size];
 		}
 	};
-
+	
 }
