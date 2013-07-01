@@ -14,6 +14,9 @@ import org.ksoap2.transport.HttpTransportSE;
 import org.kxml2.kdom.Element;
 import org.kxml2.kdom.Node;
 import org.xmlpull.v1.XmlPullParserException;
+
+import android.R;
+
 import com.easycts.Models.StationHours;
 
 
@@ -23,7 +26,7 @@ public class soapHoursHelper
 	private final String	NAMESPACE	= "http://www.cts-strasbourg.fr/";
 	private final String	URL	= "http://opendata.cts-strasbourg.fr/webservice_v4/Service.asmx";
 
-	public ArrayList<StationHours> getHours (int code, int mod, Date date, int nbHours) throws IOException, XmlPullParserException
+	public ArrayList<StationHours> getHours (String pwd, int code, int mod, Date date, int nbHours) throws IOException, XmlPullParserException
 	{	
 		//Toutes les données demandées sont mises dans une enveloppe.
 		SoapSerializationEnvelope envelope = new SoapSerializationEnvelope (SoapEnvelope.VER11);
@@ -34,7 +37,7 @@ public class soapHoursHelper
 		SoapObject request = getBodyRequest(code, mod, date, nbHours);
 		
 		//Header        
-		envelope.headerOut = buildAuthHeader();
+		envelope.headerOut = buildAuthHeader(pwd);
 
 		//Préparation de la requête
 		envelope.bodyOut = request;
@@ -83,14 +86,14 @@ public class soapHoursHelper
         return request;
 	}
 	
- 	private Element[] buildAuthHeader() 
+ 	private Element[] buildAuthHeader(String pwd) 
 	{
 		Element[] header = new Element[1];
 		
 	    Element h = new Element().createElement(NAMESPACE, "CredentialHeader");
 	    
 	    Element username = new Element().createElement(NAMESPACE, "ID");
-	    username.addChild(Node.TEXT, "136");
+	    username.addChild(Node.TEXT, pwd); 	    
 	    h.addChild(Node.ELEMENT, username);
 	    
 	    Element pass = new Element().createElement(NAMESPACE, "MDP");

@@ -1,39 +1,31 @@
 package com.easycts.ui;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
-import android.support.v4.widget.CursorAdapter;
 import android.support.v4.widget.ResourceCursorAdapter;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.FilterQueryProvider;
 import android.widget.ListView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.*;
+import com.actionbarsherlock.view.MenuItem;
 import com.easycts.R;
 import com.easycts.Utils;
-import com.easycts.Database.LigneDBAdapter;
 import com.easycts.Database.StationDBAdapter;
+import com.easycts.Models.Ligne;
 import com.easycts.Models.Station;
+import com.easycts.ui.mainactivity.CollectionLignesFragment;
 
 public class CollectionStationActivity extends SherlockActivity implements OnItemClickListener{
 	StationDBAdapter stationDBAdapter;
@@ -45,8 +37,8 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 	public static final String POSITIONID = "com.easycts.ui.intent.POSITIONID";
 	public static final String STATIONS = "com.easycts.ui.intent.STATIONS";
 	public static final String FAVORITES = "com.easycts.ui.SP.FAVORITES";
-	public long ligneId = 0;
-
+	public Ligne ligne;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -54,8 +46,7 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 		setContentView(R.layout.activity_collection_station);
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		Intent i = getIntent();
-		ligneId = i.getLongExtra(MainActivity.LIGNEID, 0);
-
+		ligne = (Ligne)i.getParcelableExtra(CollectionLignesFragment.LIGNE);
 		stationDBAdapter = new StationDBAdapter(this);
 		stationDBAdapter.open();
 
@@ -66,7 +57,7 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 				return stationDBAdapter.getAllLigne(constraint.toString());
 			}});
 
-		adapter.getFilter().filter(String.valueOf(ligneId));
+		adapter.getFilter().filter(String.valueOf(ligne.getId()));
 		
 		listView = (ListView) findViewById(R.id.listStations);
 		listView.setAdapter(adapter);
@@ -89,6 +80,7 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 	{
 		Intent intent = new Intent(CollectionStationActivity.this, PagerStationActivity.class);
 		intent.putExtra(POSITIONID, position);
+		intent.putExtra(CollectionLignesFragment.LIGNE, ligne);
 		
 		ArrayList<Station> mArrayList = new ArrayList<Station>();
 	    Cursor cursor = adapter.getCursor();
@@ -97,7 +89,6 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 		intent.putParcelableArrayListExtra(STATIONS, mArrayList);
 		
 		startActivity(intent);
-		
 	}
 
 	private class MyAdapter extends ResourceCursorAdapter 

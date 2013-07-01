@@ -56,53 +56,22 @@ public class StationTask extends AsyncTask<String, Integer, ArrayList<StationHou
 	 * @param finishedListener
 	 *            - the listener that will be told when this task is finished
 	 */
-	public StationTask(StationTaskFinishedListener stationTaskFinishedListener) {
+	public StationTask(StationTaskFinishedListener stationTaskFinishedListener) 
+	{
 		this.stationTaskFinishedListener = stationTaskFinishedListener;
 	}
 
 	@Override
 	protected ArrayList<StationHours> doInBackground(String... params)
 	{
-		return downloadResources(params[0], params[1], params[2]);
+		return downloadResources(params[0], params[1], params[2], params[3]);
 	}
 
-	private ArrayList<StationHours> downloadResources(String ctsid, String id, String dbUrl) 
+	private ArrayList<StationHours> downloadResources(String pwd, String ctsid, String id, String ligneType) 
 	{
-		int count;
-		String resultToReturn=null;
-		HttpURLConnection conection = null;
-
-		/*try {
-			URL url = new URL(dbUrl + "?type=station&ctsid="+ctsid+"&id="+id);
-			Log.d("StationTask","StationTask:dl:"+url.toString());
-			conection = (HttpURLConnection) url.openConnection();
-			conection.setConnectTimeout(20000);
-			conection.connect();
-
-			if (conection.getResponseCode() == HttpURLConnection.HTTP_OK) 
-			{
-				BufferedReader br = new BufferedReader(new InputStreamReader(conection.getInputStream()));
-                StringBuilder sb = new StringBuilder();
-                String line;
-                while ((line = br.readLine()) != null) {
-                    sb.append(line+"\n");
-                }
-                br.close();
-                resultToReturn = sb.toString();
-			}
-		}
-		catch (Exception e) 
+		try 
 		{
-			Log.e("Error: ", e.getMessage());
-		}
-		finally
-		{
-			if(conection != null)
-				conection.disconnect();
-		}*/
-		
-		try {
-			return new soapHoursHelper().getHours(319, 0, new Date(), 5);
+			return new soapHoursHelper().getHours(pwd, Integer.parseInt(ctsid), Integer.parseInt(ligneType) ==0 ? 1:2, new Date(), 5);
 		}
 		catch (SocketTimeoutException e1) 
 		{
@@ -114,55 +83,8 @@ public class StationTask extends AsyncTask<String, Integer, ArrayList<StationHou
 		}
 		
 		return null;
-		//return ProcessResults(resultToReturn);
 	}
 
-	private ArrayList<StationHours> ProcessResults(String resuls)
-	{
-		Map<String, StationHours> stationsGrouped = new HashMap<String, StationHours>();
-		
-		try 
-		{
-			JSONObject jsonresults = new JSONObject(resuls);
-			
-			// Set Results
-			if (jsonresults.length()>0) 
-			{
-				Iterator<String> iter = jsonresults.keys();
-			    while (iter.hasNext()) 
-			    {
-			        String key = iter.next();
-			        try 
-			        {
-			        	JSONObject value = (JSONObject)jsonresults.get(key);
-			        	String type = ((JSONObject)value.get("mode")).get("value").toString();
-						String endstation = ((JSONObject)value.get("destination")).get("value").toString();
-						String hours = ((JSONObject)value.get("horaire")).get("value").toString();
-
-						if(stationsGrouped.containsKey(endstation))
-						{
-							stationsGrouped.get(endstation).getHours().add(hours);
-						}
-						else
-						{
-							StationHours stationLigne = new StationHours(endstation, type);
-							stationLigne.getHours().add(hours);
-							stationsGrouped.put(endstation, stationLigne);
-						}
-			        } catch (JSONException e) 
-			        {
-						Log.d("StationTask", "stationtask : error parsing results");
-			        }
-			    }
-			}
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		return  new ArrayList<StationHours>(stationsGrouped.values());
-	}
-	
 	@Override
 	protected void onProgressUpdate(Integer... values) {
 		super.onProgressUpdate(values);

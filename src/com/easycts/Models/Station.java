@@ -46,8 +46,22 @@ public class Station implements Parcelable {
 		return ctsId;
 	}
 
-	public ArrayList<StationHours> getStationHours() {
+	public ArrayList<StationHours> getAllStationHours() {
 		return stationHours;
+	}
+	
+	public ArrayList<StationHours> getStationHours(String ligneIdentifier) 
+	{
+		ArrayList<StationHours> results = new ArrayList<StationHours>();
+		for(StationHours sta : stationHours)
+		{
+			if(sta.getEndstation().startsWith(ligneIdentifier.replaceFirst("^0+(?!$)", "")))
+			{
+				results.add(sta);
+			}
+		}
+		
+		return results;
 	}
 
 	public void setStationHours(ArrayList<StationHours> stationHours) {

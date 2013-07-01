@@ -14,7 +14,6 @@
     <string name="action_websearch">Recherche</string>
     <string name="app_not_available">Sorry, there\'s no web browser available</string>
     <string name="database_url">http://dev-easy-cts.herokuapp.com/</string>
-    <string name="dev_database_url">http://dev-easy-cts.gromhm.c9.io</string>
-   	<string name="database_name">points.sqlite</string>
    	<string name="fragment_station_button_text">Récupérer les horaires</string>
+   	<string name="cts_password">136</string>
 </resources>

@@ -20,6 +20,7 @@ import com.actionbarsherlock.app.SherlockFragment;
 import com.easycts.R;
 import com.easycts.Utils;
 import com.easycts.Database.StationDBAdapter;
+import com.easycts.Models.Ligne;
 import com.easycts.Models.Station;
 import com.easycts.ui.CollectionStationActivity;
 import com.easycts.ui.MainActivity;
@@ -32,6 +33,7 @@ public class FavoritesFragment extends SherlockFragment
 	StationDBAdapter stationDBAdapter;
 	SimpleCursorAdapter lignesAdapter;
 	Cursor curs;
+	Ligne ligne;
 	
 	 @Override
 	    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) 
@@ -41,6 +43,7 @@ public class FavoritesFragment extends SherlockFragment
 		stationDBAdapter = new StationDBAdapter(mContext);
 		stationDBAdapter.open();
 		curs = stationDBAdapter.getStationsById(TextUtils.join(",", Utils.loadArray(mContext)));
+		ligne = (Ligne)getArguments().getParcelable(CollectionLignesFragment.LIGNE);
 		
 		lignesAdapter = new SimpleCursorAdapter(mContext, android.R.layout.simple_list_item_1, curs,
 				new String[] { StationDBAdapter.ARRET_TITLE },
@@ -58,7 +61,8 @@ public class FavoritesFragment extends SherlockFragment
 			{
 				Intent intent = new Intent(mContext, PagerStationActivity.class);
 				intent.putExtra(CollectionStationActivity.POSITIONID, position);
-
+				intent.putExtra(CollectionLignesFragment.LIGNE, ligne);
+				
 				ArrayList<Station> mArrayList = new ArrayList<Station>();
 			    for(curs.moveToFirst(); !curs.isAfterLast(); curs.moveToNext())
 			    	mArrayList.add(Station.FromCursor(curs));

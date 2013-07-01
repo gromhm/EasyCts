@@ -966,8 +966,8 @@ containing a value of this type.
         public static final int abs__textButton=0x7f050013;
         public static final int abs__title=0x7f05001b;
         public static final int abs__up=0x7f05000b;
-        public static final int action_filter=0x7f050046;
-        public static final int action_websearch=0x7f050045;
+        public static final int action_filter=0x7f050045;
+        public static final int action_websearch=0x7f050044;
         public static final int activity_splash_progress_bar=0x7f050038;
         public static final int content_frame=0x7f050035;
         public static final int disableHome=0x7f050009;
@@ -987,12 +987,11 @@ containing a value of this type.
         public static final int showCustom=0x7f050008;
         public static final int showHome=0x7f050005;
         public static final int showTitle=0x7f050007;
-        public static final int station_fragment_button=0x7f050040;
-        public static final int station_fragment_progressbar=0x7f050041;
-        public static final int station_fragment_results=0x7f050042;
+        public static final int station_fragment_progressbar=0x7f050040;
+        public static final int station_fragment_results=0x7f050041;
         public static final int station_fragment_title=0x7f05003f;
-        public static final int station_row_checkbox=0x7f050044;
-        public static final int station_row_text=0x7f050043;
+        public static final int station_row_checkbox=0x7f050043;
+        public static final int station_row_text=0x7f050042;
         public static final int tabMode=0x7f050003;
         public static final int text=0x7f05003d;
         public static final int useLogo=0x7f050004;
@@ -1089,13 +1088,12 @@ containing a value of this type.
         public static final int activity_splash_title_line_one=0x7f0a0010;
         public static final int app_name=0x7f0a000d;
         public static final int app_not_available=0x7f0a0016;
-        public static final int database_name=0x7f0a0019;
+        public static final int cts_password=0x7f0a0019;
         public static final int database_url=0x7f0a0017;
         public static final int dev=0x7f0a0011;
-        public static final int dev_database_url=0x7f0a0018;
         public static final int drawer_close=0x7f0a0013;
         public static final int drawer_open=0x7f0a0012;
-        public static final int fragment_station_button_text=0x7f0a001a;
+        public static final int fragment_station_button_text=0x7f0a0018;
         public static final int hello_world=0x7f0a000f;
     }
     public static final class style {

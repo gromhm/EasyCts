@@ -1,31 +1,19 @@
 package com.easycts.ui;
 
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.res.Configuration;
-import android.database.Cursor;
-import android.database.MatrixCursor;
 import android.os.Bundle;
-import android.provider.BaseColumns;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.CursorAdapter;
 import android.support.v4.widget.DrawerLayout;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.actionbarsherlock.widget.SearchView;
 import com.easycts.R;
 import com.easycts.ui.mainactivity.CollectionLignesFragment;
 import com.easycts.ui.mainactivity.DefaultFragment;
@@ -39,15 +27,14 @@ public class MainActivity extends SherlockFragmentActivity {
 	private CharSequence mDrawerTitle;
 	private CharSequence mTitle;
 	private String[] mMenuArray;
-	private String[] mLigneTypes;
-	private int currentPosition;
+
 	Boolean isFirstFilterCallBack=true;
 	
 	CollectionLignesFragment lignesFragment;
 	FavoritesFragment favFragment;
 	DefaultFragment planetFragment;
 	
-	public final static String LIGNEID = "com.easycts.ui.intent.LIGNEID";
+
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
@@ -64,9 +51,6 @@ public class MainActivity extends SherlockFragmentActivity {
 		mMenuArray = getResources().getStringArray(R.array.menu_array);
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		mDrawerList = (ListView) findViewById(R.id.left_drawer);
-
-		//Menu filtre ligne
-		mLigneTypes = getResources().getStringArray(R.array.ligne_type);
 
 		
         // set a custom shadow that overlays the main content when the drawer
@@ -256,7 +240,6 @@ public class MainActivity extends SherlockFragmentActivity {
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, int position, long id) 
 		{
-			currentPosition = position; 
 			selectItem(position);
 		}
 	}

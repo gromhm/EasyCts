@@ -94,7 +94,7 @@ public class LigneDBAdapter {
 			where = LIGNE_TYPE + "=0";
 		
 		return this.mDb.query(LIGNE_TABLE_NAME, new String[] {LIGNE_KEY, LIGNE_CTSID,
-				LIGNE_DIR1, LIGNE_DIR2 }, where, null, null, null, LIGNE_CTSID + " ASC");
+				LIGNE_DIR1, LIGNE_DIR2, LIGNE_TYPE }, where, null, null, null, LIGNE_CTSID + " ASC");
 	}
 
 	/**
@@ -109,8 +109,8 @@ public class LigneDBAdapter {
 
 		Cursor mCursor =
 
-		this.mDb.query(true, LIGNE_TABLE_NAME, new String[] { LIGNE_KEY, LIGNE_CTSID, LIGNE_TYPE,
-				LIGNE_DIR1, LIGNE_DIR2 }, LIGNE_KEY + "=" + rowId, null, null, null, null,
+		this.mDb.query(true, LIGNE_TABLE_NAME, new String[] { LIGNE_KEY, LIGNE_CTSID,
+				LIGNE_DIR1, LIGNE_DIR2, LIGNE_TYPE }, LIGNE_KEY + "=" + rowId, null, null, null, null,
 				null);
 		if (mCursor != null) {
 			mCursor.moveToFirst();

@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.xmlpull.v1.XmlPullParserException;
 
+import com.easycts.Database.DBAdapter;
 import com.easycts.task.LoadingTask;
 import com.easycts.task.LoadingTask.LoadingTaskFinishedListener;
 import com.easycts.ui.Network.soapHoursHelper;
@@ -35,7 +36,7 @@ public class SplashActivity extends Activity implements LoadingTaskFinishedListe
 		ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
-		dbName = getString(R.string.database_name);
+		dbName = DBAdapter.DATABASE_NAME;
 		filesDir = getFilesDir().getPath();
 		resourcesAlreadyExist = this.resourcesAlreadyExist(filesDir, dbName);
 		Boolean networkIsActif = networkInfo != null && networkInfo.isAvailable() && networkInfo.isConnected();

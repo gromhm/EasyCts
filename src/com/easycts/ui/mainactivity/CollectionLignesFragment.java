@@ -33,6 +33,8 @@ import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.widget.SearchView;
 import com.easycts.R;
 import com.easycts.Database.LigneDBAdapter;
+import com.easycts.Models.Ligne;
+import com.easycts.Models.Station;
 import com.easycts.ui.CollectionStationActivity;
 import com.easycts.ui.MainActivity;
 
@@ -40,7 +42,9 @@ public class CollectionLignesFragment extends SherlockFragment implements
 		ActionBar.OnNavigationListener, SearchView.OnQueryTextListener,
 		SearchView.OnSuggestionListener {
 	public static final String ITEMNUMBER = "com.easycts.ui.intent.STATIONID";
+	public static final String LIGNE = "com.easycts.ui.intent.LIGNE";
 
+	
 	LigneDBAdapter ligneDBAdapter;
 	SimpleCursorAdapter lignesAdapter;
 	SherlockFragmentActivity mContext;
@@ -81,9 +85,7 @@ public class CollectionLignesFragment extends SherlockFragment implements
 			public boolean setViewValue(View view, Cursor cursor,
 					int columnIndex) {
 				if (view.getId() == R.id.ligne_row_id) {
-					int getIndex = cursor
-							.getColumnIndex(LigneDBAdapter.LIGNE_CTSID);
-					String empname = cursor.getString(getIndex);
+					String empname = cursor.getString(cursor.getColumnIndex(LigneDBAdapter.LIGNE_CTSID));
 					TextView tv = (TextView) view;
 					tv.setTextColor(Color.WHITE);
 					tv.setText(empname);
@@ -119,11 +121,11 @@ public class CollectionLignesFragment extends SherlockFragment implements
 
 		listView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
-			public void onItemClick(AdapterView<?> arg0, View view,
-					int position, long id) {
-				Intent intent = new Intent(view.getContext(),
-						CollectionStationActivity.class);
-				intent.putExtra(MainActivity.LIGNEID, id);
+			public void onItemClick(AdapterView<?> arg0, View view, int position, long id) 
+			{
+				Cursor cursor = lignesAdapter.getCursor();
+				Intent intent = new Intent(view.getContext(), CollectionStationActivity.class);
+				intent.putExtra(LIGNE, Ligne.FromCursor(cursor));
 				mContext.startActivity(intent);
 			}
 		});
