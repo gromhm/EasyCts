@@ -2,7 +2,10 @@ package com.easycts.Database;
 
 import java.util.ArrayList;
 
+import org.w3c.dom.Text;
+
 import com.easycts.Models.Ligne;
+import com.easycts.Models.Station;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -107,15 +110,30 @@ public class StationDBAdapter {
 		return mCursor;
 	}
 
-	public Cursor getStationsById(String rowsId) {
-		Cursor mCursor = this.mDb.query(true, ARRET_TABLE_NAME, new String[] { ARRET_KEY, ARRET_CTSID, ARRET_LIGNE_KEY, ARRET_CTSID,
-				ARRET_TITLE}, ARRET_KEY + " IN(" + rowsId +")", null, null, null, null,
-				null);
+	public Cursor getLignesAndStationsByStationId(String rowsId) 
+	{
 		
+		String queryRaw = String.format("SELECT a.*,l.%s as id_ligne,%s,%s,%s,%s FROM %s a INNER JOIN %s l ON a.%s = l.%s where a.%s IN (%s)", 
+				LigneDBAdapter.LIGNE_KEY, 
+				LigneDBAdapter.LIGNE_CTSID, 
+				LigneDBAdapter.LIGNE_DIR1, 
+				LigneDBAdapter.LIGNE_DIR2, 
+				LigneDBAdapter.LIGNE_TYPE,
+				ARRET_TABLE_NAME, 
+				LigneDBAdapter.LIGNE_TABLE_NAME,
+				ARRET_LIGNE_KEY,
+				LigneDBAdapter.LIGNE_KEY,
+				ARRET_KEY, 
+				rowsId);
+		
+		Cursor mCursor = this.mDb.rawQuery(queryRaw, new String[]{});
+
 		if (mCursor != null) {
 			mCursor.moveToFirst();
 		}
+		
 		return mCursor;
+
 	}
 
 }

@@ -1,6 +1,8 @@
 package com.easycts.Models;
 
 import java.util.ArrayList;
+
+import com.easycts.Database.LigneDBAdapter;
 import com.easycts.Database.StationDBAdapter;
 
 import android.database.Cursor;
@@ -13,6 +15,11 @@ public class Station implements Parcelable {
 	private String ctsId;
 	ArrayList<StationHours> stationHours;
 
+	public Station()
+	{
+		
+	}
+	
 	public Station(long id, String ctsId, String title) {
 		super();
 		this.id = id;
@@ -85,6 +92,13 @@ public class Station implements Parcelable {
 	public static Station FromCursor(Cursor cursor)
 	{
 		return new Station(cursor.getLong(cursor.getColumnIndex(StationDBAdapter.ARRET_KEY)), 
+    			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_CTSID)),
+    			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_TITLE)));
+	}
+	
+	public static Station FromCursorWithSpecificId(Cursor cursor, String id)
+	{
+		return new Station(cursor.getLong(cursor.getColumnIndex(id)), 
     			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_CTSID)),
     			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_TITLE)));
 	}

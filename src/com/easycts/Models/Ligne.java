@@ -17,6 +17,11 @@ public class Ligne implements Parcelable
 	  private String direction2;
 	  private int type;
 	  
+		public Ligne()
+		{
+			
+		}
+	  
 	  public Ligne(long id, String title, int type, String direction1, String direction2) {
 	    super();
 	    this.id = id;
@@ -76,7 +81,7 @@ public class Ligne implements Parcelable
 	    this.type = type;
 	  }
 	  
-	public static Ligne FromCursor(Cursor cursor) 
+	public static Ligne FromCursor(Cursor cursor)
 	{
 		return new Ligne(cursor.getLong(cursor.getColumnIndex(LigneDBAdapter.LIGNE_KEY)), 
     			cursor.getString(cursor.getColumnIndex(LigneDBAdapter.LIGNE_CTSID)),
@@ -85,6 +90,7 @@ public class Ligne implements Parcelable
     			cursor.getString(cursor.getColumnIndex(LigneDBAdapter.LIGNE_DIR2)));
 	}
 
+	
 	@Override
 	public int describeContents() {
 		// TODO Auto-generated method stub

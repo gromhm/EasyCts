@@ -74,14 +74,18 @@ public class StationFragment extends Fragment implements StationTaskFinishedList
 		((TextView) rootViewRL.findViewById(R.id.station_fragment_title)).setText(ligne.getTitle() + " - "+ currentStation.getTitle());
 		
 		progressbar.setVisibility(View.VISIBLE);
+		ProcessHours();
+		
+		LogFragment("onCreateView");
+		return sw;
+	}
+	
+	public void ProcessHours()
+	{
 		new StationTask(StationFragment.this).execute(getActivity().getString(R.string.cts_password), 
 				currentStation.getCtsId(),
 				String.valueOf(currentStation.getId()), 
 				String.valueOf(ligne.getType()));
-		
-		// ProgressDialog.show(this.get, "loading", "message");
-		LogFragment("onCreateView");
-		return sw;
 	}
 
 	@Override

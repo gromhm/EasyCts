@@ -23,17 +23,22 @@ import com.easycts.Database.StationDBAdapter;
 import com.easycts.Models.Ligne;
 import com.easycts.Models.Station;
 import com.easycts.ui.CollectionStationActivity;
+import com.easycts.ui.FavoriteActivity;
 import com.easycts.ui.MainActivity;
 import com.easycts.ui.PagerStationActivity;
+import com.easycts.ui.StationFragment;
 
 
 public class FavoritesFragment extends SherlockFragment 
 {
+	public final static String STATION = "com.easycts.ui.intent.STATION";
+	
 	FragmentActivity mContext;
 	StationDBAdapter stationDBAdapter;
 	SimpleCursorAdapter lignesAdapter;
 	Cursor curs;
 	Ligne ligne;
+	Station station;
 	
 	 @Override
 	    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) 
@@ -42,15 +47,13 @@ public class FavoritesFragment extends SherlockFragment
 		mContext = this.getActivity();
 		stationDBAdapter = new StationDBAdapter(mContext);
 		stationDBAdapter.open();
-		curs = stationDBAdapter.getStationsById(TextUtils.join(",", Utils.loadArray(mContext)));
-		ligne = (Ligne)getArguments().getParcelable(CollectionLignesFragment.LIGNE);
+
+		curs = stationDBAdapter.getLignesAndStationsByStationId(TextUtils.join(",", Utils.loadArray(mContext)));
 		
 		lignesAdapter = new SimpleCursorAdapter(mContext, android.R.layout.simple_list_item_1, curs,
 				new String[] { StationDBAdapter.ARRET_TITLE },
 				new int[] { android.R.id.text1},
 				CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
-		
-		
 		
 		ListView listView = (ListView) rootView.findViewById(R.id.listStations);
 		listView.setAdapter(lignesAdapter);
@@ -59,14 +62,12 @@ public class FavoritesFragment extends SherlockFragment
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) 
 			{
-				Intent intent = new Intent(mContext, PagerStationActivity.class);
-				intent.putExtra(CollectionStationActivity.POSITIONID, position);
+				Intent intent = new Intent(mContext, FavoriteActivity.class);
+
+				Ligne ligne = Ligne.FromCursor(curs);
+				Station station = Station.FromCursorWithSpecificId(curs, "id_ligne");
 				intent.putExtra(CollectionLignesFragment.LIGNE, ligne);
-				
-				ArrayList<Station> mArrayList = new ArrayList<Station>();
-			    for(curs.moveToFirst(); !curs.isAfterLast(); curs.moveToNext())
-			    	mArrayList.add(Station.FromCursor(curs));
-			    intent.putParcelableArrayListExtra(CollectionStationActivity.STATIONS, mArrayList);
+				intent.putExtra(STATION, station);
 
 				mContext.startActivity(intent);
 				
