@@ -1,30 +1,24 @@
-package com.easycts.task;
-
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.SocketTimeoutException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.Date;
-
-import com.easycts.R;
-import com.easycts.ui.SplashActivity;
-import com.easycts.ui.Network.soapHoursHelper;
+package com.easycts.Task;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.AsyncTask;
-import android.text.format.Time;
 import android.util.Log;
 import android.widget.ProgressBar;
-import android.widget.Toast;
+
+import com.easycts.Network.soapDeviationsHelper;
+import com.easycts.R;
+import com.easycts.Ui.SplashActivity;
+
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.BufferedInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class LoadingTask extends AsyncTask<String, Integer, Integer> 
 {
@@ -33,21 +27,21 @@ public class LoadingTask extends AsyncTask<String, Integer, Integer>
 		void onTaskFinished(Integer result);
 	}
 
-	// This is the progress bar you want to update while the task is in progress
+	// This is the progress bar you want to update while the Task is in progress
 	private final ProgressBar progressBar;
-	// This is the listener that will be told when this task is finished
+	// This is the listener that will be told when this Task is finished
 	private final LoadingTaskFinishedListener finishedListener;
 	Context mContext;
 
 	/**
-	 * A Loading task that will load some resources that are necessary for the
+	 * A Loading Task that will load some resources that are necessary for the
 	 * app to start
 	 * 
 	 * @param progressBar
-	 *            - the progress bar you want to update while the task is in
+	 *            - the progress bar you want to update while the Task is in
 	 *            progress
 	 * @param finishedListener
-	 *            - the listener that will be told when this task is finished
+	 *            - the listener that will be told when this Task is finished
 	 */
 	public LoadingTask(ProgressBar progressBar, LoadingTaskFinishedListener finishedListener) {
 		mContext = ((Activity) finishedListener);
@@ -57,7 +51,17 @@ public class LoadingTask extends AsyncTask<String, Integer, Integer>
 
 	@Override
 	protected Integer doInBackground(String... params) {
-		Log.i("Tutorial", "Starting download task ");
+		Log.i("Tutorial", "Starting download Task ");
+		
+		try {
+			new soapDeviationsHelper(mContext.getString(R.string.cts_soap_password)).execute(null);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (XmlPullParserException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		return downloadResources(params[0]);
 	}

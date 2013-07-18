@@ -1,6 +1,4 @@
-package com.easycts.ui.mainactivity;
-
-import java.util.ArrayList;
+package com.easycts.Ui.Mainactivity;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -13,25 +11,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockFragment;
-import com.easycts.R;
-import com.easycts.Utils;
 import com.easycts.Database.StationDBAdapter;
 import com.easycts.Models.Ligne;
 import com.easycts.Models.Station;
-import com.easycts.ui.CollectionStationActivity;
-import com.easycts.ui.FavoriteActivity;
-import com.easycts.ui.MainActivity;
-import com.easycts.ui.PagerStationActivity;
-import com.easycts.ui.StationFragment;
+import com.easycts.R;
+import com.easycts.Ui.FavoriteActivity;
+import com.easycts.Utils;
 
 
 public class FavoritesFragment extends SherlockFragment 
 {
-	public final static String STATION = "com.easycts.ui.intent.STATION";
+	public final static String STATION = "com.easycts.Ui.intent.STATION";
 	
 	FragmentActivity mContext;
 	StationDBAdapter stationDBAdapter;

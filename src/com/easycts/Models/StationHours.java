@@ -1,9 +1,9 @@
 package com.easycts.Models;
 
-import java.util.ArrayList;
-
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import java.util.ArrayList;
 
 public class StationHours implements Parcelable {
 	private String endstation;
@@ -33,6 +33,12 @@ public class StationHours implements Parcelable {
 		return endstation;
 	}
 
+    private String mCtsLigneId;
+    public String getCtsLigneId()
+    {
+        return mCtsLigneId = (mCtsLigneId == null)? endstation.split(" ")[0] : mCtsLigneId;
+    }
+
 	public void setType(String type) {
 		this.type = type;
 	}
@@ -40,6 +46,11 @@ public class StationHours implements Parcelable {
 	public String getType() {
 		return type;
 	}
+
+    public Boolean IsTram()
+    {
+        return type == "Tram";
+    }
 
 	public void setHours(ArrayList<String> hours) {
 		this.hours = hours;

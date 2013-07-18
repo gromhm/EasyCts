@@ -1,13 +1,12 @@
 package com.easycts.Models;
 
-import java.util.ArrayList;
-
-import com.easycts.Database.LigneDBAdapter;
-import com.easycts.Database.StationDBAdapter;
-
 import android.database.Cursor;
 import android.os.Parcel;
 import android.os.Parcelable;
+
+import com.easycts.Database.StationDBAdapter;
+
+import java.util.ArrayList;
 
 public class Station implements Parcelable {
 	private long id;

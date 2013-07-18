@@ -1,4 +1,4 @@
-package com.easycts.ui.mainactivity;
+package com.easycts.Ui.Mainactivity;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +14,7 @@ import com.easycts.R;
  */
 public class DefaultFragment extends SherlockFragment
 {
-	public static final String ITEMNUMBER = "com.easycts.ui.intent.ITEMNUMBER";
+	public static final String ITEMNUMBER = "com.easycts.Ui.intent.ITEMNUMBER";
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) 

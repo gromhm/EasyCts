@@ -1,4 +1,4 @@
-package com.easycts.ui.mainactivity;
+package com.easycts.Ui.Mainactivity;
 
 import android.app.SearchManager;
 import android.content.Context;
@@ -8,7 +8,6 @@ import android.database.MatrixCursor;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.BaseColumns;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.CursorAdapter;
 import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v4.widget.SimpleCursorAdapter.ViewBinder;
@@ -17,12 +16,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.FilterQueryProvider;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragment;
@@ -31,18 +30,16 @@ import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.widget.SearchView;
-import com.easycts.R;
 import com.easycts.Database.LigneDBAdapter;
 import com.easycts.Models.Ligne;
-import com.easycts.Models.Station;
-import com.easycts.ui.CollectionStationActivity;
-import com.easycts.ui.MainActivity;
+import com.easycts.R;
+import com.easycts.Ui.CollectionStationActivity;
 
 public class CollectionLignesFragment extends SherlockFragment implements
 		ActionBar.OnNavigationListener, SearchView.OnQueryTextListener,
 		SearchView.OnSuggestionListener {
-	public static final String ITEMNUMBER = "com.easycts.ui.intent.STATIONID";
-	public static final String LIGNE = "com.easycts.ui.intent.LIGNE";
+	public static final String ITEMNUMBER = "com.easycts.Ui.intent.STATIONID";
+	public static final String LIGNE = "com.easycts.Ui.intent.LIGNE";
 
 	
 	LigneDBAdapter ligneDBAdapter;
@@ -169,7 +166,7 @@ public class CollectionLignesFragment extends SherlockFragment implements
 
 		// Create the search view
 		SearchView searchView = new SearchView(ab.getThemedContext());
-		searchView.setQueryHint("Rechercher un arrêt");
+		searchView.setQueryHint("Rechercher un arrÃªt");
 		searchView.setOnQueryTextListener(this);
 		searchView.setOnSuggestionListener(this);
 
@@ -220,8 +217,7 @@ public class CollectionLignesFragment extends SherlockFragment implements
 		Cursor c = (Cursor) mSuggestionsAdapter.getItem(position);
 		String query = c.getString(c
 				.getColumnIndex(SearchManager.SUGGEST_COLUMN_TEXT_1));
-		Toast.makeText(this.mContext, "Suggestion clicked: " + query,
-				Toast.LENGTH_LONG).show();
+		Toast.makeText(this.mContext.getBaseContext(), "Suggestion clicked: " + query, Toast.LENGTH_LONG).show();
 		return true;
 	}
 
@@ -239,8 +235,7 @@ public class CollectionLignesFragment extends SherlockFragment implements
 
 	@Override
 	public boolean onQueryTextSubmit(String query) {
-		Toast.makeText(this.mContext, "You searched for: " + query,
-				Toast.LENGTH_LONG).show();
+		Toast.makeText(this.mContext.getBaseContext(), "You searched for: " + query, Toast.LENGTH_LONG).show();
 		return true;
 	}
 }

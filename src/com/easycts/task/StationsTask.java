@@ -1,27 +1,16 @@
-package com.easycts.task;
-import java.net.URI;
+package com.easycts.Task;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import com.codebutler.android_websockets.SocketIOClient;
-import com.easycts.R;
-import com.easycts.Database.StationDBAdapter;
-import com.easycts.task.LoadingTask.LoadingTaskFinishedListener;
-import com.easycts.ui.PagerStationActivity;
-import com.easycts.ui.ViewPagerAdapter;
-
-import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
 import android.os.AsyncTask;
-import android.util.Log;
-import android.widget.ProgressBar;
+
+
+import com.easycts.Database.StationDBAdapter;
 
 public class StationsTask extends AsyncTask<String, Integer, Cursor> 
 {
 	StationsTaskFinishedListener stationsTaskFinishedListener;
-	SocketIOClient socketIOClient;
+
 	StationDBAdapter stationDBAdapter;
 	Context mContext;
 	public Boolean Connected = false;

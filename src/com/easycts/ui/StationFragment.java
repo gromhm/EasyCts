@@ -1,8 +1,6 @@
-package com.easycts.ui;
+package com.easycts.Ui;
 
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -11,7 +9,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -20,18 +17,24 @@ import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import com.easycts.R;
-import com.easycts.R.layout;
+
 import com.easycts.Models.Ligne;
 import com.easycts.Models.Station;
 import com.easycts.Models.StationHours;
-import com.easycts.task.StationTask;
-import com.easycts.task.StationTask.StationTaskFinishedListener;
-import com.easycts.ui.mainactivity.CollectionLignesFragment;
+import com.easycts.Network.soapHelper;
+import com.easycts.Network.soapHoursHelper;
+import com.easycts.R;
+import com.easycts.R.layout;
+import com.easycts.Task.GenericSoapTask;
+import com.easycts.Task.GenericSoapTask.StationTaskFinishedListener;
+import com.easycts.Ui.Mainactivity.CollectionLignesFragment;
 
-public class StationFragment extends Fragment implements StationTaskFinishedListener {
-	public final static String STATION = "com.easycts.ui.intent.STATION";
-	public final static String DISPLAYHOURS = "com.easycts.ui.intent.DISPLAYHOURS";
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class StationFragment extends Fragment implements StationTaskFinishedListener<ArrayList<StationHours>> {
+	public final static String STATION = "com.easycts.Ui.intent.STATION";
+	public final static String DISPLAYHOURS = "com.easycts.Ui.intent.DISPLAYHOURS";
 	private Station currentStation;
 	private LinearLayout resultsLL;
 	private ProgressBar progressbar;
@@ -82,10 +85,10 @@ public class StationFragment extends Fragment implements StationTaskFinishedList
 	
 	public void ProcessHours()
 	{
-		new StationTask(StationFragment.this).execute(getActivity().getString(R.string.cts_password), 
-				currentStation.getCtsId(),
-				String.valueOf(currentStation.getId()), 
-				String.valueOf(ligne.getType()));
+		soapHelper<ArrayList<StationHours>> soapHelper = new soapHoursHelper(getString(R.string.cts_soap_password));
+		
+		new GenericSoapTask<ArrayList<StationHours>>(StationFragment.this, soapHelper).
+			execute(currentStation.getCtsId(), ligne.getType());
 	}
 
 	@Override
@@ -126,6 +129,7 @@ public class StationFragment extends Fragment implements StationTaskFinishedList
 		ArrayList<?> stationLignes = currentStation.getAllStationHours();
 		if (stationLignes.size() > 0) {
 			LogFragment("onTaskFinished");
+			@SuppressWarnings("unchecked")
 			Iterator<StationHours> it = (Iterator<StationHours>) stationLignes.iterator();
 			while (it.hasNext()) 
 			{
@@ -215,7 +219,7 @@ public class StationFragment extends Fragment implements StationTaskFinishedList
 							LayoutParams.MATCH_PARENT,
 							LayoutParams.WRAP_CONTENT, 4));
 			titleView.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL);
-			titleView.setText("Aucune donnée disponible pour cet arrêt.");
+			titleView.setText("Aucune donnÃ©e disponible pour cet arrÃªt.");
 			resultsLL.addView(titleView);
 		}
 		resultsLL.setVisibility(View.VISIBLE);

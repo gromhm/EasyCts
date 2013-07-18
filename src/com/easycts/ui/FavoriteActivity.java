@@ -1,16 +1,16 @@
-package com.easycts.ui;
+package com.easycts.Ui;
 
-
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.MenuItem;
-import com.easycts.R;
-import com.easycts.Models.Ligne;
-import com.easycts.Models.Station;
-import com.easycts.ui.mainactivity.CollectionLignesFragment;
-import com.easycts.ui.mainactivity.FavoritesFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+import com.actionbarsherlock.view.MenuItem;
+import com.easycts.Models.Ligne;
+import com.easycts.Models.Station;
+import com.easycts.R;
+import com.easycts.Ui.Mainactivity.CollectionLignesFragment;
+import com.easycts.Ui.Mainactivity.FavoritesFragment;
 
 
 public class FavoriteActivity extends SherlockFragmentActivity 

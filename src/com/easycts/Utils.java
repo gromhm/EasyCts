@@ -1,12 +1,12 @@
 package com.easycts;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.easycts.ui.CollectionStationActivity;
+import com.easycts.Ui.CollectionStationActivity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Utils 
@@ -33,4 +33,6 @@ public class Utils
 	        editor.putInt(CollectionStationActivity.FAVORITES + "_" + i, favArray.get(i));  
 	    return editor.commit();  
 	}
+
+
 }

@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
-  android:orientation="vertical" >
- 
+  android:orientation="vertical">
+
   <TextView
     android:id="@+id/ligne_row_id"
     android:layout_width="70dp"
@@ -12,7 +12,7 @@
     android:textStyle="bold"
     android:layout_centerVertical="true"
     android:text="A"/>
- 
+
     <TextView
     android:id="@+id/ligne_row_direction1"
     android:layout_toRightOf="@id/ligne_row_id"
@@ -20,7 +20,7 @@
     android:layout_height="wrap_content"
     android:textSize="15sp"
     android:text="ill"/>
-    
+
     <TextView
     android:id="@+id/ligne_row_direction2"
     android:layout_toRightOf="@id/ligne_row_id"
@@ -29,5 +29,5 @@
     android:layout_height="wrap_content"
     android:textSize="15sp"
     android:text="haut"/>
-    
+
 </RelativeLayout>

@@ -1,42 +1,36 @@
-package com.easycts.ui;
+package com.easycts.Ui;
 
-import java.util.ArrayList;
-import java.util.List;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.support.v4.widget.ResourceCursorAdapter;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.FilterQueryProvider;
 import android.widget.ListView;
-import android.widget.TextView;
+
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.MenuItem;
-import com.easycts.R;
-import com.easycts.Utils;
 import com.easycts.Database.StationDBAdapter;
 import com.easycts.Models.Ligne;
 import com.easycts.Models.Station;
-import com.easycts.ui.mainactivity.CollectionLignesFragment;
+import com.easycts.R;
+import com.easycts.Ui.Adapter.CollectionStationResourceCursorAdapter;
+import com.easycts.Ui.Mainactivity.CollectionLignesFragment;
+
+import java.util.ArrayList;
 
 public class CollectionStationActivity extends SherlockActivity implements OnItemClickListener{
 	StationDBAdapter stationDBAdapter;
-	MyAdapter adapter;
+	CollectionStationResourceCursorAdapter adapter;
 	ListView listView;
 	Context mContext;
 	
-	public final static String STATIONID = "com.easycts.ui.intent.STATIONID";
-	public static final String POSITIONID = "com.easycts.ui.intent.POSITIONID";
-	public static final String STATIONS = "com.easycts.ui.intent.STATIONS";
-	public static final String FAVORITES = "com.easycts.ui.SP.FAVORITES";
+	public final static String STATIONID = "com.easycts.Ui.intent.STATIONID";
+	public static final String POSITIONID = "com.easycts.Ui.intent.POSITIONID";
+	public static final String STATION = "com.easycts.Ui.intent.STATION";
+	public static final String FAVORITES = "com.easycts.Ui.SP.FAVORITES";
 	public Ligne ligne;
 	
 	@Override
@@ -50,7 +44,7 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 		stationDBAdapter = new StationDBAdapter(this);
 		stationDBAdapter.open();
 
-		adapter = new MyAdapter(this, null);
+		adapter = new CollectionStationResourceCursorAdapter(this, null);
 
 		adapter.setFilterQueryProvider(new FilterQueryProvider() {
 			public Cursor runQuery(CharSequence constraint) {
@@ -79,64 +73,12 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 	public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) 
 	{
 		Intent intent = new Intent(CollectionStationActivity.this, PagerStationActivity.class);
-		intent.putExtra(POSITIONID, position);
 		intent.putExtra(CollectionLignesFragment.LIGNE, ligne);
-		
-		ArrayList<Station> mArrayList = new ArrayList<Station>();
-	    Cursor cursor = adapter.getCursor();
-	    for(cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext())
-	    	mArrayList.add(Station.FromCursor(cursor));
-		intent.putParcelableArrayListExtra(STATIONS, mArrayList);
-		
+        Cursor cursor = adapter.getCursor();
+		intent.putExtra(STATION, Station.FromCursor(cursor));
 		startActivity(intent);
 	}
 
-	private class MyAdapter extends ResourceCursorAdapter 
-	{
-		private LayoutInflater mInflater;
-		private List<Integer> favArray;
-		
-        public MyAdapter(Context context, Cursor cur) 
-        {
-            super(context, R.layout.cursor_row, cur, true);
-            favArray =  Utils.loadArray(context);
-            mInflater = LayoutInflater.from(context);
-        }
-        
-        @Override
-        public View newView(Context context, Cursor cur, ViewGroup parent) 
-        {
-            return mInflater.inflate(R.layout.station_row, parent, false);
-        }
 
-        @Override
-        public void bindView(View view, Context context, Cursor cur) {
-            TextView tvListText = (TextView)view.findViewById(R.id.station_row_text);
-            CheckBox cbListCheck = (CheckBox)view.findViewById(R.id.station_row_checkbox);
-            
-            Long longid = cur.getLong(cur.getColumnIndex(StationDBAdapter.ARRET_KEY));
-            
-            tvListText.setText(cur.getString(cur.getColumnIndex(StationDBAdapter.ARRET_TITLE)));
-            cbListCheck.setChecked(favArray.contains(longid.intValue())? true : false);
-            cbListCheck.setTag(longid.intValue());
-            
-            cbListCheck.setOnCheckedChangeListener(new OnCheckedChangeListener() 
-            {
-				@Override
-				public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-					Integer intId = Integer.parseInt(buttonView.getTag().toString());
-					if(isChecked)
-					{
-						favArray.add(intId);
-					}
-					else
-					{
-						favArray.remove(intId);
-					}
-					Utils.saveArray(mContext, favArray);
-				}
-			});	 
-        }
-	}
 	
 }

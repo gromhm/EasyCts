@@ -1,25 +1,20 @@
-package com.easycts.ui;
-
-import java.io.File;
-import java.io.IOException;
-
-import org.xmlpull.v1.XmlPullParserException;
-
-import com.easycts.Database.DBAdapter;
-import com.easycts.task.LoadingTask;
-import com.easycts.task.LoadingTask.LoadingTaskFinishedListener;
-import com.easycts.ui.Network.soapHoursHelper;
-import com.easycts.R;
+package com.easycts.Ui;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import com.easycts.Database.DBAdapter;
+import com.easycts.R;
+import com.easycts.Task.LoadingTask;
+import com.easycts.Task.LoadingTask.LoadingTaskFinishedListener;
+
+import java.io.File;
 
 public class SplashActivity extends Activity implements LoadingTaskFinishedListener {
 	
@@ -32,7 +27,7 @@ public class SplashActivity extends Activity implements LoadingTaskFinishedListe
 	public void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
-		
+
 		ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
@@ -56,22 +51,22 @@ public class SplashActivity extends Activity implements LoadingTaskFinishedListe
 		{
 			if (resourcesAlreadyExist)
 			{
-				Toast.makeText(this, "La vérification de mise à jour n'a pu être effectuée.", Toast.LENGTH_LONG).show();
+				Toast.makeText(this, "La vÃ©rification de mise Ã© jour n'a pu Ã©tre effectuÃ©e.", Toast.LENGTH_LONG).show();
 				completeSplash();
 			}
 			else
-				closeAppWithMessage("Easy CTS nécésite un accès réseau pour son premier démarage");
+				closeAppWithMessage("Easy CTS nÃ©cÃ©site un accÃ©s rÃ©seau pour son premier dÃ©marage");
 		}
 	}
 
-	// This is the callback for when your async task has finished
+	// This is the callback for when your async Task has finished
 	@Override
 	public void onTaskFinished(Integer result) 
 	{
 		//File downloaded
 		if(result == 1)
 		{
-			Toast.makeText(this, "Les données ont bien étés mises à jour.", Toast.LENGTH_LONG).show();
+			Toast.makeText(this, "Les donnÃ©es ont bien Ã©tÃ©s mises Ã© jour.", Toast.LENGTH_LONG).show();
 			completeSplash();
 		}
 		//No update
@@ -79,7 +74,7 @@ public class SplashActivity extends Activity implements LoadingTaskFinishedListe
 		{
 			if (resourcesAlreadyExist) 
 			{
-				Toast.makeText(this, "Les données sont à jour.", Toast.LENGTH_LONG).show();
+				Toast.makeText(this, "Les donnÃ©es sont Ã  jour.", Toast.LENGTH_LONG).show();
 				completeSplash();
 			}
 		}
@@ -88,11 +83,11 @@ public class SplashActivity extends Activity implements LoadingTaskFinishedListe
 		{
 			if (resourcesAlreadyExist) 
 			{
-				Toast.makeText(this, "Erreur lors de la vérification de mise à jour.", Toast.LENGTH_LONG).show();
+				Toast.makeText(this, "Erreur lors de la vÃ©rification de mise Ã  jour.", Toast.LENGTH_LONG).show();
 				completeSplash();
 			}
 			else
-				closeAppWithMessage("Erreur réseau.");
+				closeAppWithMessage("Erreur rÃ©seau.");
 		}
 	}
 

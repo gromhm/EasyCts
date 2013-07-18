@@ -1,4 +1,4 @@
-package com.easycts.ui;
+package com.easycts.Ui;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -10,15 +10,16 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.easycts.R;
-import com.easycts.ui.mainactivity.CollectionLignesFragment;
-import com.easycts.ui.mainactivity.DefaultFragment;
-import com.easycts.ui.mainactivity.FavoritesFragment;
-import com.easycts.ui.mainactivity.MainActivityMenuItemView;
+import com.easycts.Ui.Mainactivity.CollectionLignesFragment;
+import com.easycts.Ui.Mainactivity.DefaultFragment;
+import com.easycts.Ui.Mainactivity.FavoritesFragment;
+import com.easycts.Ui.Mainactivity.MainActivityMenuItemView;
 
 public class MainActivity extends SherlockFragmentActivity {
 	private DrawerLayout mDrawerLayout;
