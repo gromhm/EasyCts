@@ -6,6 +6,11 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.easycts.Models.Fav;
+import com.easycts.Models.Station;
+
+import java.util.ArrayList;
+
 public class StationDBAdapter {
 
 	public static final String ARRET_KEY = "_id";
@@ -74,12 +79,24 @@ public class StationDBAdapter {
 	 * 
 	 * @return Cursor over all cars
 	 */
-	public Cursor getAllLigne(String constraint) 
+	public  ArrayList<Station> getAllStation(String constraint)
 	{
 
-		return this.mDb.query(ARRET_TABLE_NAME, new String[] {ARRET_KEY, ARRET_CTSID,
+		Cursor curs = this.mDb.query(ARRET_TABLE_NAME, new String[] {ARRET_KEY, ARRET_CTSID,
 				ARRET_TITLE}, ARRET_LIGNE_KEY + "=" + constraint, null, null, null, null);
-	}
+
+        ArrayList<Station> stations = new ArrayList<Station>();
+
+        if (curs != null)
+        {
+            while (curs.moveToNext())
+            {
+                stations.add(Station.FromCursor(curs));
+            }
+        }
+
+        return stations;
+    }
 
 	/**
 	 * Return a Cursor positioned at the car that matches the given rowId
@@ -101,27 +118,32 @@ public class StationDBAdapter {
 		return mCursor;
 	}
 
-	public Cursor getLignesAndStationsByStationId(String rowsId) 
+	public Cursor getLignesAndStationsFavs(ArrayList<Fav> favs)
 	{
-		
-		String queryRaw = String.format("SELECT a.*,l.%s as id_ligne,%s,%s,%s,%s FROM %s a INNER JOIN %s l ON a.%s = l.%s where a.%s IN (%s)", 
-				LigneDBAdapter.LIGNE_KEY, 
-				LigneDBAdapter.LIGNE_CTSID, 
-				LigneDBAdapter.LIGNE_DIR1, 
-				LigneDBAdapter.LIGNE_DIR2, 
-				LigneDBAdapter.LIGNE_TYPE,
-				ARRET_TABLE_NAME, 
-				LigneDBAdapter.LIGNE_TABLE_NAME,
-				ARRET_LIGNE_KEY,
-				LigneDBAdapter.LIGNE_KEY,
-				ARRET_KEY, 
-				rowsId);
-		
-		Cursor mCursor = this.mDb.rawQuery(queryRaw, new String[]{});
+        StringBuilder queryBuilder = new StringBuilder();
+        for(int i=0;i<favs.size();i++)
+        {
+            Fav fav = favs.get(i);
+            if(i>0)
+            {
+                queryBuilder.append(" UNION ");
+            }
+            queryBuilder.append(String.format("SELECT a.*,%s,%s,%s,%s FROM %s a INNER JOIN %s l ON a.%s = l.%s where l.%s = '%s' AND a.%s = '%s'",
+                    LigneDBAdapter.LIGNE_CTSID,
+                    LigneDBAdapter.LIGNE_DIR1,
+                    LigneDBAdapter.LIGNE_DIR2,
+                    LigneDBAdapter.LIGNE_TYPE,
+                    ARRET_TABLE_NAME,
+                    LigneDBAdapter.LIGNE_TABLE_NAME,
+                    ARRET_LIGNE_KEY,
+                    LigneDBAdapter.LIGNE_KEY,
+                    LigneDBAdapter.LIGNE_CTSID,
+                    fav.getLigneCtsKey(),
+                    ARRET_CTSID,
+                    fav.getArretCtsKey()));
+        }
 
-		if (mCursor != null) {
-			mCursor.moveToFirst();
-		}
+		Cursor mCursor = this.mDb.rawQuery(queryBuilder.toString(), new String[]{});
 		
 		return mCursor;
 

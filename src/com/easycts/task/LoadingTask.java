@@ -52,7 +52,7 @@ public class LoadingTask extends AsyncTask<String, Integer, Integer>
 	@Override
 	protected Integer doInBackground(String... params) {
 		Log.i("Tutorial", "Starting download Task ");
-		
+
 		try {
 			new soapDeviationsHelper(mContext.getString(R.string.cts_soap_password)).execute(null);
 		} catch (IOException e) {

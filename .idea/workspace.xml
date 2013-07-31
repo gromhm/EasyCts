@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="easycts" />
+        <option name="name" value="Unnamed-0" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
+    </filters>
+  </component>
   <component name="AndroidLayoutPreviewToolWindow">
     <option name="state">
       <GlobalState />
@@ -21,133 +33,103 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="INFO" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41a60c83-8ba0-437c-91a7-4c577d3ca995" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/minus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/CollectionStationResourceCursorAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EasyCTS.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Intents.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/NewAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/StationFullFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/StationLightFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/childrow.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/fragment_station_full.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/fragment_station_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/grouprow.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/plusminus.xml" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Task\LignesTask$LignesTaskFinishedListener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Task\LignesTask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Task\StationTask$StationTaskFinishedListener.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Task\StationTask.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\CollectionStationActivity$MyAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\CollectionStationActivity$MyAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\MainActivity$SuggestionsAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\Mainactivity\MainActivityFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\ViewPagerAdapter$DummyFragment$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\ViewPagerAdapter$DummyFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\ViewPagerAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\ui\Network\soapHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\ui\Network\soapHoursHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\ui\mainactivity\Views\FavFragment$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\ui\mainactivity\Views\FavFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\ui\mainactivity\Views\LignesFragment$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\ui\mainactivity\Views\LignesFragment$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\ui\mainactivity\Views\LignesFragment$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\ui\mainactivity\Views\LignesFragment.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\gen\com\actionbarsherlock\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\gen\com\tjerkw\slideexpandable\library\R.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\Task\LignesTask.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\Task\StationTask.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\Ui\Adapter\ViewPagerAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\Ui\Mainactivity\MainActivityFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\ui\Network\soapHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\ui\Network\soapHoursHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\ui\mainactivity\Views\FavFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\ui\mainactivity\Views\LignesFragment.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/BuildConfig.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/CollectionLignesFragment$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/CollectionLignesFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/CollectionLignesFragment$2.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/CollectionLignesFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/CollectionLignesFragment$3.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/CollectionLignesFragment$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/CollectionLignesFragment$SuggestionsAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/CollectionLignesFragment$SuggestionsAdapter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/navigation_refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-mdpi/navigation_refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/navigation_refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Models/Fav.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Database/FavAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Task/FavTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Models/Pair.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Task/StationsFavTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/colors.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/fav_row.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/values/style.xml" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\actionbarsherlock\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$array.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$raw.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\Adapter\CollectionStationResourceCursorAdapter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\Adapter\NewAdapter$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\CollectionStationActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\MainActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\Mainactivity\CollectionLignesFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\Mainactivity\CollectionLignesFragment$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\Mainactivity\CollectionLignesFragment$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\Mainactivity\FavoritesFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\easycts\Ui\PagerStationActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\tjerkw\slideexpandable\library\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\bin\classes\com\tjerkw\slideexpandable\library\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\Ui\FavoriteActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\Ui\StationFragment.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\Ui\StationLightFragment.java" afterPath="" />
+      <change type="MOVED" beforePath="C:\Dev\Workspace4\EasyCTS\src\com\easycts\Ui\Adapter\NewAdapter.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/PagerStationBaseExpandableListAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/CollectionLignesFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/CollectionLignesFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/CollectionStationActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/CollectionStationActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/CollectionStationActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/CollectionStationActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Database/DBAdapter$DatabaseHelper.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Database/DBAdapter$DatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Database/DBAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Database/DBAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Adapter/CollectionStationResourceCursorAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Adapter/CollectionStationResourceCursorAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/DefaultFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/DefaultFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EasyCTS.apk" afterPath="$PROJECT_DIR$/bin/EasyCTS.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/FavoriteActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/FavoriteActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/FavoritesFragment$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/FavoritesFragment$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/FavoritesFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/FavoritesFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Models/Ligne$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Models/Ligne$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Models/Ligne.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Models/Ligne.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Database/LigneDBAdapter$DatabaseHelper.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Database/LigneDBAdapter$DatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Database/LigneDBAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Database/LigneDBAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Task/LoadingTask$LoadingTaskFinishedListener.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Task/LoadingTask$LoadingTaskFinishedListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Task/LoadingTask.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Task/LoadingTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/MainActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/MainActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/MainActivity$DrawerItemClickListener.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/MainActivity$DrawerItemClickListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/MainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/MainActivityMenuItemView$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/MainActivityMenuItemView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/MainActivityMenuItemView.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Mainactivity/MainActivityMenuItemView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Adapter/NewAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Adapter/NewAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/PagerStationActivity$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/PagerStationActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/PagerStationActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/PagerStationActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/R$drawable.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/R$id.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/R$integer.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/actionbarsherlock/R$layout.class" afterPath="$PROJECT_DIR$/bin/classes/com/actionbarsherlock/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/R$layout.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/R$menu.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/R$raw.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/R$string.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/R$style.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/R$styleable.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Adapter/PagerStationViewPagerAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/Adapter/PagerStationViewPagerAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/R.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/SplashActivity.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/SplashActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Models/Station$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Models/Station$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Models/Station.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Models/Station.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Database/StationDBAdapter$DatabaseHelper.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Database/StationDBAdapter$DatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Database/StationDBAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Database/StationDBAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/StationFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/StationFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Models/StationHours$1.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Models/StationHours$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Models/StationHours.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Models/StationHours.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Task/StationsTask$StationsTaskFinishedListener.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Task/StationsTask$StationsTaskFinishedListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/StationFullFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/StationFullFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/StationLightFragment.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Ui/StationLightFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Task/StationsTask.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Task/StationsTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/easycts/Utils.class" afterPath="$PROJECT_DIR$/bin/classes/com/easycts/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dexedLibs/actionbarsherlock-0ce7a97f54521291173018ae413fd610.jar" afterPath="$PROJECT_DIR$/bin/dexedLibs/actionbarsherlock-0ce7a97f54521291173018ae413fd610.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes.dex" afterPath="$PROJECT_DIR$/bin/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/resources.ap_" afterPath="$PROJECT_DIR$/bin/resources.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/minus.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/minus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/plus.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/plus.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/AndroidManifest.xml" afterPath="$PROJECT_DIR$/bin/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/easycts/BuildConfig.java" afterPath="$PROJECT_DIR$/gen/com/easycts/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/CollectionLignesFragment.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/CollectionLignesFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/CollectionStationActivity.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/CollectionStationActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/CollectionStationResourceCursorAdapter.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/CollectionStationResourceCursorAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Database/DBAdapter.java" afterPath="$PROJECT_DIR$/src/com/easycts/Database/DBAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/DefaultFragment.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/DefaultFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/FavoriteActivity.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/FavoriteActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/FavoritesFragment.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/FavoritesFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Models/Ligne.java" afterPath="$PROJECT_DIR$/src/com/easycts/Models/Ligne.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Database/LigneDBAdapter.java" afterPath="$PROJECT_DIR$/src/com/easycts/Database/LigneDBAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Task/LoadingTask.java" afterPath="$PROJECT_DIR$/src/com/easycts/Task/LoadingTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/MainActivityMenuItemView.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/MainActivityMenuItemView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/PagerStationActivity.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/PagerStationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/easycts/R.java" afterPath="$PROJECT_DIR$/gen/com/easycts/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/R.txt" afterPath="$PROJECT_DIR$/bin/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/SplashActivity.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/SplashActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/PagerStationViewPagerAdapter.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/PagerStationViewPagerAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Models/Station.java" afterPath="$PROJECT_DIR$/src/com/easycts/Models/Station.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Database/StationDBAdapter.java" afterPath="$PROJECT_DIR$/src/com/easycts/Database/StationDBAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/StationFragment.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/StationFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Models/StationHours.java" afterPath="$PROJECT_DIR$/src/com/easycts/Models/StationHours.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Models/StationLigne.java" afterPath="$PROJECT_DIR$/src/com/easycts/Models/StationLigne.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/StationFullFragment.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/StationFullFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Task/StationsTask.java" afterPath="$PROJECT_DIR$/src/com/easycts/Task/StationsTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Utils.java" afterPath="$PROJECT_DIR$/src/com/easycts/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_collection_ligne.xml" afterPath="$PROJECT_DIR$/res/layout/activity_collection_ligne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_collection_station.xml" afterPath="$PROJECT_DIR$/res/layout/activity_collection_station.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_pager_station.xml" afterPath="$PROJECT_DIR$/res/layout/activity_pager_station.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/cursor_row.xml" afterPath="$PROJECT_DIR$/res/layout/cursor_row.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/childrow.xml" afterPath="$PROJECT_DIR$/res/layout/childrow.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_station_full.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_station_full.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/grouprow.xml" afterPath="$PROJECT_DIR$/res/layout/grouprow.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EasyCTS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -158,6 +140,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="USE_COMPILE_SERVER" value="false" />
   </component>
@@ -168,6 +155,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -204,7 +193,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -214,123 +202,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StationFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/StationFragment.java">
+      <file leaf-file-name="CollectionStationActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/CollectionStationActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="63" selection-start="2206" selection-end="2206" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="3468">
+            <state line="83" column="34" selection-start="2809" selection-end="2809" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="1870">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_station_full.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_station_full.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+      <file leaf-file-name="CollectionStationResourceCursorAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Adapter/CollectionStationResourceCursorAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="43" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1921">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_collection_ligne.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/activity_collection_ligne.xml">
+      <file leaf-file-name="station_row.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/station_row.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="38" selection-start="172" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="493">
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="android-designer">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fav_row.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/fav_row.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="492" selection-end="492" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="374">
+            <state line="3" column="37" selection-start="188" selection-end="188" vertical-scroll-proportion="0.060212515" vertical-offset="0" max-vertical-offset="847">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollectionLignesFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/CollectionLignesFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="27" selection-start="2602" selection-end="2602" vertical-scroll-proportion="-6.1923075" vertical-offset="451" max-vertical-offset="3502">
-              <folding>
-                <element signature="e#3022#3970#0" expanded="true" />
-                <element signature="e#3965#3966#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_station.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_station.xml">
           <provider editor-type-id="android-designer">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="36" selection-start="318" selection-end="318" vertical-scroll-proportion="-1.72" vertical-offset="93" max-vertical-offset="782">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drawer_list_item.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/drawer_list_item.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="29" selection-start="633" selection-end="633" vertical-scroll-proportion="-4.76" vertical-offset="153" max-vertical-offset="714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="childrow.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/childrow.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1400" selection-end="1400" vertical-scroll-proportion="-16.68" vertical-offset="229" max-vertical-offset="765">
-              <folding>
-                <element signature="e#807#828#0" expanded="true" />
-                <element signature="e#1057#1078#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grouprow.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/grouprow.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="57" selection-start="450" selection-end="450" vertical-scroll-proportion="0.28544775" vertical-offset="0" max-vertical-offset="536">
-              <folding>
-                <element signature="e#371#392#0" expanded="true" />
-                <element signature="e#570#591#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cursor_row.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/cursor_row.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="32" selection-start="221" selection-end="221" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="646">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PagerStationViewPagerAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Adapter/PagerStationViewPagerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="13" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="1105">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -353,30 +263,33 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/activity_pager_station.xml" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Network/soapHoursHelper.java" />
-        <option value="$PROJECT_DIR$/res/layout/fragment_station_full.xml" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/NewAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/StationLightFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Database/DBAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Task/LoadingTask.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Models/Pair.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Task/FavTask.java" />
         <option value="$PROJECT_DIR$/src/com/easycts/Task/StationsTask.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/PagerStationActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/Intents.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Utils.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Intents.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/StationFullFragment.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/PagerStationViewPagerAdapter.java" />
-        <option value="$PROJECT_DIR$/res/layout/childrow.xml" />
-        <option value="$PROJECT_DIR$/res/layout/activity_collection_ligne.xml" />
-        <option value="$PROJECT_DIR$/res/layout/cursor_row.xml" />
-        <option value="$PROJECT_DIR$/res/layout/grouprow.xml" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Ui/CollectionStationActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/activity_collection_station.xml" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Models/Fav.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Models/Station.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Models/Ligne.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Database/StationDBAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Database/FavAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Task/StationsFavTask.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/FavoritesFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/CollectionStationResourceCursorAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/fav_row.xml" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1688" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -409,7 +322,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -487,11 +399,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Ui" />
+              <option name="myItemId" value="Task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EasyCTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EasyCTS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Mainactivity" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="easycts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EasyCTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EasyCTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="easycts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -529,16 +481,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../actionbarsherlock/libs/android-support-v13.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="4df174e927d64f57" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -549,16 +504,22 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easycts.Task" />
       <recent name="com.easycts.Ui.Adapter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable-hdpi" />
       <recent name="C:\Dev\Workspace4\EasyCTS\res\layout" />
+      <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable-hdpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable-mdpi" />
+      <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable-xhdpi" />
+      <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable-hdpi" />
       <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable" />
     </key>
   </component>
@@ -688,6 +649,11 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
@@ -734,33 +700,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1688" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32965687" sideWeight="0.67626727" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35253456" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.60992527" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22358592" sideWeight="0.28619152" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22358592" sideWeight="0.28619152" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328341" sideWeight="0.3900747" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32852563" sideWeight="0.6336405" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36555555" sideWeight="0.4501077" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41746247" sideWeight="0.5498923" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22358592" sideWeight="0.28619152" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22358592" sideWeight="0.28619152" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48847926" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.195795" sideWeight="0.6714976" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20833333" sideWeight="0.67626727" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32373273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27403846" sideWeight="0.6336405" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32293987" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739422" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32603687" sideWeight="0.38980618" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -825,151 +791,129 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/Bundle.class">
+    <entry file="jar://$PROJECT_DIR$/../actionbarsherlock/libs/android-support-v13.jar!/android/support/v4/widget/SimpleCursorAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="69" selection-start="6482" selection-end="6482" vertical-scroll-proportion="0.3320965" vertical-offset="2286" max-vertical-offset="3230">
+        <state line="20" column="11" selection-start="803" selection-end="803" vertical-scroll-proportion="0.34979424" vertical-offset="153" max-vertical-offset="1020" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Task/StationsFavTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="55" selection-start="1754" selection-end="1800" vertical-scroll-proportion="0.6594912" vertical-offset="513" max-vertical-offset="1547">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Models/StationHours.java">
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Database/StationDBAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="29" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.33208954" vertical-offset="757" max-vertical-offset="1530">
+        <state line="120" column="18" selection-start="3155" selection-end="3155" vertical-scroll-proportion="0.04109589" vertical-offset="1866" max-vertical-offset="2516">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Intents.java">
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/FavoritesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="43" selection-start="332" selection-end="344" vertical-scroll-proportion="0.28544775" vertical-offset="0" max-vertical-offset="536">
-          <folding />
-        </state>
+        <state line="85" column="54" selection-start="3341" selection-end="3341" vertical-scroll-proportion="0.5596869" vertical-offset="717" max-vertical-offset="1683" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Utils.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/AsyncTask.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.0" vertical-offset="110" max-vertical-offset="646">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#529#538#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/StationFullFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="9" selection-start="3329" selection-end="3329" vertical-scroll-proportion="0.0" vertical-offset="824" max-vertical-offset="1615">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/easycts/Task/StationsTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="45" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/StationFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="63" selection-start="2206" selection-end="2206" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="3468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Adapter/PagerStationViewPagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="13" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/drawer_list_item.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="633" selection-end="633" vertical-scroll-proportion="-4.76" vertical-offset="153" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_station.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="36" selection-start="318" selection-end="318" vertical-scroll-proportion="-1.72" vertical-offset="93" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_station_full.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+        <state line="17" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.22709924" vertical-offset="0" max-vertical-offset="1411">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_collection_ligne.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="492" selection-end="492" vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="374">
+        <state line="10" column="34" selection-start="409" selection-end="409" vertical-scroll-proportion="0.34068137" vertical-offset="0" max-vertical-offset="499">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/CollectionLignesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="27" selection-start="2602" selection-end="2602" vertical-scroll-proportion="-6.1923075" vertical-offset="451" max-vertical-offset="3502">
-          <folding>
-            <element signature="e#3022#3970#0" expanded="true" />
-            <element signature="e#3965#3966#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="142" column="5" selection-start="4854" selection-end="4959" vertical-scroll-proportion="0.0" vertical-offset="1482" max-vertical-offset="3502" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/cursor_row.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/drawer_list_item.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_collection_station.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="632" selection-end="632" vertical-scroll-proportion="0.51102203" vertical-offset="0" max-vertical-offset="499">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/childrow.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="32" selection-start="221" selection-end="221" vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="646">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/CollectionStationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="34" selection-start="2809" selection-end="2809" vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1479">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/childrow.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/cursor_row.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="24" selection-start="704" selection-end="704" vertical-scroll-proportion="0.6132265" vertical-offset="51" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Adapter/CollectionStationResourceCursorAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1400" selection-end="1400" vertical-scroll-proportion="-16.68" vertical-offset="229" max-vertical-offset="765">
-          <folding>
-            <element signature="e#807#828#0" expanded="true" />
-            <element signature="e#1057#1078#0" expanded="true" />
-          </folding>
+        <state line="39" column="43" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1479">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/grouprow.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/station_row.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="38" selection-start="172" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fav_row.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="57" selection-start="450" selection-end="450" vertical-scroll-proportion="0.28544775" vertical-offset="0" max-vertical-offset="536">
-          <folding>
-            <element signature="e#371#392#0" expanded="true" />
-            <element signature="e#570#591#0" expanded="true" />
-          </folding>
+        <state line="3" column="37" selection-start="188" selection-end="188" vertical-scroll-proportion="0.060212515" vertical-offset="0" max-vertical-offset="847">
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
@@ -1012,7 +956,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>Android 4.2.2 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

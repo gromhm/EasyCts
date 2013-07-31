@@ -14,7 +14,7 @@ public class LigneDBAdapter {
 	public static final String LIGNE_DIR1 = "labeldir1";
 	public static final String LIGNE_DIR2 = "labeldir2";
 	public static final String LIGNE_TABLE_NAME = "Ligne";
-	
+
 	private DatabaseHelper mDbHelper;
 	private SQLiteDatabase mDb;
 

@@ -3,64 +3,106 @@ package com.easycts.Ui.Adapter;
 import android.content.Context;
 import android.database.Cursor;
 import android.support.v4.widget.ResourceCursorAdapter;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.TextView;
 
 import com.easycts.Database.StationDBAdapter;
+import com.easycts.Models.Fav;
+import com.easycts.Models.Ligne;
+import com.easycts.Models.Pair;
+import com.easycts.Models.Station;
 import com.easycts.R;
+import com.easycts.Task.FavTask;
 import com.easycts.Utils;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class CollectionStationResourceCursorAdapter extends ResourceCursorAdapter
+public class CollectionStationResourceCursorAdapter extends ArrayAdapter
 {
-    private LayoutInflater mInflater;
-    private List<Integer> favArray;
+    private static int TAGARRET = 1;
 
-    public CollectionStationResourceCursorAdapter(Context context, Cursor cur)
+    private LayoutInflater mInflater;
+    private ArrayList<Fav> favArray;
+    private ArrayList<Station> stations;
+    private Ligne ligne;
+    private Context mContext;
+
+    public CollectionStationResourceCursorAdapter(Context context, ArrayList<Station> stations, Ligne ligne)
     {
-        super(context, R.layout.cursor_row, cur, true);
-        favArray =  Utils.loadArray(context);
+        super(context, R.layout.station_row, stations);
+        this.stations = stations;
+        favArray = new ArrayList<Fav>();
+        mContext = context;
+        this.ligne = ligne;
         mInflater = LayoutInflater.from(context);
     }
 
     @Override
-    public View newView(Context context, Cursor cur, ViewGroup parent)
-    {
-        return mInflater.inflate(R.layout.station_row, parent, false);
+    public View getView(int position, View aView, ViewGroup parent) {
+        ViewHolder holder;
+        if (aView == null) {
+            aView = mInflater.inflate(R.layout.station_row, null);
+            holder = new ViewHolder();
+            holder.cb=(CheckBox)aView.findViewById(R.id.station_row_checkbox);
+            holder.cb.setOnCheckedChangeListener(checkListener);
+            holder.tw = (TextView)aView.findViewById(R.id.station_row_text);
+            aView.setTag(holder);
+        }
+         else {
+            holder = (ViewHolder) aView.getTag();
+        }
+
+
+        Station station = stations.get(position);
+        holder.tw.setText(station.getTitle());
+        holder.cb.setTag(position);
+        holder.cb.setChecked(station.isFav());
+
+        return aView;
     }
 
-    @Override
-    public void bindView(View view, Context context, Cursor cur) {
-        TextView tvListText = (TextView)view.findViewById(R.id.station_row_text);
-        CheckBox cbListCheck = (CheckBox)view.findViewById(R.id.station_row_checkbox);
+    private OnCheckedChangeListener checkListener = new OnCheckedChangeListener() {
+        @Override
+        public void onCheckedChanged(CompoundButton checkboxView, boolean isChecked) {
+            if(checkboxView.getTag() == null)
+                return;
 
-        Long longid = cur.getLong(cur.getColumnIndex(StationDBAdapter.ARRET_KEY));
+            int position = (Integer)checkboxView.getTag();
+            Station station = stations.get(position);
+            station.setFav(isChecked);
 
-        tvListText.setText(cur.getString(cur.getColumnIndex(StationDBAdapter.ARRET_TITLE)));
-        cbListCheck.setChecked(favArray.contains(longid.intValue())? true : false);
-        cbListCheck.setTag(longid.intValue());
+            Fav fav = new Fav(station.getCtsId(), ligne.getTitle());
+            int index = Fav.FavsContains(favArray, fav.getArretCtsKey());
 
-        cbListCheck.setOnCheckedChangeListener(new OnCheckedChangeListener()
-        {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Integer intId = Integer.parseInt(buttonView.getTag().toString());
-                if(isChecked)
-                {
-                    favArray.add(intId);
-                }
-                else
-                {
-                    favArray.remove(intId);
-                }
-                Utils.saveArray(mContext, favArray);
+            if(index == -1 && isChecked)
+            {
+                favArray.add(fav);
             }
-        });
+            else
+            {
+                if(index != -1 && !isChecked)
+                    favArray.remove(index);
+            }
+        }
+    };
+
+    public ArrayList<Fav> getFavs()
+    {
+        return favArray;
     }
+
+    static class ViewHolder {
+        TextView tw;
+        CheckBox cb;
+    }
+
+
 }

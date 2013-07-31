@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <style name="Theme.test" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+    <!--<item name="android:actionBarTabStyle">@style/MyActionBarTabStyle</item>
+   <item name="actionBarTabStyle">@style/MyActionBarTabStyle</item>-->
+</style>
+
+<style name="MyActionBarTabStyle" parent="Widget.Sherlock.Light.ActionBar.TabBar">
+   <item name="android:showDividers">middle</item>
+   <item name="android:divider">@android:drawable/divider_horizontal_dark</item>
+   <item name="divider">@android:drawable/divider_horizontal_dark</item>
+   <item name="android:dividerPadding">10dip</item>
+   <item name="android:background">#ff0000</item>
+</style>
+</resources>

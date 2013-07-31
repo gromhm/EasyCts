@@ -5,6 +5,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.easycts.Database.LigneDBAdapter;
+import com.easycts.Database.StationDBAdapter;
 
 public class Ligne implements Parcelable
 {
@@ -88,6 +89,14 @@ public class Ligne implements Parcelable
     			cursor.getString(cursor.getColumnIndex(LigneDBAdapter.LIGNE_DIR2)));
 	}
 
+    public static Ligne FromCursorWithSpecificId(Cursor cursor, String id)
+    {
+        return new Ligne(cursor.getLong(cursor.getColumnIndex(id)),
+                cursor.getString(cursor.getColumnIndex(LigneDBAdapter.LIGNE_CTSID)),
+                cursor.getInt(cursor.getColumnIndex(LigneDBAdapter.LIGNE_TYPE)),
+                cursor.getString(cursor.getColumnIndex(LigneDBAdapter.LIGNE_DIR1)),
+                cursor.getString(cursor.getColumnIndex(LigneDBAdapter.LIGNE_DIR2)));
+    }
 	
 	@Override
 	public int describeContents() {

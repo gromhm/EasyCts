@@ -12,6 +12,7 @@ public class Station implements Parcelable {
 	private long id;
 	private String title;
 	private String ctsId;
+    private Boolean isFav;
 	ArrayList<StationHours> stationHours;
 
 	public Station()
@@ -19,12 +20,13 @@ public class Station implements Parcelable {
 		
 	}
 	
-	public Station(long id, String ctsId, String title) {
+	public Station(long id, String ctsId, String title, Boolean isChecked) {
 		super();
 		this.id = id;
 		this.ctsId = ctsId;
 		this.title = title;
 		this.stationHours = new ArrayList<StationHours>();
+        this.isFav = isChecked;
 	}
 	
 	public Station(Parcel in) 
@@ -33,6 +35,7 @@ public class Station implements Parcelable {
 		this.id = in.readLong();
 		this.ctsId = in.readString();
 		this.title = in.readString();
+        this.isFav = in.readByte() == 1;
 		in.readTypedList(this.stationHours, StationHours.CREATOR);
 	}
 
@@ -74,6 +77,16 @@ public class Station implements Parcelable {
 		this.stationHours = stationHours;
 	}
 
+    public boolean isFav()
+    {
+        return isFav;
+    }
+
+    public void setFav(boolean fav)
+    {
+        isFav = fav;
+    }
+
 	@Override
 	public int describeContents() {
 		// TODO Auto-generated method stub
@@ -86,21 +99,16 @@ public class Station implements Parcelable {
 		dest.writeString(ctsId);
 		dest.writeString(title);
 		dest.writeTypedList(stationHours);
+        dest.writeByte((byte) (isFav ? 1 : 0));
 	}
 	
 	public static Station FromCursor(Cursor cursor)
 	{
 		return new Station(cursor.getLong(cursor.getColumnIndex(StationDBAdapter.ARRET_KEY)), 
     			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_CTSID)),
-    			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_TITLE)));
+    			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_TITLE)), Boolean.FALSE);
 	}
-	
-	public static Station FromCursorWithSpecificId(Cursor cursor, String id)
-	{
-		return new Station(cursor.getLong(cursor.getColumnIndex(id)), 
-    			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_CTSID)),
-    			cursor.getString(cursor.getColumnIndex(StationDBAdapter.ARRET_TITLE)));
-	}
+
 	
 	public static final Parcelable.Creator<Station> CREATOR = new Parcelable.Creator<Station>() {
 		@Override

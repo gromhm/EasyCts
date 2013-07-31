@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:paddingTop="5sp"
+  android:paddingBottom="5sp">
+
+  <TextView
+    android:id="@+id/fav_row_ligne"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_centerVertical="true"
+    android:text="A"/>
+
+    <TextView
+    android:id="@+id/fav_row_station"
+    android:layout_toRightOf="@id/fav_row_ligne"
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:text="ill"/>
+
+</RelativeLayout>
