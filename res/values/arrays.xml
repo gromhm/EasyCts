@@ -6,7 +6,8 @@
         <item>TRAM</item>planets_arrayplanets_array
     </string-array>
     <string-array name="menu_array">
-        <item>Accueil</item>
+        <item>Info Trafic</item>
+        <item>Deviation</item>
         <item>Arrèts à proximité</item>
         <item>Lignes</item>
         <item>Favoris</item>

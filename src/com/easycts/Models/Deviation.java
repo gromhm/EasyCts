@@ -12,13 +12,15 @@ public class Deviation implements Parcelable
 	private String position;
 	private String lignes;
 	private String debut, fin;
-	
-	public Deviation(String id, String titre, String description, String exergue, String position, String lignes, String debut, String fin)
+	private String categorie;
+
+	public Deviation(String id, String titre, String description, String exergue, String categorie, String position, String lignes, String debut, String fin)
 	{
 		 this.id = id;
 		 this.titre=  titre;
 		 this.description = description;
 		 this.exergue = exergue;
+         this.categorie = categorie;
 		 this.position = position;
 		 this.lignes = lignes;
 		 this.debut = debut;
@@ -31,6 +33,7 @@ public class Deviation implements Parcelable
 		 this.titre=   in.readString();
 		 this.description =  in.readString();
 		 this.exergue =  in.readString();
+         this.categorie = in.readString();
 		 this.position =  in.readString();
 		 this.lignes =  in.readString();
 		 this.debut =  in.readString();
@@ -53,7 +56,11 @@ public class Deviation implements Parcelable
 	public String getExergue() {
 		return exergue;
 	}
-	
+
+    public String getCategorie() {
+        return categorie;
+    }
+
 	public String getPosition() {
 		return position;
 	}
@@ -82,6 +89,7 @@ public class Deviation implements Parcelable
 		dest.writeString(titre);
 		dest.writeString(description);
 		dest.writeString(exergue);
+        dest.writeString(categorie);
 		dest.writeString(position);
 		dest.writeString(lignes);
 		dest.writeString(debut);

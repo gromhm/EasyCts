@@ -20,13 +20,10 @@ import com.actionbarsherlock.app.SherlockFragment;
 import com.easycts.Database.LigneDBAdapter;
 import com.easycts.Database.StationDBAdapter;
 import com.easycts.Models.Ligne;
-import com.easycts.Models.Pair;
 import com.easycts.Models.Station;
 import com.easycts.R;
 import com.easycts.Task.StationsFavTask;
 import com.easycts.Ui.PagerStationActivity;
-
-import java.util.ArrayList;
 
 
 public class FavoritesFragment extends SherlockFragment implements StationsFavTask.StationsFavTaskFinishedListener
@@ -42,14 +39,15 @@ public class FavoritesFragment extends SherlockFragment implements StationsFavTa
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View rootView = inflater.inflate(R.layout.activity_collection_station, container, false);
+        View rootView = inflater.inflate(R.layout.activity_collection_progressbar, container, false);
         mContext = this.getSherlockActivity();
-        listView = (ListView) rootView.findViewById(R.id.listStations);
-        progressBar = (ProgressBar) rootView.findViewById(R.id.stationCollectionLoader);
+        listView = (ListView) rootView.findViewById(R.id.activity_coll_collection);
+        progressBar = (ProgressBar) rootView.findViewById(R.id.activity_coll_progressbar);
         listView.setOnItemClickListener(setOnItemClickListener);
         progressBar.setVisibility(View.VISIBLE);
         listView.setVisibility(View.GONE);
         new StationsFavTask(this).execute();
+
         return rootView;
     }
 

@@ -15,10 +15,13 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.easycts.Models.Deviation;
 import com.easycts.R;
 import com.easycts.Ui.Mainactivity.CollectionLignesFragment;
 import com.easycts.Ui.Mainactivity.DefaultFragment;
+import com.easycts.Ui.Mainactivity.DeviationsFragment;
 import com.easycts.Ui.Mainactivity.FavoritesFragment;
+import com.easycts.Ui.Mainactivity.InfosTraficFragment;
 import com.easycts.Ui.Mainactivity.MainActivityMenuItemView;
 
 public class MainActivity extends SherlockFragmentActivity {
@@ -34,8 +37,8 @@ public class MainActivity extends SherlockFragmentActivity {
 	CollectionLignesFragment lignesFragment;
 	FavoritesFragment favFragment;
 	DefaultFragment planetFragment;
-	
-
+	DeviationsFragment deviationFragment;
+    InfosTraficFragment infosTraficFragment;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) 
@@ -46,7 +49,9 @@ public class MainActivity extends SherlockFragmentActivity {
 		lignesFragment = new CollectionLignesFragment();
 		favFragment = new FavoritesFragment();
 		planetFragment = new DefaultFragment();
-		
+        deviationFragment = new DeviationsFragment();
+        infosTraficFragment = new InfosTraficFragment();
+
 		setContentView(R.layout.activity_main);
 		mTitle = mDrawerTitle = getTitle();
 		mMenuArray = getResources().getStringArray(R.array.menu_array);
@@ -172,10 +177,16 @@ public class MainActivity extends SherlockFragmentActivity {
 		   FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 	        // Locate Position
 	        switch (position) {
-	        case 2:
+            case 0:
+                ft.replace(R.id.content_frame, infosTraficFragment);
+                break;
+            case 1:
+                ft.replace(R.id.content_frame, deviationFragment);
+                break;
+	        case 3:
 	            ft.replace(R.id.content_frame, lignesFragment);
 	            break;
-	        case 3:
+	        case 4:
 	            ft.replace(R.id.content_frame, favFragment);
 	            break;
 	        default:

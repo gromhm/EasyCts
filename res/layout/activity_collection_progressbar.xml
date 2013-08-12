@@ -4,8 +4,15 @@
                     android:layout_height="match_parent"
                     android:padding="20dip">
 
+    <TextView
+            android:id="@+id/activity_coll_empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
     <ProgressBar
-            android:id="@+id/stationCollectionLoader"
+            android:id="@+id/activity_coll_progressbar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -13,7 +20,7 @@
             android:visibility="gone"/>
 
       <ListView
-      android:id="@+id/listStations"
+      android:id="@+id/activity_coll_collection"
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
       android:choiceMode="singleChoice"

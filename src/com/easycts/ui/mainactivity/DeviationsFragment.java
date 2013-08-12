@@ -1,12 +1,8 @@
 package com.easycts.Ui.Mainactivity;
 
 import android.content.Intent;
-import android.database.Cursor;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.widget.CursorAdapter;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,45 +13,45 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockFragment;
-import com.easycts.Database.LigneDBAdapter;
-import com.easycts.Database.StationDBAdapter;
-import com.easycts.Models.InfosTrafic;
-import com.easycts.Models.Ligne;
-import com.easycts.Models.Station;
+import com.easycts.Intents;
+import com.easycts.Models.Deviation;
+import com.easycts.Network.soapDeviationsHelper;
 import com.easycts.Network.soapHelper;
-import com.easycts.Network.soapInfosTraficHelper;
 import com.easycts.R;
 import com.easycts.Task.GenericSoapTask;
-import com.easycts.Task.StationsFavTask;
-import com.easycts.Ui.PagerStationActivity;
+import com.easycts.Ui.Adapter.CollectionDeviationArrayAdapter;
+import com.easycts.Ui.Adapter.CollectionInfosTraficArrayAdapter;
+import com.easycts.Ui.DeviationActivity;
 
 import java.util.ArrayList;
 
 
-public class DeviationsFragment extends SherlockFragment implements StationsFavTask.StationsFavTaskFinishedListener, GenericSoapTask.StationTaskFinishedListener<ArrayList<InfosTrafic>>
+public class DeviationsFragment extends SherlockFragment implements GenericSoapTask.StationTaskFinishedListener<ArrayList<Deviation>>
 {
-    public final static String STATION = "com.easycts.Ui.intent.STATION";
-
     FragmentActivity mContext;
     ListView listView;
     ProgressBar progressBar;
-    SimpleCursorAdapter lignesAdapter;
-    private Cursor curs;
+    TextView emptyTw;
+    private CollectionDeviationArrayAdapter mCollectionDeviationArrayAdapter;
+    ArrayList<Deviation> mDeviations;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View rootView = inflater.inflate(R.layout.activity_collection_station, container, false);
+        View rootView = inflater.inflate(R.layout.activity_collection_progressbar, container, false);
         mContext = this.getSherlockActivity();
-        listView = (ListView) rootView.findViewById(R.id.listStations);
-        progressBar = (ProgressBar) rootView.findViewById(R.id.stationCollectionLoader);
+        listView = (ListView) rootView.findViewById(R.id.activity_coll_collection);
+        progressBar = (ProgressBar) rootView.findViewById(R.id.activity_coll_progressbar);
+        emptyTw = (TextView) rootView.findViewById(R.id.activity_coll_empty_text);
         listView.setOnItemClickListener(setOnItemClickListener);
         progressBar.setVisibility(View.VISIBLE);
         listView.setVisibility(View.GONE);
-        new StationsFavTask(this).execute();
+        emptyTw.setVisibility(View.GONE);
 
-        soapHelper<ArrayList<InfosTrafic>> soapHelper = new soapInfosTraficHelper(getString(R.string.cts_soap_password));
-        new GenericSoapTask<ArrayList<InfosTrafic>>(DeviationsFragment.this, soapHelper).execute();
+        emptyTw.setText(getString(R.string.empty_deviations));
+
+        soapHelper<ArrayList<Deviation>> soapHelper = new soapDeviationsHelper(getString(R.string.cts_soap_password));
+        new GenericSoapTask<ArrayList<Deviation>>(DeviationsFragment.this, soapHelper).execute();
 
         return rootView;
     }
@@ -63,65 +59,34 @@ public class DeviationsFragment extends SherlockFragment implements StationsFavT
     private OnItemClickListener setOnItemClickListener = new OnItemClickListener()
     {
         @Override
-        public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id)
+        public void onItemClick(AdapterView<?> arg0, View view, int position, long id)
         {
-            Intent intent = new Intent(mContext, PagerStationActivity.class);
-            Ligne ligne = Ligne.FromCursorWithSpecificId(curs, "ligne_id");
-            Station station = Station.FromCursor(curs);
-            intent.putExtra(CollectionLignesFragment.LIGNE, ligne);
-            intent.putExtra(STATION, station);
+            Deviation deviation = mDeviations.get(position);
+            Intent intent = new Intent(view.getContext(), DeviationActivity.class);
+            intent.putExtra(Intents.DEVIATION, deviation);
             mContext.startActivity(intent);
         }
     };
 
     @Override
-    public void onTaskFinished(Cursor results) {
-        curs = results;
-        lignesAdapter = new SimpleCursorAdapter(mContext,
-                R.layout.fav_row, results, new String[] {
-                LigneDBAdapter.LIGNE_CTSID, StationDBAdapter.ARRET_TITLE,
-                LigneDBAdapter.LIGNE_DIR1 }, new int[] {
-                R.id.fav_row_ligne, R.id.fav_row_station},
-                CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
+    public void onTaskFinished(ArrayList<Deviation> results)
+    {
+        mDeviations = results;
+        if(!results.isEmpty())
+        {
+            this.mCollectionDeviationArrayAdapter  = new CollectionDeviationArrayAdapter(mContext, results);
+            listView.setAdapter(this.mCollectionDeviationArrayAdapter);
+            listView.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.GONE);
+            emptyTw.setVisibility(View.GONE);
+        }
+        else
+        {
+            listView.setVisibility(View.GONE);
+            progressBar.setVisibility(View.GONE);
+            emptyTw.setVisibility(View.VISIBLE);
+        }
 
-        listView.setAdapter(lignesAdapter);
 
-        lignesAdapter.setViewBinder(new SimpleCursorAdapter.ViewBinder() {
-            @Override
-            public boolean setViewValue(View view, Cursor cursor,
-                                        int columnIndex) {
-                if (view.getId() == R.id.fav_row_ligne) {
-                    String empname = cursor.getString(cursor.getColumnIndex(LigneDBAdapter.LIGNE_CTSID));
-                    TextView tv = (TextView) view;
-                    tv.setTextColor(Color.WHITE);
-                    tv.setText(empname);
-
-                    if (empname.equals("A"))
-                        SetTramTxtView(tv, Color.rgb(226, 0, 26));
-                    else if (empname.equals("B"))
-                        SetTramTxtView(tv, Color.rgb(0, 158, 224));
-                    else if (empname.equals("C"))
-                        SetTramTxtView(tv, Color.rgb(242, 148, 0));
-                    else if (empname.equals("D"))
-                        SetTramTxtView(tv, Color.rgb(0, 153, 51));
-                    else if (empname.equals("E"))
-                        SetTramTxtView(tv, Color.rgb(144, 133, 186));
-                    else if (empname.equals("F"))
-                        SetTramTxtView(tv, Color.rgb(177, 200, 0));
-                    else
-                        tv.setTextColor(Color.BLACK);
-                    return true;
-                }
-                return false;
-            }
-        });
-
-        listView.setVisibility(View.VISIBLE);
-        progressBar.setVisibility(View.GONE);
-    }
-
-    private void SetTramTxtView(TextView tv, int color) {
-        tv.setTextColor(color);
-        tv.setTextSize(20);
     }
 }

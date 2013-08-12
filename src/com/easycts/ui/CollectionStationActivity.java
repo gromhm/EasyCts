@@ -3,7 +3,6 @@ package com.easycts.Ui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -13,7 +12,6 @@ import android.widget.ProgressBar;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.MenuItem;
-import com.easycts.Database.StationDBAdapter;
 import com.easycts.Models.Fav;
 import com.easycts.Models.Ligne;
 import com.easycts.Models.Station;
@@ -39,7 +37,7 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mContext = this;
-		setContentView(R.layout.activity_collection_station);
+		setContentView(R.layout.activity_collection_progressbar);
 		Intent i = getIntent();
 		ligne = i.getParcelableExtra(CollectionLignesFragment.LIGNE);
 
@@ -48,8 +46,8 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
         supportActionBar.setDisplayHomeAsUpEnabled(true);
         supportActionBar.setTitle("Ligne " + ligne.getTitle());
 
-		listView = (ListView) findViewById(R.id.listStations);
-        mProgressBar = (ProgressBar) findViewById(R.id.stationCollectionLoader);
+		listView = (ListView) findViewById(R.id.activity_coll_collection);
+        mProgressBar = (ProgressBar) findViewById(R.id.activity_coll_progressbar);
         mProgressBar.setVisibility(View.VISIBLE);
 		listView.setOnItemClickListener(this);
 
@@ -68,7 +66,7 @@ public class CollectionStationActivity extends SherlockActivity implements OnIte
 	}
 
 	@Override
-	public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) 
+	public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id)
 	{
 		Intent intent = new Intent(CollectionStationActivity.this, PagerStationActivity.class);
 		intent.putExtra(CollectionLignesFragment.LIGNE, ligne);

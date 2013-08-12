@@ -18,4 +18,10 @@
    	<string name="cts_soap_password">136</string>
    	<string name="cts_soap_url">http://opendata.cts-strasbourg.fr/webservice_v4/Service.asmx</string>
    	<string name="cts_soap_namespace">http://www.cts-strasbourg.fr/</string>
+
+    <string name="empty_infos_trafic">"Il n'y a pas d'info trafic"</string>
+    <string name="empty_deviations">"Il n'y a pas de déviation"</string>
+    <string name="infostrafic_lignes">Ligne(s) concernée(s) :</string>
+    <string name="infostrafic_categorie">Catégorie :</string>
+    <string name="infostrafic_periode">Période :</string>
 </resources>

@@ -7,63 +7,28 @@
   android:paddingBottom="5sp">
 
     <TextView
-        android:id="@+id/deviation_row_title"
+        android:id="@+id/infos_trafic_row_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="14sp"
         android:text="Titre"/>
 
-    <!--<TextView
-        android:id="@+id/deviation_row_lignes_lib"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:layout_below="@id/deviation_row_title"
-        android:text="Ligne(s) concernée(s) :"/>
-
-      <TextView
-        android:id="@+id/deviation_row_lignes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:layout_below="@id/deviation_row_title"
-        android:layout_toRightOf="@id/deviation_row_lignes_lib"
-        android:text=" 63"/>-->
-
     <TextView
-        android:id="@+id/deviation_row_category_lib"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:layout_below="@id/deviation_row_title"
-        android:text="Catégorie :"/>
-
-    <TextView
-        android:id="@+id/deviation_row_category"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:layout_below="@id/deviation_row_title"
-        android:layout_toRightOf="@id/deviation_row_category_lib"
-        android:text="Travaux"/>
-
-    <TextView
-            android:id="@+id/deviation_row_date_lib"
+            android:id="@+id/infos_trafic_row_date_lib"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textStyle="bold"
-            android:layout_below="@id/deviation_row_category_lib"
+            android:layout_below="@id/infos_trafic_row_title"
             android:text="Période :"/>
 
     <TextView
-        android:id="@+id/deviation_row_date"
+        android:id="@+id/infos_trafic_row_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="12sp"
-        android:layout_below="@id/deviation_row_category_lib"
-        android:layout_toRightOf="@id/deviation_row_date_lib"
+        android:layout_below="@id/infos_trafic_row_title"
+        android:layout_toRightOf="@id/infos_trafic_row_date_lib"
         android:text="12/08/2013 au 30/08/2013"/>
 
 

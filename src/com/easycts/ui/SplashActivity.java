@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.actionbarsherlock.app.SherlockActivity;
 import com.easycts.Database.DBAdapter;
 import com.easycts.R;
 import com.easycts.Task.LoadingTask;
@@ -16,7 +17,7 @@ import com.easycts.Task.LoadingTask.LoadingTaskFinishedListener;
 
 import java.io.File;
 
-public class SplashActivity extends Activity implements LoadingTaskFinishedListener {
+public class SplashActivity extends SherlockActivity implements LoadingTaskFinishedListener {
 	
 	String dbName, filesDir;
 	Boolean resourcesAlreadyExist;

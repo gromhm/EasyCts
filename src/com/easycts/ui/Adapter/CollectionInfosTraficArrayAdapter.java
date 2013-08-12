@@ -9,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.easycts.Models.Deviation;
+import com.easycts.Models.InfosTrafic;
 import com.easycts.R;
 
 import java.util.ArrayList;
@@ -17,13 +18,13 @@ import java.util.Date;
 public class CollectionInfosTraficArrayAdapter extends ArrayAdapter
 {
     private LayoutInflater mInflater;
-    private ArrayList<Deviation> devArray;
+    private ArrayList<InfosTrafic> infosArray;
     private Context mContext;
 
-    public CollectionInfosTraficArrayAdapter(Context context, ArrayList<Deviation> deviations)
+    public CollectionInfosTraficArrayAdapter(Context context, ArrayList<InfosTrafic> infos)
     {
-        super(context, R.layout.deviation_row, deviations);
-        this.devArray = deviations;
+        super(context, R.layout.deviation_row, infos);
+        this.infosArray = infos;
         mContext = context;
         mInflater = LayoutInflater.from(context);
     }
@@ -36,12 +37,9 @@ public class CollectionInfosTraficArrayAdapter extends ArrayAdapter
             aView = mInflater.inflate(R.layout.deviation_row, null);
         }
 
-        Date dateDebut = new Date(), dateFin = new Date();
-        Deviation dev = devArray.get(position);
-        ((TextView)aView.findViewById(R.id.deviation_row_title)).setText(dev.getTitre());
-        //((TextView)aView.findViewById(R.id.deviation_row_lignes)).setText(dev.getLignes());
-        ((TextView)aView.findViewById(R.id.deviation_row_category)).setText(dev.getCategorie());
-        ((TextView)aView.findViewById(R.id.deviation_row_date)).setText(dev.getDebut() + " - " + dev.getFin());
+        InfosTrafic info = infosArray.get(position);
+        ((TextView)aView.findViewById(R.id.infos_trafic_row_title)).setText(info.getTitre());
+        ((TextView)aView.findViewById(R.id.infos_trafic_row_date)).setText(info.getDebut() + " - " + info.getFin());
 
         return aView;
     }

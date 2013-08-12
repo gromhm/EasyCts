@@ -210,6 +210,7 @@ public class PagerStationActivity  extends SherlockFragmentActivity implements G
         ArrayList<StationHours> typeHours = new ArrayList<StationHours>();
         for(StationHours hour : hours)
         {
+            //Autre arrets Bus ou Tram
             if(type != null)
             {
                 if (hour.getType().equals(type) && !hour.getCtsLigneId().startsWith(ligne.getTitle()))
@@ -217,6 +218,7 @@ public class PagerStationActivity  extends SherlockFragmentActivity implements G
                     typeHours.add(hour);
                 }
             }
+            //Arret
             else
             {
                 if (hour.getCtsLigneId().startsWith(ligne.getTitle()))

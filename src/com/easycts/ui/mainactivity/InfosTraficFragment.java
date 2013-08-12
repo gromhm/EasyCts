@@ -1,5 +1,6 @@
 package com.easycts.Ui.Mainactivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
@@ -9,15 +10,21 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockFragment;
+import com.easycts.Intents;
 import com.easycts.Models.Deviation;
 import com.easycts.Models.InfosTrafic;
 import com.easycts.Network.soapDeviationsHelper;
 import com.easycts.Network.soapHelper;
+import com.easycts.Network.soapInfosTraficHelper;
 import com.easycts.R;
 import com.easycts.Task.GenericSoapTask;
 import com.easycts.Ui.Adapter.CollectionDeviationArrayAdapter;
+import com.easycts.Ui.Adapter.CollectionInfosTraficArrayAdapter;
+import com.easycts.Ui.DeviationActivity;
+import com.easycts.Ui.InfosTraficActivity;
 
 import java.util.ArrayList;
 
@@ -26,8 +33,10 @@ public class InfosTraficFragment extends SherlockFragment implements GenericSoap
 {
     FragmentActivity mContext;
     ListView listView;
+    TextView emptyTw;
     ProgressBar progressBar;
-    private CollectionDeviationArrayAdapter mCollectionDeviationArrayAdapter;
+    private CollectionInfosTraficArrayAdapter mCollectionInfosTraficArrayAdapter;
+    ArrayList<InfosTrafic> mInfoTraf;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -36,12 +45,16 @@ public class InfosTraficFragment extends SherlockFragment implements GenericSoap
         mContext = this.getSherlockActivity();
         listView = (ListView) rootView.findViewById(R.id.activity_coll_collection);
         progressBar = (ProgressBar) rootView.findViewById(R.id.activity_coll_progressbar);
+        emptyTw = (TextView) rootView.findViewById(R.id.activity_coll_empty_text);
         listView.setOnItemClickListener(setOnItemClickListener);
         progressBar.setVisibility(View.VISIBLE);
         listView.setVisibility(View.GONE);
+        emptyTw.setVisibility(View.GONE);
 
-        soapHelper<ArrayList<Deviation>> soapHelper = new soapDeviationsHelper(getString(R.string.cts_soap_password));
-        new GenericSoapTask<ArrayList<Deviation>>(InfoTraficFragment.this, soapHelper).execute();
+        emptyTw.setText(getString(R.string.empty_infos_trafic));
+
+        soapHelper<ArrayList<InfosTrafic>> soapHelper = new soapInfosTraficHelper(getString(R.string.cts_soap_password));
+        new GenericSoapTask<ArrayList<InfosTrafic>>(InfosTraficFragment.this, soapHelper).execute();
 
         return rootView;
     }
@@ -49,34 +62,33 @@ public class InfosTraficFragment extends SherlockFragment implements GenericSoap
     private OnItemClickListener setOnItemClickListener = new OnItemClickListener()
     {
         @Override
-        public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id)
+        public void onItemClick(AdapterView<?> arg0, View view, int position, long id)
         {
-            /*AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-            builder.setAdapter(new MyAdapter(), null);
-            builder.setTitle("Title");
-            builder.setPositiveButton(android.R.string.ok, new OnClickListener() {
-
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                }
-            });*/
-
-            /*Intent intent = new Intent(mContext, PagerStationActivity.class);
-            Ligne ligne = Ligne.FromCursorWithSpecificId(curs, "ligne_id");
-            Station station = Station.FromCursor(curs);
-            intent.putExtra(CollectionLignesFragment.LIGNE, ligne);
-            intent.putExtra(STATION, station);
-            mContext.startActivity(intent);*/
+            InfosTrafic infoTraf = mInfoTraf.get(position);
+            Intent intent = new Intent(view.getContext(), InfosTraficActivity.class);
+            intent.putExtra(Intents.INFOSTRAFIC, infoTraf);
+            mContext.startActivity(intent);
         }
     };
 
     @Override
-    public void onTaskFinished(ArrayList<Deviation> results)
+    public void onTaskFinished(ArrayList<InfosTrafic> results)
     {
-        this.mCollectionDeviationArrayAdapter  = new CollectionDeviationArrayAdapter(mContext, results);
-        listView.setAdapter(this.mCollectionDeviationArrayAdapter);
-        listView.setVisibility(View.VISIBLE);
-        progressBar.setVisibility(View.GONE);
+        mInfoTraf = results;
+        if(!results.isEmpty())
+        {
+            this.mCollectionInfosTraficArrayAdapter  = new CollectionInfosTraficArrayAdapter(mContext, results);
+            listView.setAdapter(this.mCollectionInfosTraficArrayAdapter);
+            listView.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.GONE);
+            emptyTw.setVisibility(View.GONE);
+        }
+        else
+        {
+            listView.setVisibility(View.GONE);
+            progressBar.setVisibility(View.GONE);
+            emptyTw.setVisibility(View.VISIBLE);
+        }
 
     }
 }
