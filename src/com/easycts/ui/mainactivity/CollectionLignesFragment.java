@@ -31,9 +31,13 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.widget.SearchView;
 import com.easycts.Database.LigneDBAdapter;
+import com.easycts.Database.StationDBAdapter;
+import com.easycts.Intents;
 import com.easycts.Models.Ligne;
+import com.easycts.Models.Station;
 import com.easycts.R;
 import com.easycts.Ui.CollectionStationActivity;
+import com.easycts.Ui.PagerStationActivity;
 
 public class CollectionLignesFragment extends SherlockFragment implements
 		ActionBar.OnNavigationListener, SearchView.OnQueryTextListener,
@@ -45,11 +49,13 @@ public class CollectionLignesFragment extends SherlockFragment implements
 	LigneDBAdapter ligneDBAdapter;
 	SimpleCursorAdapter lignesAdapter;
 	SherlockFragmentActivity mContext;
+    private StationDBAdapter stationDBAdapter;
 	boolean mNaviFirstHit;
+    SearchView searchView;
+    SuggestionsAdapter mSuggestionsAdapter;
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.activity_collection_ligne,
 				container, false);
 		mContext = this.getSherlockActivity();
@@ -62,6 +68,9 @@ public class CollectionLignesFragment extends SherlockFragment implements
 				context, R.array.ligne_type, R.layout.sherlock_spinner_item);
 		list.setDropDownViewResource(R.layout.sherlock_spinner_dropdown_item);
 		ab.setListNavigationCallbacks(list, this);
+
+        stationDBAdapter = new StationDBAdapter(rootView.getContext());
+        stationDBAdapter.open();
 
 		ligneDBAdapter = new LigneDBAdapter(rootView.getContext());
 		ligneDBAdapter.open();
@@ -153,10 +162,6 @@ public class CollectionLignesFragment extends SherlockFragment implements
 		return true;
 	}
 
-	private static final String[] COLUMNS = { BaseColumns._ID,
-			SearchManager.SUGGEST_COLUMN_TEXT_1, };
-	private SuggestionsAdapter mSuggestionsAdapter;
-
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) 
 	{
@@ -165,21 +170,10 @@ public class CollectionLignesFragment extends SherlockFragment implements
 		ab.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 
 		// Create the search view
-		SearchView searchView = new SearchView(ab.getThemedContext());
+		searchView = new SearchView(ab.getThemedContext());
 		searchView.setQueryHint("Rechercher un arrêt");
 		searchView.setOnQueryTextListener(this);
 		searchView.setOnSuggestionListener(this);
-
-		if (mSuggestionsAdapter == null) {
-			MatrixCursor cursor = new MatrixCursor(COLUMNS);
-			cursor.addRow(new String[] { "1", "'Murica" });
-			cursor.addRow(new String[] { "2", "Canada" });
-			cursor.addRow(new String[] { "3", "Denmark" });
-			mSuggestionsAdapter = new SuggestionsAdapter(ab.getThemedContext(),
-					cursor);
-		}
-
-		searchView.setSuggestionsAdapter(mSuggestionsAdapter);
 
 		menu.add("Search")
 				.setIcon(R.drawable.abs__ic_search)
@@ -198,44 +192,62 @@ public class CollectionLignesFragment extends SherlockFragment implements
 		@Override
 		public void bindView(View view, Context context, Cursor cursor) {
 			TextView tv = (TextView) view;
-			final int textIndex = cursor
-					.getColumnIndex(SearchManager.SUGGEST_COLUMN_TEXT_1);
-			tv.setText(cursor.getString(textIndex));
+			final int textIndex = cursor.getColumnIndex(StationDBAdapter.ARRET_TITLE);
+            final int ligneCtsidIndex = cursor.getColumnIndex(LigneDBAdapter.LIGNE_CTSID);
+			tv.setText(cursor.getString(textIndex) + " (" + cursor.getString(ligneCtsidIndex) + ")");
 		}
 
 		@Override
 		public View newView(Context context, Cursor cursor, ViewGroup parent) {
 			LayoutInflater inflater = LayoutInflater.from(context);
-			View v = inflater.inflate(android.R.layout.simple_list_item_1,
-					parent, false);
+			View v = inflater.inflate(android.R.layout.simple_list_item_1, parent, false);
 			return v;
 		}
 	}
 
 	@Override
 	public boolean onSuggestionClick(int position) {
-		Cursor c = (Cursor) mSuggestionsAdapter.getItem(position);
-		String query = c.getString(c
-				.getColumnIndex(SearchManager.SUGGEST_COLUMN_TEXT_1));
-		Toast.makeText(this.mContext.getBaseContext(), "Suggestion clicked: " + query, Toast.LENGTH_LONG).show();
-		return true;
-	}
+		Cursor curs = (Cursor) mSuggestionsAdapter.getItem(position);
 
-	@Override
-	public boolean onSuggestionSelect(int arg0) {
-		// TODO Auto-generated method stub
+        Intent intent = new Intent(mContext, PagerStationActivity.class);
+        Ligne ligne = Ligne.FromCursorWithSpecificId(curs, "ligne_id");
+        Station station = Station.FromCursor(curs);
+        intent.putExtra(CollectionLignesFragment.LIGNE, ligne);
+        intent.putExtra(Intents.STATION, station);
+        mContext.startActivity(intent);
 		return false;
 	}
 
 	@Override
-	public boolean onQueryTextChange(String arg0) {
-		// TODO Auto-generated method stub
+	public boolean onSuggestionSelect(int arg0) {
+        return false;
+	}
+
+	@Override
+	public boolean onQueryTextChange(String query) {
+        showResults(query);
 		return false;
 	}
 
 	@Override
 	public boolean onQueryTextSubmit(String query) {
-		Toast.makeText(this.mContext.getBaseContext(), "You searched for: " + query, Toast.LENGTH_LONG).show();
-		return true;
+        showResults(query);
+        return false;
 	}
+
+    String lastValue;
+    private void showResults(String query)
+    {
+        if(query != null &&  !query.equals(""))
+        {
+            if(query.equals(lastValue))
+                return;
+            lastValue = query;
+            Cursor cursor = stationDBAdapter.searchStation(query.toString());
+            ActionBar ab = mContext.getSupportActionBar();
+            mSuggestionsAdapter = new SuggestionsAdapter(ab.getThemedContext(), cursor);
+            searchView.setSuggestionsAdapter(mSuggestionsAdapter);
+        }
+    }
+
 }

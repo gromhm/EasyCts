@@ -10,4 +10,7 @@ public class Intents {
     public static final String FRAGMENTTYPE = "com.easycts.Ui.intent.FRAGMENTTYPE";
     public static final String DEVIATION = "com.easycts.Ui.intent.DEVIATION";
     public static final String INFOSTRAFIC = "com.easycts.Ui.intent.INFOSTRAFIC";
+    public static final String ISFAV = "com.easycts.Ui.intent.ISFAV";
+
+
 }

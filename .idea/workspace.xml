@@ -43,30 +43,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41a60c83-8ba0-437c-91a7-4c577d3ca995" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/CollectionDeviationArrayAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/CollectionInfosTraficArrayAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/DeviationActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/DeviationsFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Models/InfosTrafic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/InfosTraficActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/InfosTraficFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/activity_deviation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/activity_infostrafic.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/deviation_row.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/infotrafic_row.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Network/soapInfosTraficHelper.java" />
-      <change type="MOVED" beforePath="C:\Dev\Workspace4\EasyCTS\res\layout\activity_collection_station.xml" afterPath="$PROJECT_DIR$/res/layout/activity_collection_progressbar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/CollectionStationActivity.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/CollectionStationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Models/Deviation.java" afterPath="$PROJECT_DIR$/src/com/easycts/Models/Deviation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/star_off.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/star_on.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/easycts/Task/CheckStationFavTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/CollectionLignesFragment.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/CollectionLignesFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Database/FavAdapter.java" afterPath="$PROJECT_DIR$/src/com/easycts/Database/FavAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/FavoritesFragment.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/FavoritesFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Intents.java" afterPath="$PROJECT_DIR$/src/com/easycts/Intents.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/PagerStationActivity.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/PagerStationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Ui/SplashActivity.java" afterPath="$PROJECT_DIR$/src/com/easycts/Ui/SplashActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/arrays.xml" afterPath="$PROJECT_DIR$/res/values/arrays.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Network/soapDeviationsHelper.java" afterPath="$PROJECT_DIR$/src/com/easycts/Network/soapDeviationsHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Database/StationDBAdapter.java" afterPath="$PROJECT_DIR$/src/com/easycts/Database/StationDBAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/easycts/Task/StationsFavTask.java" afterPath="$PROJECT_DIR$/src/com/easycts/Task/StationsFavTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EasyCTS.iws" />
@@ -129,23 +115,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/com/easycts/Ui/DeviationActivity.java" line="25" class="com.easycts.Ui.DeviationActivity" package="com.easycts.Ui">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -156,77 +126,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="InfosTrafic.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/easycts/Models/InfosTrafic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="47" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1445">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Deviation.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/easycts/Models/Deviation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="17" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1972">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfosTraficActivity.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/InfosTraficActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="42" selection-start="821" selection-end="821" vertical-scroll-proportion="0.24385247" vertical-offset="255" max-vertical-offset="867">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviationActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/DeviationActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="735" selection-end="911" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PagerStationActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PagerStationActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/PagerStationActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="13" selection-start="1467" selection-end="1476" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3757">
+            <state line="50" column="21" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.45232815" vertical-offset="0" max-vertical-offset="2754">
+              <folding>
+                <element signature="method#initialisePaging#0;class#PagerStationActivity#0" expanded="false" />
+                <element signature="method#getHoursByType#0;class#PagerStationActivity#0" expanded="false" />
+                <element signature="method#onTaskFinished#0;class#PagerStationActivity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FavAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/easycts/Database/FavAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="123" column="34" selection-start="3421" selection-end="3421" vertical-scroll-proportion="0.0" vertical-offset="2074" max-vertical-offset="3179">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_deviation.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/activity_deviation.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="FavTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/easycts/Task/FavTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="51" selection-start="4559" selection-end="4559" vertical-scroll-proportion="-35.92" vertical-offset="853" max-vertical-offset="2006">
-              <folding>
-                <element signature="e#1362#1390#0" expanded="true" />
-                <element signature="e#2483#2514#0" expanded="true" />
-                <element signature="e#3610#3639#0" expanded="true" />
-              </folding>
+            <state line="41" column="20" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1462">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_infostrafic.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/activity_infostrafic.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="Fav.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/easycts/Models/Fav.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="899" selection-end="899" vertical-scroll-proportion="-8.72" vertical-offset="173" max-vertical-offset="1173">
-              <folding>
-                <element signature="e#1365#1394#0" expanded="true" />
-              </folding>
+            <state line="13" column="16" selection-start="243" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2091">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -250,14 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/CollectionInfosTraficArrayAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/Adapter/CollectionDeviationArrayAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/GenericListFragment.java" />
-        <option value="$PROJECT_DIR$/res/layout/activity_collection_progressbar.xml" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/PagerStationActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Ui/SplashActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/easycts/Intents.java" />
         <option value="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/DeviationsFragment.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
@@ -266,6 +193,14 @@
         <option value="$PROJECT_DIR$/res/layout/activity_deviation.xml" />
         <option value="$PROJECT_DIR$/src/com/easycts/Ui/DeviationActivity.java" />
         <option value="$PROJECT_DIR$/src/com/easycts/Ui/InfosTraficActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/FavoritesFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Database/StationDBAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/CollectionLignesFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Task/StationsFavTask.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Intents.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Task/CheckStationFavTask.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Database/FavAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/easycts/Ui/PagerStationActivity.java" />
       </list>
     </option>
   </component>
@@ -273,10 +208,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-1508" />
+    <option name="y" value="52" />
+    <option name="width" value="1404" />
+    <option name="height" value="881" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -309,6 +244,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -403,6 +340,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="easycts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EasyCTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EasyCTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="easycts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EasyCTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EasyCTS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -421,14 +402,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="drawable-hdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -443,10 +422,10 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="4df174e927d64f57" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="api17-x86-gpu" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="MyAvd0" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
@@ -457,21 +436,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easycts.Task" />
       <recent name="com.easycts.Ui" />
       <recent name="com.easycts.Ui.Mainactivity" />
       <recent name="com.easycts.Ui.Adapter" />
-      <recent name="com.easycts.Task" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Dev\Workspace4\EasyCTS\res\layout" />
       <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable-hdpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable-hdpi" />
       <recent name="C:\Dev\Workspace4\EasyCTS\src\com\easycts\Network" />
       <recent name="C:\Dev\Workspace4\EasyCTS\src\com\easycts\Models" />
       <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable-mdpi" />
       <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable-xhdpi" />
-      <recent name="C:\Dev\Workspace4\EasyCTS\res\drawable-hdpi" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.EasyCTS">
@@ -651,32 +630,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1508" y="52" width="1404" height="881" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15117522" sideWeight="0.6751152" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42761692" sideWeight="0.4501077" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41746247" sideWeight="0.5498923" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40525588" sideWeight="0.52086437" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32226834" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22358592" sideWeight="0.28619152" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22358592" sideWeight="0.28619152" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32405347" sideWeight="0.38980618" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48847926" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27723378" sideWeight="0.2062212" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32373273" sideWeight="0.38980618" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4868603" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.195795" sideWeight="0.6714976" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24172892" sideWeight="0.57238305" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32293987" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2839046" sideWeight="0.6777317" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32226834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15073529" sideWeight="0.65553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32603687" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -742,128 +721,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Intents.java">
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/CollectionStationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="77" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/MainActivityMenuItemView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="296" selection-end="296" vertical-scroll-proportion="-2.6448932" vertical-offset="2295" max-vertical-offset="4488">
+        <state line="73" column="30" selection-start="2379" selection-end="2601" vertical-scroll-proportion="0.73913044" vertical-offset="612" max-vertical-offset="1479">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/CollectionLignesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="43" selection-start="4453" selection-end="4453" vertical-scroll-proportion="0.28266034" vertical-offset="1122" max-vertical-offset="3434">
+        <state line="204" column="9" selection-start="6971" selection-end="6971" vertical-scroll-proportion="0.0" vertical-offset="1689" max-vertical-offset="3570">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/SplashActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/FavoritesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="53" selection-start="1396" selection-end="1437" vertical-scroll-proportion="0.30851063" vertical-offset="314" max-vertical-offset="1819">
+        <state line="55" column="0" selection-start="2079" selection-end="2079" vertical-scroll-proportion="0.78532606" vertical-offset="255" max-vertical-offset="1768">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Models/Deviation.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_collection_ligne.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1955">
+        <state line="15" column="4" selection-start="552" selection-end="552" vertical-scroll-proportion="0.49227798" vertical-offset="0" max-vertical-offset="518">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Models/InfosTrafic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="47" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="53" selection-start="1907" selection-end="1907" vertical-scroll-proportion="0.4574468" vertical-offset="618" max-vertical-offset="1122">
-          <folding>
-            <element signature="e#404#422#0" expanded="true" />
-            <element signature="e#556#574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Network/soapInfosTraficHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="777" selection-end="777" vertical-scroll-proportion="0.41702127" vertical-offset="263" max-vertical-offset="1054" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="63" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.79574466" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/DeviationsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="9" selection-start="2390" selection-end="2755" vertical-scroll-proportion="0.0" vertical-offset="269" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/Mainactivity/InfosTraficFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="72" selection-start="2777" selection-end="2777" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_deviation.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Database/StationDBAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="51" selection-start="4559" selection-end="4559" vertical-scroll-proportion="-35.92" vertical-offset="853" max-vertical-offset="2006">
+        <state line="162" column="29" selection-start="4937" selection-end="4937" vertical-scroll-proportion="0.6151013" vertical-offset="2097" max-vertical-offset="2703">
           <folding>
-            <element signature="e#1362#1390#0" expanded="true" />
-            <element signature="e#2483#2514#0" expanded="true" />
-            <element signature="e#3610#3639#0" expanded="true" />
+            <element signature="method#getLigne#0;class#StationDBAdapter#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_infostrafic.xml">
-      <provider editor-type-id="android-designer">
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Task/StationsFavTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="67" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Intents.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="36" selection-start="581" selection-end="581" vertical-scroll-proportion="0.3756906" vertical-offset="0" max-vertical-offset="543">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/minus.png">
+      <provider selected="true" editor-type-id="images">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/StationFullFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="899" selection-end="899" vertical-scroll-proportion="-8.72" vertical-offset="173" max-vertical-offset="1173">
-          <folding>
-            <element signature="e#1365#1394#0" expanded="true" />
-          </folding>
+        <state line="27" column="27" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1853">
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Task/CheckStationFavTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="4" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Models/Fav.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="16" selection-start="243" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-17/android.jar!/android/os/AsyncTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Task/FavTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="20" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/easycts/Database/FavAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="34" selection-start="3421" selection-end="3421" vertical-scroll-proportion="0.0" vertical-offset="929" max-vertical-offset="2992">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/plus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/PagerStationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="13" selection-start="1467" selection-end="1476" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3757">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/DeviationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="735" selection-end="911" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/easycts/Ui/InfosTraficActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="42" selection-start="821" selection-end="821" vertical-scroll-proportion="0.24385247" vertical-offset="255" max-vertical-offset="867">
-          <folding />
+        <state line="50" column="21" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.45232815" vertical-offset="0" max-vertical-offset="2754">
+          <folding>
+            <element signature="method#initialisePaging#0;class#PagerStationActivity#0" expanded="false" />
+            <element signature="method#getHoursByType#0;class#PagerStationActivity#0" expanded="false" />
+            <element signature="method#onTaskFinished#0;class#PagerStationActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -98,6 +98,27 @@ public class StationDBAdapter {
         return stations;
     }
 
+    public Cursor searchStation(String constraint)
+    {
+
+        /*Cursor curs = this.mDb.query(ARRET_TABLE_NAME, new String[] {ARRET_KEY, ARRET_CTSID,
+                ARRET_TITLE}, ARRET_TITLE + " like '%" + constraint +"%'", null, null, null, null);*/
+
+        String query = String.format("SELECT a.*,%s,%s,%s,%s FROM %s a INNER JOIN %s l ON a.%s = l.%s where a.%s like '%%%s%%'",
+                LigneDBAdapter.LIGNE_CTSID,
+                LigneDBAdapter.LIGNE_DIR1,
+                LigneDBAdapter.LIGNE_DIR2,
+                LigneDBAdapter.LIGNE_TYPE,
+                ARRET_TABLE_NAME,
+                LigneDBAdapter.LIGNE_TABLE_NAME,
+                ARRET_LIGNE_KEY,
+                LigneDBAdapter.LIGNE_KEY,
+                ARRET_TITLE,
+                constraint);
+        Cursor curs = this.mDb.rawQuery(query, new String[]{});
+        return curs;
+    }
+
 	/**
 	 * Return a Cursor positioned at the car that matches the given rowId
 	 * 

@@ -39,42 +39,13 @@ public class StationsFavTask extends AsyncTask<Object, Integer, Cursor>
         ArrayList<Fav> favs = favAdapter.getAll();
         favAdapter.close();
 
+        if(favs.isEmpty())
+            return null;
+
         //Get the Cursor results
         stationDBAdapter = new StationDBAdapter(mContext);
         stationDBAdapter.open();
         Cursor curs = stationDBAdapter.getLignesAndStationsFavs(favs);
-
-
-        /*HashMap<Long, ArrayList<Station>> stations = new  HashMap<Long, ArrayList<Station>>();
-        HashMap<Long, Ligne> lignes = new  HashMap<Long, Ligne>();
-
-        while (curs.moveToNext())
-        {
-            Ligne ligne = Ligne.FromCursorWithSpecificId(curs, "ligne_id");
-            if(!lignes.containsKey(ligne.getId()))
-            {
-                lignes.put(ligne.getId(), ligne);
-                stations.put(ligne.getId(), new ArrayList<Station>());
-            }
-
-            Station station = Station.FromCursor(curs);
-            station.setFav(true);
-
-            stations.get(ligne.getId()).add(station);
-        }
-        stationDBAdapter.close();
-
-        ArrayList<Pair<Ligne, Station>> pairs = new ArrayList<Pair<Ligne, Station>>();
-        Iterator it = stations.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry entry = (Map.Entry)it.next();
-            ArrayList<Station> entryStations = (ArrayList<Station>)entry.getValue();
-            Ligne entryLigne = lignes.get(entry.getKey());
-            for(Station station:entryStations)
-            {
-                pairs.add(Pair.of(entryLigne, station));
-            }
-        }*/
 
         return curs;
 	}
@@ -91,4 +62,5 @@ public class StationsFavTask extends AsyncTask<Object, Integer, Cursor>
 	{
 		super.onPostExecute(results);
 		stationsTaskFinishedListener.onTaskFinished(results);
-	}}
+	}
+}

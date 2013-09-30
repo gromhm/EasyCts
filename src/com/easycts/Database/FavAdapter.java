@@ -36,6 +36,8 @@ public class FavAdapter
     public FavAdapter(Context ctx) {
         this.mCtx = ctx;
     }
+
+
     private static class DatabaseHelper extends SQLiteOpenHelper
     {
         DatabaseHelper(Context context)
@@ -107,6 +109,13 @@ public class FavAdapter
 
         return favs;
     }
+
+    public Boolean Check(String ligneId, String arretId)
+    {
+        Cursor curs = this.mDb.rawQuery("select * from " + FAV_TABLE_NAME + " Where " + FAV_LIGNE_CTS_KEY + "='" + ligneId + "' and " + FAV_ARRET_CTS_KEY  + "='" + arretId + "'",null);
+        return curs.getCount()>0;
+    }
+
 
     public ArrayList<Fav> getAllByLigne(Ligne ligne)
     {

@@ -18,17 +18,21 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.easycts.Intents;
+import com.easycts.Models.Fav;
 import com.easycts.Models.Ligne;
 import com.easycts.Models.Station;
 import com.easycts.Models.StationHours;
 import com.easycts.Network.soapHelper;
 import com.easycts.Network.soapHoursHelper;
 import com.easycts.R;
+import com.easycts.Task.CheckStationFavTask;
+import com.easycts.Task.FavTask;
 import com.easycts.Task.GenericSoapTask;
 import com.easycts.Ui.Adapter.PagerStationViewPagerAdapter;
 import com.easycts.Ui.Mainactivity.CollectionLignesFragment;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -36,9 +40,11 @@ import java.util.Vector;
 
 import static com.actionbarsherlock.app.ActionBar.Tab;
 
-public class PagerStationActivity  extends SherlockFragmentActivity implements GenericSoapTask.StationTaskFinishedListener<ArrayList<StationHours>>
+public class PagerStationActivity  extends SherlockFragmentActivity implements GenericSoapTask.StationTaskFinishedListener<ArrayList<StationHours>>, CheckStationFavTask.CheckStationFavTaskFinishedListener
 {
     private static final int REFRESH = 1;
+    private static final int FAVOK = 2;
+    private static final int FAVKO = 3;
 
     // Declare Variables
     ActionBar mActionBar;
@@ -49,7 +55,8 @@ public class PagerStationActivity  extends SherlockFragmentActivity implements G
 	 private PagerStationViewPagerAdapter mSectionsPagerAdapter;
      private Ligne mLigne;
      private Station mStation;
-    private ArrayList<StationHours> hours;
+     private ArrayList<StationHours> hours;
+     private Boolean isFav;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -83,13 +90,14 @@ public class PagerStationActivity  extends SherlockFragmentActivity implements G
             }
         });
 
-        if (savedInstanceState == null) {
-            //Call SoapTask
-            ProcessSoapHoursTask();
+        if (savedInstanceState == null)
+        {
+            new CheckStationFavTask(PagerStationActivity.this).execute(mLigne.getTitle(), mStation.getCtsId());
         }
         else
         {
             this.hours = savedInstanceState.getParcelableArrayList(Intents.HOURS);
+            this.isFav = savedInstanceState.getBoolean(Intents.ISFAV, isFav);
             initialisePaging();
         }
     }
@@ -126,6 +134,16 @@ public class PagerStationActivity  extends SherlockFragmentActivity implements G
                 //NavUtils.navigateUpFromSameTask(this);
                 onBackPressed();
                 return true;
+            case FAVOK:
+                new FavTask(this).execute(new ArrayList<Fav>(Arrays.asList(new Fav(mStation.getCtsId(), mLigne.getTitle()))) , 0);
+                isFav = false;
+                invalidateOptionsMenu();
+                break;
+            case FAVKO:
+                new FavTask(this).execute(new ArrayList<Fav>(Arrays.asList(new Fav(mStation.getCtsId(), mLigne.getTitle()))) , 1);
+                isFav = true;
+                invalidateOptionsMenu();
+                break;
             case REFRESH:
                 ProcessSoapHoursTask();
                 break;
@@ -138,6 +156,7 @@ public class PagerStationActivity  extends SherlockFragmentActivity implements G
     {
         super.onSaveInstanceState(outState);
         outState.putParcelableArrayList(Intents.HOURS, hours);
+        outState.putBoolean(Intents.ISFAV, isFav);
     }
 
 
@@ -243,9 +262,23 @@ public class PagerStationActivity  extends SherlockFragmentActivity implements G
     public boolean onCreateOptionsMenu(Menu menu)
     {
         if(!refresh)
+        {
             menu.add(0, REFRESH, 0, "Refresh").setIcon(R.drawable.navigation_refresh).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-
+            if(isFav)
+                menu.add(0, FAVOK, 1, "Favoris").setIcon(R.drawable.star_on).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+            else
+                menu.add(0, FAVKO, 2, "Favoris").setIcon(R.drawable.star_off).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+        }
         return true;
+    }
+
+    @Override
+    public void onTaskFinished(Boolean result)
+    {
+        isFav = result;
+
+        //Call SoapTask
+        ProcessSoapHoursTask();
     }
 }
 

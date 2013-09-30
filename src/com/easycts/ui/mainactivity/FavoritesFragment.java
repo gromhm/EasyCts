@@ -33,6 +33,7 @@ public class FavoritesFragment extends SherlockFragment implements StationsFavTa
     FragmentActivity mContext;
     ListView listView;
     ProgressBar progressBar;
+    TextView textview;
     SimpleCursorAdapter lignesAdapter;
     private Cursor curs;
 
@@ -43,8 +44,10 @@ public class FavoritesFragment extends SherlockFragment implements StationsFavTa
         mContext = this.getSherlockActivity();
         listView = (ListView) rootView.findViewById(R.id.activity_coll_collection);
         progressBar = (ProgressBar) rootView.findViewById(R.id.activity_coll_progressbar);
+        textview = (TextView) rootView.findViewById(R.id.activity_coll_empty_text);
         listView.setOnItemClickListener(setOnItemClickListener);
         progressBar.setVisibility(View.VISIBLE);
+        textview.setVisibility(View.GONE);
         listView.setVisibility(View.GONE);
         new StationsFavTask(this).execute();
 
@@ -68,46 +71,56 @@ public class FavoritesFragment extends SherlockFragment implements StationsFavTa
     @Override
     public void onTaskFinished(Cursor results) {
         curs = results;
-        lignesAdapter = new SimpleCursorAdapter(mContext,
-                R.layout.fav_row, results, new String[] {
-                LigneDBAdapter.LIGNE_CTSID, StationDBAdapter.ARRET_TITLE,
-                LigneDBAdapter.LIGNE_DIR1 }, new int[] {
-                R.id.fav_row_ligne, R.id.fav_row_station},
-                CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
 
-        listView.setAdapter(lignesAdapter);
+        if(results == null)
+        {
+            textview.setText("Aucun favoris");
+            textview.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            lignesAdapter = new SimpleCursorAdapter(mContext,
+                    R.layout.fav_row, results, new String[] {
+                    LigneDBAdapter.LIGNE_CTSID, StationDBAdapter.ARRET_TITLE,
+                    LigneDBAdapter.LIGNE_DIR1 }, new int[] {
+                    R.id.fav_row_ligne, R.id.fav_row_station},
+                    CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
 
-        lignesAdapter.setViewBinder(new SimpleCursorAdapter.ViewBinder() {
-            @Override
-            public boolean setViewValue(View view, Cursor cursor,
-                                        int columnIndex) {
-                if (view.getId() == R.id.fav_row_ligne) {
-                    String empname = cursor.getString(cursor.getColumnIndex(LigneDBAdapter.LIGNE_CTSID));
-                    TextView tv = (TextView) view;
-                    tv.setTextColor(Color.WHITE);
-                    tv.setText(empname);
+            listView.setAdapter(lignesAdapter);
 
-                    if (empname.equals("A"))
-                        SetTramTxtView(tv, Color.rgb(226, 0, 26));
-                    else if (empname.equals("B"))
-                        SetTramTxtView(tv, Color.rgb(0, 158, 224));
-                    else if (empname.equals("C"))
-                        SetTramTxtView(tv, Color.rgb(242, 148, 0));
-                    else if (empname.equals("D"))
-                        SetTramTxtView(tv, Color.rgb(0, 153, 51));
-                    else if (empname.equals("E"))
-                        SetTramTxtView(tv, Color.rgb(144, 133, 186));
-                    else if (empname.equals("F"))
-                        SetTramTxtView(tv, Color.rgb(177, 200, 0));
-                    else
-                        tv.setTextColor(Color.BLACK);
-                    return true;
+            lignesAdapter.setViewBinder(new SimpleCursorAdapter.ViewBinder() {
+                @Override
+                public boolean setViewValue(View view, Cursor cursor,
+                                            int columnIndex) {
+                    if (view.getId() == R.id.fav_row_ligne) {
+                        String empname = cursor.getString(cursor.getColumnIndex(LigneDBAdapter.LIGNE_CTSID));
+                        TextView tv = (TextView) view;
+                        tv.setTextColor(Color.WHITE);
+                        tv.setText(empname);
+
+                        if (empname.equals("A"))
+                            SetTramTxtView(tv, Color.rgb(226, 0, 26));
+                        else if (empname.equals("B"))
+                            SetTramTxtView(tv, Color.rgb(0, 158, 224));
+                        else if (empname.equals("C"))
+                            SetTramTxtView(tv, Color.rgb(242, 148, 0));
+                        else if (empname.equals("D"))
+                            SetTramTxtView(tv, Color.rgb(0, 153, 51));
+                        else if (empname.equals("E"))
+                            SetTramTxtView(tv, Color.rgb(144, 133, 186));
+                        else if (empname.equals("F"))
+                            SetTramTxtView(tv, Color.rgb(177, 200, 0));
+                        else
+                            tv.setTextColor(Color.BLACK);
+                        return true;
+                    }
+                    return false;
                 }
-                return false;
-            }
-        });
+            });
 
-        listView.setVisibility(View.VISIBLE);
+            listView.setVisibility(View.VISIBLE);
+        }
+
         progressBar.setVisibility(View.GONE);
     }
 
